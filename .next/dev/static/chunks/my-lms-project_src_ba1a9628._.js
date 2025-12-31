@@ -1,0 +1,10039 @@
+(globalThis.TURBOPACK || (globalThis.TURBOPACK = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/my-lms-project/src/lib/supabase.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "supabase",
+    ()=>supabase
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$build$2f$polyfills$2f$process$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = /*#__PURE__*/ __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/build/polyfills/process.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$supabase$2f$supabase$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/@supabase/supabase-js/dist/index.mjs [app-client] (ecmascript) <locals>");
+;
+const supabaseUrl = ("TURBOPACK compile-time value", "https://ukfljyhpkhzadjwhsvzf.supabase.co");
+const supabaseAnonKey = ("TURBOPACK compile-time value", "sb_publishable_KKQJ_me6VhhkNQDeoJvEZw_9vJFPeIW");
+if ("TURBOPACK compile-time falsy", 0) //TURBOPACK unreachable
+;
+const supabase = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$supabase$2f$supabase$2d$js$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$locals$3e$__["createClient"])(supabaseUrl, supabaseAnonKey);
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/ui/utils.ts [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "cn",
+    ()=>cn
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/clsx/dist/clsx.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/tailwind-merge/dist/bundle-mjs.mjs [app-client] (ecmascript)");
+;
+;
+function cn(...inputs) {
+    return (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$tailwind$2d$merge$2f$dist$2f$bundle$2d$mjs$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["twMerge"])((0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$clsx$2f$dist$2f$clsx$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["clsx"])(inputs));
+}
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/ui/button.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Button",
+    ()=>Button,
+    "buttonVariants",
+    ()=>buttonVariants
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/@radix-ui/react-slot/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/class-variance-authority/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/utils.ts [app-client] (ecmascript)");
+;
+;
+;
+;
+;
+const buttonVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cva"])("inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive", {
+    variants: {
+        variant: {
+            default: "bg-primary text-primary-foreground hover:bg-primary/90",
+            destructive: "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+            outline: "border bg-background text-foreground hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50",
+            secondary: "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+            ghost: "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
+            link: "text-primary underline-offset-4 hover:underline"
+        },
+        size: {
+            default: "h-9 px-4 py-2 has-[>svg]:px-3",
+            sm: "h-8 rounded-md gap-1.5 px-3 has-[>svg]:px-2.5",
+            lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+            icon: "size-9 rounded-md"
+        }
+    },
+    defaultVariants: {
+        variant: "default",
+        size: "default"
+    }
+});
+function Button(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(15);
+    if ($[0] !== "b3cd349ddf329325a110a6e41f8260ff87915079933f6819c85419f4be858ae2") {
+        for(let $i = 0; $i < 15; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "b3cd349ddf329325a110a6e41f8260ff87915079933f6819c85419f4be858ae2";
+    }
+    let className;
+    let props;
+    let size;
+    let t1;
+    let variant;
+    if ($[1] !== t0) {
+        ({ className, variant, size, asChild: t1, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+        $[4] = size;
+        $[5] = t1;
+        $[6] = variant;
+    } else {
+        className = $[2];
+        props = $[3];
+        size = $[4];
+        t1 = $[5];
+        variant = $[6];
+    }
+    const asChild = t1 === undefined ? false : t1;
+    const Comp = asChild ? __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Slot"] : "button";
+    let t2;
+    if ($[7] !== className || $[8] !== size || $[9] !== variant) {
+        t2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])(buttonVariants({
+            variant,
+            size,
+            className
+        }));
+        $[7] = className;
+        $[8] = size;
+        $[9] = variant;
+        $[10] = t2;
+    } else {
+        t2 = $[10];
+    }
+    let t3;
+    if ($[11] !== Comp || $[12] !== props || $[13] !== t2) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Comp, {
+            "data-slot": "button",
+            className: t2,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/button.tsx",
+            lineNumber: 80,
+            columnNumber: 10
+        }, this);
+        $[11] = Comp;
+        $[12] = props;
+        $[13] = t2;
+        $[14] = t3;
+    } else {
+        t3 = $[14];
+    }
+    return t3;
+}
+_c = Button;
+;
+var _c;
+__turbopack_context__.k.register(_c, "Button");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/ui/card.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Card",
+    ()=>Card,
+    "CardAction",
+    ()=>CardAction,
+    "CardContent",
+    ()=>CardContent,
+    "CardDescription",
+    ()=>CardDescription,
+    "CardFooter",
+    ()=>CardFooter,
+    "CardHeader",
+    ()=>CardHeader,
+    "CardTitle",
+    ()=>CardTitle
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/utils.ts [app-client] (ecmascript)");
+;
+;
+;
+function Card(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "de3175b9bed123b78a4d64821455b2b0cea2532179a6cefbf0beb4880d164974") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "de3175b9bed123b78a4d64821455b2b0cea2532179a6cefbf0beb4880d164974";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("bg-card text-card-foreground flex flex-col gap-6 rounded-xl border", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            "data-slot": "card",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/card.tsx",
+            lineNumber: 36,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c = Card;
+function CardHeader(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "de3175b9bed123b78a4d64821455b2b0cea2532179a6cefbf0beb4880d164974") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "de3175b9bed123b78a4d64821455b2b0cea2532179a6cefbf0beb4880d164974";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-1.5 px-6 pt-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            "data-slot": "card-header",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/card.tsx",
+            lineNumber: 77,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c1 = CardHeader;
+function CardTitle(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "de3175b9bed123b78a4d64821455b2b0cea2532179a6cefbf0beb4880d164974") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "de3175b9bed123b78a4d64821455b2b0cea2532179a6cefbf0beb4880d164974";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("leading-none", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+            "data-slot": "card-title",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/card.tsx",
+            lineNumber: 118,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c2 = CardTitle;
+function CardDescription(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "de3175b9bed123b78a4d64821455b2b0cea2532179a6cefbf0beb4880d164974") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "de3175b9bed123b78a4d64821455b2b0cea2532179a6cefbf0beb4880d164974";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("text-muted-foreground", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+            "data-slot": "card-description",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/card.tsx",
+            lineNumber: 159,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c3 = CardDescription;
+function CardAction(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "de3175b9bed123b78a4d64821455b2b0cea2532179a6cefbf0beb4880d164974") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "de3175b9bed123b78a4d64821455b2b0cea2532179a6cefbf0beb4880d164974";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("col-start-2 row-span-2 row-start-1 self-start justify-self-end", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            "data-slot": "card-action",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/card.tsx",
+            lineNumber: 200,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c4 = CardAction;
+function CardContent(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "de3175b9bed123b78a4d64821455b2b0cea2532179a6cefbf0beb4880d164974") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "de3175b9bed123b78a4d64821455b2b0cea2532179a6cefbf0beb4880d164974";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("px-6 [&:last-child]:pb-6", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            "data-slot": "card-content",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/card.tsx",
+            lineNumber: 241,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c5 = CardContent;
+function CardFooter(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "de3175b9bed123b78a4d64821455b2b0cea2532179a6cefbf0beb4880d164974") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "de3175b9bed123b78a4d64821455b2b0cea2532179a6cefbf0beb4880d164974";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex items-center px-6 pb-6 [.border-t]:pt-6", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            "data-slot": "card-footer",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/card.tsx",
+            lineNumber: 282,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c6 = CardFooter;
+;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6;
+__turbopack_context__.k.register(_c, "Card");
+__turbopack_context__.k.register(_c1, "CardHeader");
+__turbopack_context__.k.register(_c2, "CardTitle");
+__turbopack_context__.k.register(_c3, "CardDescription");
+__turbopack_context__.k.register(_c4, "CardAction");
+__turbopack_context__.k.register(_c5, "CardContent");
+__turbopack_context__.k.register(_c6, "CardFooter");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/ui/badge.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Badge",
+    ()=>Badge,
+    "badgeVariants",
+    ()=>badgeVariants
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/@radix-ui/react-slot/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/class-variance-authority/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/utils.ts [app-client] (ecmascript)");
+;
+;
+;
+;
+;
+const badgeVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cva"])("inline-flex items-center justify-center rounded-md border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden", {
+    variants: {
+        variant: {
+            default: "border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90",
+            secondary: "border-transparent bg-secondary text-secondary-foreground [a&]:hover:bg-secondary/90",
+            destructive: "border-transparent bg-destructive text-white [a&]:hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:focus-visible:ring-destructive/40 dark:bg-destructive/60",
+            outline: "text-foreground [a&]:hover:bg-accent [a&]:hover:text-accent-foreground"
+        }
+    },
+    defaultVariants: {
+        variant: "default"
+    }
+});
+function Badge(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(13);
+    if ($[0] !== "3187a303d670e79fcb9b5f217cd6a8a969f3bf13cac6c24a7823e3e9f2a975d0") {
+        for(let $i = 0; $i < 13; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "3187a303d670e79fcb9b5f217cd6a8a969f3bf13cac6c24a7823e3e9f2a975d0";
+    }
+    let className;
+    let props;
+    let t1;
+    let variant;
+    if ($[1] !== t0) {
+        ({ className, variant, asChild: t1, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+        $[4] = t1;
+        $[5] = variant;
+    } else {
+        className = $[2];
+        props = $[3];
+        t1 = $[4];
+        variant = $[5];
+    }
+    const asChild = t1 === undefined ? false : t1;
+    const Comp = asChild ? __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Slot"] : "span";
+    let t2;
+    if ($[6] !== className || $[7] !== variant) {
+        t2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])(badgeVariants({
+            variant
+        }), className);
+        $[6] = className;
+        $[7] = variant;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    let t3;
+    if ($[9] !== Comp || $[10] !== props || $[11] !== t2) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(Comp, {
+            "data-slot": "badge",
+            className: t2,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/badge.tsx",
+            lineNumber: 64,
+            columnNumber: 10
+        }, this);
+        $[9] = Comp;
+        $[10] = props;
+        $[11] = t2;
+        $[12] = t3;
+    } else {
+        t3 = $[12];
+    }
+    return t3;
+}
+_c = Badge;
+;
+var _c;
+__turbopack_context__.k.register(_c, "Badge");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/figma/ImageWithFallback.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ImageWithFallback",
+    ()=>ImageWithFallback
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+;
+;
+const ERROR_IMG_SRC = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIuMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzLjciPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjU2IiByeD0iNiIvPjxwYXRoIGQ9Im0xNiA1OCAxNi0xOCAzMiAzMiIvPjxjaXJjbGUgY3g9IjUzIiBjeT0iMzUiIHI9IjciLz48L3N2Zz4KCg==';
+function ImageWithFallback(props) {
+    _s();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(15);
+    if ($[0] !== "ed8f69e1dc905ad1fae35496774244126c8a000935ebe56ceb3389d36442099a") {
+        for(let $i = 0; $i < 15; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "ed8f69e1dc905ad1fae35496774244126c8a000935ebe56ceb3389d36442099a";
+    }
+    const [didError, setDidError] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    let t0;
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+        t0 = ({
+            "ImageWithFallback[handleError]": ()=>{
+                setDidError(true);
+            }
+        })["ImageWithFallback[handleError]"];
+        $[1] = t0;
+    } else {
+        t0 = $[1];
+    }
+    const handleError = t0;
+    let alt;
+    let className;
+    let rest;
+    let src;
+    let style;
+    if ($[2] !== props) {
+        ({ src, alt, style, className, ...rest } = props);
+        $[2] = props;
+        $[3] = alt;
+        $[4] = className;
+        $[5] = rest;
+        $[6] = src;
+        $[7] = style;
+    } else {
+        alt = $[3];
+        className = $[4];
+        rest = $[5];
+        src = $[6];
+        style = $[7];
+    }
+    let t1;
+    if ($[8] !== alt || $[9] !== className || $[10] !== didError || $[11] !== rest || $[12] !== src || $[13] !== style) {
+        t1 = didError ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: `inline-block bg-gray-100 text-center align-middle ${className ?? ""}`,
+            style: style,
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "flex items-center justify-center w-full h-full",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                    src: ERROR_IMG_SRC,
+                    alt: "Error loading image",
+                    ...rest,
+                    "data-original-url": src
+                }, void 0, false, {
+                    fileName: "[project]/my-lms-project/src/app/components/figma/ImageWithFallback.tsx",
+                    lineNumber: 53,
+                    columnNumber: 187
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/my-lms-project/src/app/components/figma/ImageWithFallback.tsx",
+                lineNumber: 53,
+                columnNumber: 123
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/figma/ImageWithFallback.tsx",
+            lineNumber: 53,
+            columnNumber: 21
+        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+            src: src,
+            alt: alt,
+            className: className,
+            style: style,
+            ...rest,
+            onError: handleError
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/figma/ImageWithFallback.tsx",
+            lineNumber: 53,
+            columnNumber: 289
+        }, this);
+        $[8] = alt;
+        $[9] = className;
+        $[10] = didError;
+        $[11] = rest;
+        $[12] = src;
+        $[13] = style;
+        $[14] = t1;
+    } else {
+        t1 = $[14];
+    }
+    return t1;
+}
+_s(ImageWithFallback, "QMNzFKr35q4hEDRZ59yrU4N+ufk=");
+_c = ImageWithFallback;
+var _c;
+__turbopack_context__.k.register(_c, "ImageWithFallback");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/ui/dialog.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Dialog",
+    ()=>Dialog,
+    "DialogClose",
+    ()=>DialogClose,
+    "DialogContent",
+    ()=>DialogContent,
+    "DialogDescription",
+    ()=>DialogDescription,
+    "DialogFooter",
+    ()=>DialogFooter,
+    "DialogHeader",
+    ()=>DialogHeader,
+    "DialogOverlay",
+    ()=>DialogOverlay,
+    "DialogPortal",
+    ()=>DialogPortal,
+    "DialogTitle",
+    ()=>DialogTitle,
+    "DialogTrigger",
+    ()=>DialogTrigger
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/@radix-ui/react-dialog/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XIcon$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as XIcon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/utils.ts [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+function Dialog(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
+    if ($[0] !== "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d") {
+        for(let $i = 0; $i < 5; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d";
+    }
+    let props;
+    if ($[1] !== t0) {
+        ({ ...props } = t0);
+        $[1] = t0;
+        $[2] = props;
+    } else {
+        props = $[2];
+    }
+    let t1;
+    if ($[3] !== props) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Root"], {
+            "data-slot": "dialog",
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dialog.tsx",
+            lineNumber: 28,
+            columnNumber: 10
+        }, this);
+        $[3] = props;
+        $[4] = t1;
+    } else {
+        t1 = $[4];
+    }
+    return t1;
+}
+_c = Dialog;
+function DialogTrigger(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
+    if ($[0] !== "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d") {
+        for(let $i = 0; $i < 5; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d";
+    }
+    let props;
+    if ($[1] !== t0) {
+        ({ ...props } = t0);
+        $[1] = t0;
+        $[2] = props;
+    } else {
+        props = $[2];
+    }
+    let t1;
+    if ($[3] !== props) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Trigger"], {
+            "data-slot": "dialog-trigger",
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dialog.tsx",
+            lineNumber: 56,
+            columnNumber: 10
+        }, this);
+        $[3] = props;
+        $[4] = t1;
+    } else {
+        t1 = $[4];
+    }
+    return t1;
+}
+_c1 = DialogTrigger;
+function DialogPortal(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
+    if ($[0] !== "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d") {
+        for(let $i = 0; $i < 5; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d";
+    }
+    let props;
+    if ($[1] !== t0) {
+        ({ ...props } = t0);
+        $[1] = t0;
+        $[2] = props;
+    } else {
+        props = $[2];
+    }
+    let t1;
+    if ($[3] !== props) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Portal"], {
+            "data-slot": "dialog-portal",
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dialog.tsx",
+            lineNumber: 84,
+            columnNumber: 10
+        }, this);
+        $[3] = props;
+        $[4] = t1;
+    } else {
+        t1 = $[4];
+    }
+    return t1;
+}
+_c2 = DialogPortal;
+function DialogClose(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
+    if ($[0] !== "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d") {
+        for(let $i = 0; $i < 5; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d";
+    }
+    let props;
+    if ($[1] !== t0) {
+        ({ ...props } = t0);
+        $[1] = t0;
+        $[2] = props;
+    } else {
+        props = $[2];
+    }
+    let t1;
+    if ($[3] !== props) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Close"], {
+            "data-slot": "dialog-close",
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dialog.tsx",
+            lineNumber: 112,
+            columnNumber: 10
+        }, this);
+        $[3] = props;
+        $[4] = t1;
+    } else {
+        t1 = $[4];
+    }
+    return t1;
+}
+_c3 = DialogClose;
+function DialogOverlay(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-50 bg-black/50", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Overlay"], {
+            "data-slot": "dialog-overlay",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dialog.tsx",
+            lineNumber: 152,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c4 = DialogOverlay;
+function DialogContent(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(13);
+    if ($[0] !== "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d") {
+        for(let $i = 0; $i < 13; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d";
+    }
+    let children;
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, children, ...props } = t0);
+        $[1] = t0;
+        $[2] = children;
+        $[3] = className;
+        $[4] = props;
+    } else {
+        children = $[2];
+        className = $[3];
+        props = $[4];
+    }
+    let t1;
+    if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DialogOverlay, {}, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dialog.tsx",
+            lineNumber: 189,
+            columnNumber: 10
+        }, this);
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== className) {
+        t2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border p-6 shadow-lg duration-200 sm:max-w-lg", className);
+        $[6] = className;
+        $[7] = t2;
+    } else {
+        t2 = $[7];
+    }
+    let t3;
+    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Close"], {
+            className: "ring-offset-background focus:ring-ring data-[state=open]:bg-accent data-[state=open]:text-muted-foreground absolute top-4 right-4 rounded-xs opacity-70 transition-opacity hover:opacity-100 focus:ring-2 focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XIcon$3e$__["XIcon"], {}, void 0, false, {
+                    fileName: "[project]/my-lms-project/src/app/components/ui/dialog.tsx",
+                    lineNumber: 204,
+                    columnNumber: 399
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                    className: "sr-only",
+                    children: "Close"
+                }, void 0, false, {
+                    fileName: "[project]/my-lms-project/src/app/components/ui/dialog.tsx",
+                    lineNumber: 204,
+                    columnNumber: 408
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dialog.tsx",
+            lineNumber: 204,
+            columnNumber: 10
+        }, this);
+        $[8] = t3;
+    } else {
+        t3 = $[8];
+    }
+    let t4;
+    if ($[9] !== children || $[10] !== props || $[11] !== t2) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(DialogPortal, {
+            "data-slot": "dialog-portal",
+            children: [
+                t1,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Content"], {
+                    "data-slot": "dialog-content",
+                    className: t2,
+                    ...props,
+                    children: [
+                        children,
+                        t3
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/my-lms-project/src/app/components/ui/dialog.tsx",
+                    lineNumber: 211,
+                    columnNumber: 54
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dialog.tsx",
+            lineNumber: 211,
+            columnNumber: 10
+        }, this);
+        $[9] = children;
+        $[10] = props;
+        $[11] = t2;
+        $[12] = t4;
+    } else {
+        t4 = $[12];
+    }
+    return t4;
+}
+_c5 = DialogContent;
+function DialogHeader(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex flex-col gap-2 text-center sm:text-left", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            "data-slot": "dialog-header",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dialog.tsx",
+            lineNumber: 253,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c6 = DialogHeader;
+function DialogFooter(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex flex-col-reverse gap-2 sm:flex-row sm:justify-end", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            "data-slot": "dialog-footer",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dialog.tsx",
+            lineNumber: 294,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c7 = DialogFooter;
+function DialogTitle(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("text-lg leading-none font-semibold", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Title"], {
+            "data-slot": "dialog-title",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dialog.tsx",
+            lineNumber: 335,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c8 = DialogTitle;
+function DialogDescription(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "1c094a894536f6586720801f2dc738c220727a5e4f2224641b1a7156203bc61d";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("text-muted-foreground text-sm", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dialog$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Description"], {
+            "data-slot": "dialog-description",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dialog.tsx",
+            lineNumber: 376,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c9 = DialogDescription;
+;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9;
+__turbopack_context__.k.register(_c, "Dialog");
+__turbopack_context__.k.register(_c1, "DialogTrigger");
+__turbopack_context__.k.register(_c2, "DialogPortal");
+__turbopack_context__.k.register(_c3, "DialogClose");
+__turbopack_context__.k.register(_c4, "DialogOverlay");
+__turbopack_context__.k.register(_c5, "DialogContent");
+__turbopack_context__.k.register(_c6, "DialogHeader");
+__turbopack_context__.k.register(_c7, "DialogFooter");
+__turbopack_context__.k.register(_c8, "DialogTitle");
+__turbopack_context__.k.register(_c9, "DialogDescription");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/PublicHomepage.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "PublicHomepage",
+    ()=>PublicHomepage
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/lib/supabase.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/button.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/card.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/badge.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$figma$2f$ImageWithFallback$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/figma/ImageWithFallback.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/dialog.tsx [app-client] (ecmascript)");
+// Icons
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/calendar.js [app-client] (ecmascript) <export default as Calendar>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/map-pin.js [app-client] (ecmascript) <export default as MapPin>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/trophy.js [app-client] (ecmascript) <export default as Trophy>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$facebook$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Facebook$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/facebook.js [app-client] (ecmascript) <export default as Facebook>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$youtube$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Youtube$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/youtube.js [app-client] (ecmascript) <export default as Youtube>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$instagram$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Instagram$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/instagram.js [app-client] (ecmascript) <export default as Instagram>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/star.js [app-client] (ecmascript) <export default as Star>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bell$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bell$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/bell.js [app-client] (ecmascript) <export default as Bell>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/clock.js [app-client] (ecmascript) <export default as Clock>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$images$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Images$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/images.js [app-client] (ecmascript) <export default as Images>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/zap.js [app-client] (ecmascript) <export default as Zap>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$quote$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Quote$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/quote.js [app-client] (ecmascript) <export default as Quote>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/target.js [app-client] (ecmascript) <export default as Target>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$brain$2d$circuit$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BrainCircuit$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/brain-circuit.js [app-client] (ecmascript) <export default as BrainCircuit>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-client] (ecmascript) <export default as ChevronRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/arrow-up-right.js [app-client] (ecmascript) <export default as ArrowUpRight>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/phone.js [app-client] (ecmascript) <export default as Phone>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/message-square.js [app-client] (ecmascript) <export default as MessageSquare>");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+function PublicHomepage({ onNavigate }) {
+    _s();
+    const [classes, setClasses] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [notices, setNotices] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [galleries, setGalleries] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [selectedGallery, setSelectedGallery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [selectedClassId, setSelectedClassId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [topStudents, setTopStudents] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "PublicHomepage.useEffect": ()=>{
+            fetchInitialData();
+        }
+    }["PublicHomepage.useEffect"], []);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "PublicHomepage.useEffect": ()=>{
+            if (selectedClassId) fetchRanks(selectedClassId);
+        }
+    }["PublicHomepage.useEffect"], [
+        selectedClassId
+    ]);
+    async function fetchInitialData() {
+        setLoading(true);
+        try {
+            const { data: classData } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('classes').select('*').order('year', {
+                ascending: false
+            });
+            if (classData && classData.length > 0) {
+                setClasses(classData);
+                setSelectedClassId(classData[0].id);
+            }
+            const { data: noticeData } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('notices').select('*').eq('publish_homepage', true).order('created_at', {
+                ascending: false
+            });
+            if (noticeData) setNotices(noticeData);
+            const { data: galleryData } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('galleries').select('*').order('created_at', {
+                ascending: false
+            });
+            if (galleryData) setGalleries(galleryData);
+        } catch (error) {
+            console.error(error);
+        } finally{
+            setLoading(false);
+        }
+    }
+    async function fetchRanks(classId) {
+        try {
+            const { data } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('exam_results').select('*').eq('class_id', classId).eq('is_public', true).order('created_at', {
+                ascending: false
+            });
+            if (data) {
+                const uniqueLatest = data.filter((item, index, self)=>index === self.findIndex((t)=>t.student_id === item.student_id));
+                setTopStudents(uniqueLatest.sort((a, b)=>b.marks - a.marks).slice(0, 10));
+            }
+        } catch (error_0) {
+            console.error(error_0);
+        }
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "min-h-screen bg-[#FAFBFC] text-slate-900 selection:bg-teal-100",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+                className: "fixed top-0 w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-100 px-6 py-4 flex justify-between items-center shadow-sm",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center gap-3",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                src: "/logo.png",
+                                alt: "Logic Logo",
+                                className: "h-12 w-auto object-contain"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 80,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex flex-col",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "text-lg font-black text-slate-800 tracking-tighter uppercase italic leading-none",
+                                        children: "Logic with Dilshan"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 82,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        className: "text-[8px] font-bold text-teal-600 uppercase tracking-widest mt-1 italic",
+                                        children: "Uthpala"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 83,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 81,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                        lineNumber: 79,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex gap-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                variant: "ghost",
+                                onClick: ()=>onNavigate('student'),
+                                className: "font-bold text-slate-600 hover:bg-slate-50 rounded-xl px-5 text-xs uppercase tracking-widest transition-all",
+                                children: "Student Login"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 87,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                onClick: ()=>onNavigate('admin'),
+                                className: "bg-slate-900 hover:bg-black text-white font-bold rounded-xl px-6 text-xs uppercase tracking-widest shadow-md",
+                                children: "Staff Portal"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 90,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                        lineNumber: 86,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                lineNumber: 78,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "pt-40 pb-24 px-6 bg-white overflow-hidden relative border-b border-slate-100",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center relative z-10",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "space-y-8 animate-in fade-in slide-in-from-left-8 duration-700",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex items-center gap-3",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "h-px w-10 bg-teal-500"
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 101,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-teal-600 font-black uppercase tracking-[0.3em] text-[10px]",
+                                            children: "Enrollment 2026 Open"
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 102,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 100,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                    className: "text-7xl md:text-8xl font-black leading-[0.85] tracking-tighter uppercase italic text-slate-900",
+                                    children: [
+                                        "Master Your ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 105,
+                                            columnNumber: 28
+                                        }, this),
+                                        " ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-teal-600",
+                                            children: "Mind."
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 105,
+                                            columnNumber: 35
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 104,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-xl text-slate-500 leading-relaxed font-medium max-w-md italic",
+                                    children: '"Logic is not just a subject, but a way of thinking, questioning, and discovering the world."'
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 107,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex flex-wrap gap-4 pt-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                            size: "lg",
+                                            className: "bg-slate-900 hover:bg-black text-white rounded-2xl px-12 font-black uppercase text-xs h-16 shadow-2xl active:scale-95 transition-all",
+                                            onClick: ()=>onNavigate('student'),
+                                            children: "Begin Journey"
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 111,
+                                            columnNumber: 16
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "https://wa.me/94770224060",
+                                            target: "_blank",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                size: "lg",
+                                                variant: "outline",
+                                                className: "rounded-2xl px-10 border-slate-200 text-slate-600 h-16 font-black uppercase text-xs hover:bg-slate-50 transition-all flex gap-2 items-center",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__["MessageSquare"], {
+                                                        size: 16
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                        lineNumber: 114,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    " WhatsApp"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 113,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 112,
+                                            columnNumber: 16
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 110,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                            lineNumber: 99,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "relative group animate-in fade-in slide-in-from-right-8 duration-1000",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute -inset-1 bg-teal-500/10 rounded-[4rem] blur-2xl opacity-50"
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 120,
+                                    columnNumber: 14
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$figma$2f$ImageWithFallback$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ImageWithFallback"], {
+                                    src: "/teacher-dilshan.jpg",
+                                    alt: "Dilshan Uthpala",
+                                    className: "rounded-[3.5rem] border-[12px] border-white shadow-2xl relative z-10 grayscale hover:grayscale-0 transition-all duration-700 aspect-[4/5] object-cover"
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 121,
+                                    columnNumber: 14
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                            lineNumber: 119,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                    lineNumber: 98,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                lineNumber: 97,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "py-32 px-6 max-w-7xl mx-auto",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "grid md:grid-cols-2 gap-24 items-start",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "space-y-10",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "space-y-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                            className: "text-xs font-black uppercase tracking-[0.4em] text-teal-600 flex items-center gap-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "h-0.5 w-8 bg-teal-600"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 132,
+                                                    columnNumber: 24
+                                                }, this),
+                                                " About Us"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 131,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                            className: "text-5xl font-black text-slate-900 uppercase italic leading-tight",
+                                            children: [
+                                                "Logic with ",
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 134,
+                                                    columnNumber: 114
+                                                }, this),
+                                                " Dilshan Uthpala"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 134,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-slate-600 leading-relaxed text-xl font-medium",
+                                            children: "We believe that logic is not just another subject but a way of thinking, questioning and discovering the world around us that goes beyond that."
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 135,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-slate-500 leading-relaxed text-lg border-l-4 border-teal-500 pl-6 py-2 italic font-medium",
+                                            children: "Created by a passionate, logical, young law student, this logic platform will help students build a sharper mind, strengthen their reasoning and practice logical thinking."
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 138,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 130,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "p-10 bg-slate-900 rounded-[3rem] text-white relative shadow-2xl border-t-8 border-teal-500 group overflow-hidden",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$quote$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Quote$3e$__["Quote"], {
+                                            className: "absolute top-6 right-6 size-12 text-teal-500/20 group-hover:scale-110 transition-transform"
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 143,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-3xl font-black italic tracking-tighter leading-tight uppercase relative z-10",
+                                            children: [
+                                                '"මොළ හදන ',
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 144,
+                                                    columnNumber: 127
+                                                }, this),
+                                                ' ලොජික් පන්තිය"'
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 144,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 142,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                            lineNumber: 129,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "space-y-16 py-12",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex gap-8 group",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "bg-white p-5 rounded-[2rem] shadow-xl h-fit border border-slate-50 group-hover:bg-teal-600 transition-all duration-300",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$target$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Target$3e$__["Target"], {
+                                                className: "text-teal-600 group-hover:text-white size-10 transition-colors"
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 151,
+                                                columnNumber: 25
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 150,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                    className: "text-2xl font-black uppercase italic text-slate-900",
+                                                    children: "Our Goal"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 154,
+                                                    columnNumber: 25
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-slate-500 leading-relaxed text-lg font-medium",
+                                                    children: "To simplify the subject of logic, which is considered complex in society, and present it to the student in a fun, intuitive and understandable way."
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 155,
+                                                    columnNumber: 25
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 153,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 149,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "flex gap-8 group",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "bg-white p-5 rounded-[2rem] shadow-xl h-fit border border-slate-50 group-hover:bg-teal-600 transition-all duration-300",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$brain$2d$circuit$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BrainCircuit$3e$__["BrainCircuit"], {
+                                                className: "text-teal-600 group-hover:text-white size-10 transition-colors"
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 162,
+                                                columnNumber: 25
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 161,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-3",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                                    className: "text-2xl font-black uppercase italic text-slate-900",
+                                                    children: "Our Mission"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 165,
+                                                    columnNumber: 25
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-slate-500 leading-relaxed text-lg font-medium",
+                                                    children: "To teach the logic section as well as the scientific method section correctly with equal emphasis. Instead of teaching a mere subject, we instill a rational mindset."
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 166,
+                                                    columnNumber: 25
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 164,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 160,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                            lineNumber: 148,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                    lineNumber: 128,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                lineNumber: 127,
+                columnNumber: 7
+            }, this),
+            notices.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "py-24 bg-slate-50 border-y border-slate-100",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-7xl mx-auto px-6",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center gap-3 mb-16",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bell$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bell$3e$__["Bell"], {
+                                    className: "text-teal-600 size-7"
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 179,
+                                    columnNumber: 21
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "text-3xl font-black uppercase tracking-tighter text-slate-900 italic",
+                                    children: "Notice Board"
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 180,
+                                    columnNumber: 21
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                            lineNumber: 178,
+                            columnNumber: 17
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid md:grid-cols-3 gap-8",
+                            children: notices.map((n)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                    className: "rounded-[2.5rem] border-none bg-white shadow-xl shadow-slate-200/50 p-4 transition-transform hover:-translate-y-2",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "text-[10px] font-black text-teal-600 uppercase mb-3 tracking-widest bg-teal-50 w-fit px-3 py-1 rounded-full",
+                                                    children: new Date(n.created_at).toLocaleDateString()
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 185,
+                                                    columnNumber: 33
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                                    className: "text-xl font-black uppercase italic leading-tight text-slate-800",
+                                                    children: n.title
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 186,
+                                                    columnNumber: 33
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 184,
+                                            columnNumber: 29
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-sm text-slate-500 font-medium leading-relaxed",
+                                                children: n.content
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 188,
+                                                columnNumber: 42
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 188,
+                                            columnNumber: 29
+                                        }, this)
+                                    ]
+                                }, n.id, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 183,
+                                    columnNumber: 39
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                            lineNumber: 182,
+                            columnNumber: 17
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                    lineNumber: 177,
+                    columnNumber: 13
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                lineNumber: 176,
+                columnNumber: 30
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "py-32 px-6 max-w-7xl mx-auto text-center",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-col items-center mb-16",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__["Trophy"], {
+                                className: "text-teal-600 size-14 mb-6"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 197,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "text-6xl font-black tracking-tighter uppercase italic text-slate-900",
+                                children: "Hall of Fame"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 198,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-slate-400 font-bold uppercase tracking-[0.4em] text-xs mt-4",
+                                children: "Recognition of Excellence"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 199,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                        lineNumber: 196,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex flex-wrap justify-center gap-3 mt-12 mb-20",
+                        children: classes.map((c)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                variant: selectedClassId === c.id ? "default" : "outline",
+                                onClick: ()=>setSelectedClassId(c.id),
+                                className: `rounded-2xl font-black px-8 h-14 uppercase text-[10px] tracking-[0.2em] transition-all ${selectedClassId === c.id ? 'bg-slate-900 text-white shadow-lg' : 'text-slate-400 border-slate-200 hover:text-slate-900'}`,
+                                children: [
+                                    c.year,
+                                    " ",
+                                    c.type
+                                ]
+                            }, c.id, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 203,
+                                columnNumber: 29
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                        lineNumber: 202,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8",
+                        children: topStudents.length > 0 ? topStudents.map((s, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                className: `rounded-[3rem] border-none bg-white shadow-2xl p-6 relative transition-all hover:scale-105 ${i === 0 ? 'ring-2 ring-teal-500' : ''}`,
+                                children: [
+                                    i === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__["Star"], {
+                                        className: "absolute -top-3 -right-3 size-12 text-yellow-400 fill-yellow-400"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 210,
+                                        columnNumber: 27
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                        className: "text-left p-0 pb-6 border-b border-slate-50",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: `size-14 rounded-2xl flex items-center justify-center font-black text-2xl mb-4 ${i === 0 ? 'bg-teal-600 text-white' : 'bg-slate-50 text-slate-300'}`,
+                                                children: i + 1
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 212,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                                className: "text-xl font-black uppercase italic truncate text-slate-800",
+                                                children: s.student_name
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 215,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardDescription"], {
+                                                className: "text-[10px] font-bold uppercase truncate text-slate-400 tracking-tight",
+                                                children: s.school_name
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 216,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 211,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                                        className: "pt-6 px-0",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "p-6 bg-[#FAFBFC] rounded-[2rem] text-center border border-slate-100",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-[9px] font-black text-slate-400 uppercase tracking-widest mb-2 italic",
+                                                    children: s.exam_name
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 220,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "text-5xl font-black text-teal-600 tracking-tighter italic",
+                                                    children: [
+                                                        s.marks,
+                                                        "%"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 221,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 219,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 218,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, i, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 209,
+                                columnNumber: 63
+                            }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "col-span-full py-24 text-slate-300 font-black uppercase tracking-[0.4em] italic border-4 border-dashed rounded-[4rem]",
+                            children: "Rankings Processing..."
+                        }, void 0, false, {
+                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                            lineNumber: 224,
+                            columnNumber: 24
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                        lineNumber: 208,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                lineNumber: 195,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "py-32 px-6 bg-white border-y border-slate-100",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-7xl mx-auto",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "text-center mb-20 space-y-4",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                    className: "text-5xl font-black tracking-tighter uppercase italic text-slate-900 leading-none",
+                                    children: "Class Schedule"
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 234,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-slate-400 font-bold uppercase tracking-widest text-xs",
+                                    children: "Instructor: Dilshan Uthpala"
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 235,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                            lineNumber: 233,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid grid-cols-1 md:grid-cols-3 gap-10",
+                            children: classes.map((cls)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                    className: "border-none rounded-[3.5rem] bg-slate-50 shadow-sm hover:shadow-2xl transition-all duration-500 group overflow-hidden border border-transparent hover:border-teal-500/20",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                            className: "p-10 pb-6",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
+                                                    className: "bg-slate-900 text-white border-none px-6 py-2 rounded-full mb-6 w-fit uppercase font-bold tracking-widest",
+                                                    children: cls.year
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 240,
+                                                    columnNumber: 29
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                                    className: "text-3xl font-black uppercase italic text-slate-800 leading-tight group-hover:text-teal-600 transition-colors",
+                                                    children: cls.title
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 241,
+                                                    columnNumber: 29
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    className: "text-[10px] font-black text-slate-400 uppercase tracking-widest mt-2 block",
+                                                    children: cls.type
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 242,
+                                                    columnNumber: 29
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 239,
+                                            columnNumber: 25
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                                            className: "p-10 pt-0 space-y-5",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-4 text-sm font-bold text-slate-600",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "size-10 bg-white rounded-xl flex items-center justify-center shadow-sm",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {
+                                                                size: 18,
+                                                                className: "text-teal-600"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                                lineNumber: 245,
+                                                                columnNumber: 191
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                            lineNumber: 245,
+                                                            columnNumber: 103
+                                                        }, this),
+                                                        " ",
+                                                        cls.class_day
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 245,
+                                                    columnNumber: 29
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-4 text-sm font-bold text-slate-600",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "size-10 bg-white rounded-xl flex items-center justify-center shadow-sm",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
+                                                                size: 18,
+                                                                className: "text-teal-600"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                                lineNumber: 246,
+                                                                columnNumber: 191
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                            lineNumber: 246,
+                                                            columnNumber: 103
+                                                        }, this),
+                                                        " ",
+                                                        cls.class_time
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 246,
+                                                    columnNumber: 29
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-4 text-sm font-medium text-slate-400",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "size-10 bg-white rounded-xl flex items-center justify-center shadow-sm",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
+                                                                size: 18
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                                lineNumber: 247,
+                                                                columnNumber: 193
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                            lineNumber: 247,
+                                                            columnNumber: 105
+                                                        }, this),
+                                                        " ",
+                                                        cls.institute_name
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 247,
+                                                    columnNumber: 29
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                    className: "w-full h-16 mt-8 bg-slate-900 hover:bg-teal-600 text-white rounded-2xl font-black uppercase text-xs tracking-widest transition-all",
+                                                    children: "Enroll Now"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 248,
+                                                    columnNumber: 29
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 244,
+                                            columnNumber: 25
+                                        }, this)
+                                    ]
+                                }, cls.id, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 238,
+                                    columnNumber: 37
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                            lineNumber: 237,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                    lineNumber: 232,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                lineNumber: 231,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+                className: "py-32 px-6 max-w-7xl mx-auto",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex items-center justify-between mb-20 border-l-8 border-teal-500 pl-8",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                        className: "text-6xl font-black tracking-tighter uppercase italic text-slate-900",
+                                        children: "Visuals"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 259,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-teal-600 font-bold uppercase tracking-widest text-sm mt-3",
+                                        children: "Moments from logic sessions"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 260,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 258,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$images$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Images$3e$__["Images"], {
+                                className: "size-16 text-slate-200 hidden md:block"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 262,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                        lineNumber: 257,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8",
+                        children: galleries.map((gal)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                className: "group cursor-pointer overflow-hidden rounded-[3rem] border-none shadow-2xl transition-all active:scale-95",
+                                onClick: ()=>setSelectedGallery(gal),
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "relative h-[28rem] w-full",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                            src: gal.image_urls[0],
+                                            alt: gal.name,
+                                            className: "h-full w-full object-cover transition-transform group-hover:scale-110 duration-1000 grayscale group-hover:grayscale-0"
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 267,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 268,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "absolute bottom-8 left-8 right-8 text-white",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "font-black text-2xl mb-1 tracking-tighter uppercase italic leading-none",
+                                                    children: gal.name
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 270,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
+                                                    className: "bg-teal-500 text-white border-none font-black text-[9px] px-3 mt-4",
+                                                    children: [
+                                                        gal.image_urls.length,
+                                                        " ASSETS"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 271,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                            lineNumber: 269,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 266,
+                                    columnNumber: 15
+                                }, this)
+                            }, gal.id, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 265,
+                                columnNumber: 33
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                        lineNumber: 264,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                lineNumber: 256,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+                className: "bg-[#030712] text-white pt-32 pb-12 px-6",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-7xl mx-auto",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "grid md:grid-cols-3 gap-24 border-b border-white/5 pb-24",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "space-y-8",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-3",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "bg-white p-2 rounded-xl shadow-lg",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$zap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Zap$3e$__["Zap"], {
+                                                    className: "text-slate-950 fill-slate-950 size-6"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 284,
+                                                    columnNumber: 71
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 284,
+                                                columnNumber: 20
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                className: "text-4xl font-black uppercase italic tracking-tighter",
+                                                children: "Logic"
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 285,
+                                                columnNumber: 20
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 283,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-slate-400 text-lg leading-relaxed italic font-medium",
+                                        children: "Instilling a rational mindset and simplified logic education through intuitive reasoning."
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 287,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-4 pt-4",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center gap-3 text-slate-300 text-sm",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                                        className: "size-4 text-teal-500"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                        lineNumber: 292,
+                                                        columnNumber: 25
+                                                    }, this),
+                                                    " dilshanuthpalalogic@gmail.com"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 291,
+                                                columnNumber: 21
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center gap-3 text-slate-300 text-sm",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
+                                                        className: "size-4 text-teal-500"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                        lineNumber: 295,
+                                                        columnNumber: 25
+                                                    }, this),
+                                                    " +94 77 022 4060"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 294,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 290,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex gap-6 pt-6",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: "https://web.facebook.com/profile.php?id=100094065144515",
+                                                target: "_blank",
+                                                className: "bg-white/5 p-4 rounded-2xl hover:bg-teal-600 transition-all group",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$facebook$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Facebook$3e$__["Facebook"], {
+                                                    className: "size-5 text-white group-hover:scale-110 transition-transform"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 301,
+                                                    columnNumber: 25
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 300,
+                                                columnNumber: 20
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: "https://www.youtube.com/@DilshanUthpala",
+                                                target: "_blank",
+                                                className: "bg-white/5 p-4 rounded-2xl hover:bg-teal-600 transition-all group",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$youtube$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Youtube$3e$__["Youtube"], {
+                                                    className: "size-5 text-white group-hover:scale-110 transition-transform"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 304,
+                                                    columnNumber: 25
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 303,
+                                                columnNumber: 20
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: "#",
+                                                className: "bg-white/5 p-4 rounded-2xl hover:bg-teal-600 transition-all group",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$instagram$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Instagram$3e$__["Instagram"], {
+                                                    className: "size-5 text-white group-hover:scale-110 transition-transform"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                    lineNumber: 307,
+                                                    columnNumber: 25
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 306,
+                                                columnNumber: 20
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 299,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 282,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                        className: "font-black mb-10 uppercase text-slate-500 tracking-[0.4em] text-[10px]",
+                                        children: "Navigation"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 313,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                        className: "space-y-6 text-slate-300 font-bold text-sm uppercase tracking-widest",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                onClick: ()=>onNavigate('home'),
+                                                className: "hover:text-teal-500 cursor-pointer flex items-center gap-2 group transition-colors italic",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
+                                                        className: "size-4 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                        lineNumber: 316,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    " Home Portal"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 315,
+                                                columnNumber: 20
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                onClick: ()=>onNavigate('student'),
+                                                className: "hover:text-teal-500 cursor-pointer flex items-center gap-2 group transition-colors italic",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
+                                                        className: "size-4 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                        lineNumber: 319,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    " Student Hub"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 318,
+                                                columnNumber: 20
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                                onClick: ()=>onNavigate('admin'),
+                                                className: "hover:text-teal-500 cursor-pointer flex items-center gap-2 group transition-colors italic",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRight$3e$__["ChevronRight"], {
+                                                        className: "size-4 opacity-0 group-hover:opacity-100 -translate-x-2 group-hover:translate-x-0 transition-all"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                        lineNumber: 322,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    " Admin Hub"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 321,
+                                                columnNumber: 20
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 314,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 312,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "space-y-10",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "p-8 bg-[#0B0F1A] rounded-[2.5rem] border border-white/5 group hover:border-teal-500/40 transition-all shadow-2xl relative overflow-hidden",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute top-0 right-0 w-24 h-24 bg-teal-500/5 -translate-y-12 translate-x-12 rounded-full blur-2xl"
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 330,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-[10px] text-teal-500 font-black uppercase tracking-widest mb-6",
+                                                children: "Developed By"
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 331,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex items-center justify-between",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-3xl font-black tracking-tight uppercase italic leading-[0.9] text-white",
+                                                        children: [
+                                                            "Lakruwan ",
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                                lineNumber: 333,
+                                                                columnNumber: 124
+                                                            }, this),
+                                                            " Shashika"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                        lineNumber: 333,
+                                                        columnNumber: 23
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                        href: "https://www.linkedin.com/in/lakruwan-shashika/",
+                                                        target: "_blank",
+                                                        className: "bg-teal-600 p-4 rounded-[1.25rem] text-white hover:bg-teal-500 transition-all shadow-lg hover:shadow-teal-500/20 active:scale-90",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                                            size: 28
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                            lineNumber: 335,
+                                                            columnNumber: 25
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                        lineNumber: 334,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                                lineNumber: 332,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 329,
+                                        columnNumber: 16
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                        className: "text-[10px] text-slate-700 font-black uppercase tracking-[0.5em] text-center italic",
+                                        children: "© 2025 LOGIC EDUCATION PLATFORM"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 339,
+                                        columnNumber: 16
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 327,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                        lineNumber: 281,
+                        columnNumber: 11
+                    }, this)
+                }, void 0, false, {
+                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                    lineNumber: 280,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                lineNumber: 279,
+                columnNumber: 7
+            }, this),
+            selectedGallery && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
+                open: !!selectedGallery,
+                onOpenChange: ()=>setSelectedGallery(null),
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogContent"], {
+                    className: "max-w-6xl max-h-[90vh] overflow-y-auto rounded-[4rem] p-12 bg-zinc-950 border border-white/10 shadow-2xl",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogHeader"], {
+                            className: "mb-12 text-center",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogTitle"], {
+                                    className: "text-5xl font-black tracking-tighter italic text-white uppercase",
+                                    children: selectedGallery.name
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 349,
+                                    columnNumber: 15
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
+                                    className: "text-sm font-black text-zinc-500 uppercase tracking-[0.3em] mt-2 italic underline underline-offset-8 decoration-teal-500 decoration-4",
+                                    children: "Exclusive Gallery Archive"
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 350,
+                                    columnNumber: 15
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                            lineNumber: 348,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8",
+                            children: selectedGallery.image_urls.map((url, i_0)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "aspect-[4/3] rounded-[2.5rem] overflow-hidden border-4 border-white/5 shadow-2xl group transition-all hover:border-teal-500/30",
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                        src: url,
+                                        className: "w-full h-full object-cover hover:scale-110 transition-transform duration-700 cursor-zoom-in",
+                                        onClick: ()=>window.open(url, '_blank')
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                        lineNumber: 354,
+                                        columnNumber: 19
+                                    }, this)
+                                }, i_0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                    lineNumber: 353,
+                                    columnNumber: 77
+                                }, this))
+                        }, void 0, false, {
+                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                            lineNumber: 352,
+                            columnNumber: 13
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "mt-16 flex justify-center",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                variant: "outline",
+                                className: "rounded-full px-16 h-16 font-black uppercase text-xs tracking-widest border-zinc-800 text-white hover:bg-white hover:text-black transition-all",
+                                onClick: ()=>setSelectedGallery(null),
+                                children: "Close Archive"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                                lineNumber: 358,
+                                columnNumber: 16
+                            }, this)
+                        }, void 0, false, {
+                            fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                            lineNumber: 357,
+                            columnNumber: 13
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                    lineNumber: 347,
+                    columnNumber: 11
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+                lineNumber: 346,
+                columnNumber: 27
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/my-lms-project/src/app/components/PublicHomepage.tsx",
+        lineNumber: 76,
+        columnNumber: 10
+    }, this);
+}
+_s(PublicHomepage, "PetZYIsO1P89Pm6YGPl06RRWWLo=");
+_c = PublicHomepage;
+var _c;
+__turbopack_context__.k.register(_c, "PublicHomepage");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/ui/input.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Input",
+    ()=>Input
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/utils.ts [app-client] (ecmascript)");
+;
+;
+;
+function Input(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
+    if ($[0] !== "8bdca3bd00b8f4d3f350f2d9c49b1b19a06a1e0fe937b3c1ea5b936b9f82fce9") {
+        for(let $i = 0; $i < 11; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "8bdca3bd00b8f4d3f350f2d9c49b1b19a06a1e0fe937b3c1ea5b936b9f82fce9";
+    }
+    let className;
+    let props;
+    let type;
+    if ($[1] !== t0) {
+        ({ className, type, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+        $[4] = type;
+    } else {
+        className = $[2];
+        props = $[3];
+        type = $[4];
+    }
+    let t1;
+    if ($[5] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input flex h-9 w-full min-w-0 rounded-md border px-3 py-1 text-base bg-input-background transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm", "focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px]", "aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive", className);
+        $[5] = className;
+        $[6] = t1;
+    } else {
+        t1 = $[6];
+    }
+    let t2;
+    if ($[7] !== props || $[8] !== t1 || $[9] !== type) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+            type: type,
+            "data-slot": "input",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/input.tsx",
+            lineNumber: 40,
+            columnNumber: 10
+        }, this);
+        $[7] = props;
+        $[8] = t1;
+        $[9] = type;
+        $[10] = t2;
+    } else {
+        t2 = $[10];
+    }
+    return t2;
+}
+_c = Input;
+;
+var _c;
+__turbopack_context__.k.register(_c, "Input");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/ui/tabs.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Tabs",
+    ()=>Tabs,
+    "TabsContent",
+    ()=>TabsContent,
+    "TabsList",
+    ()=>TabsList,
+    "TabsTrigger",
+    ()=>TabsTrigger
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$tabs$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/@radix-ui/react-tabs/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/utils.ts [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+;
+function Tabs(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "c98c86e5f82110a354c3eca2d8406b574e3b6c8c8e22837bd861918ae9f84675") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "c98c86e5f82110a354c3eca2d8406b574e3b6c8c8e22837bd861918ae9f84675";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex flex-col gap-2", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$tabs$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Root"], {
+            "data-slot": "tabs",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/tabs.tsx",
+            lineNumber: 39,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c = Tabs;
+function TabsList(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "c98c86e5f82110a354c3eca2d8406b574e3b6c8c8e22837bd861918ae9f84675") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "c98c86e5f82110a354c3eca2d8406b574e3b6c8c8e22837bd861918ae9f84675";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("bg-muted text-muted-foreground inline-flex h-9 w-fit items-center justify-center rounded-xl p-[3px] flex", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$tabs$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["List"], {
+            "data-slot": "tabs-list",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/tabs.tsx",
+            lineNumber: 80,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c1 = TabsList;
+function TabsTrigger(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "c98c86e5f82110a354c3eca2d8406b574e3b6c8c8e22837bd861918ae9f84675") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "c98c86e5f82110a354c3eca2d8406b574e3b6c8c8e22837bd861918ae9f84675";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("data-[state=active]:bg-card dark:data-[state=active]:text-foreground focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:outline-ring dark:data-[state=active]:border-input dark:data-[state=active]:bg-input/30 text-foreground dark:text-muted-foreground inline-flex h-[calc(100%-1px)] flex-1 items-center justify-center gap-1.5 rounded-xl border border-transparent px-2 py-1 text-sm font-medium whitespace-nowrap transition-[color,box-shadow] focus-visible:ring-[3px] focus-visible:outline-1 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$tabs$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Trigger"], {
+            "data-slot": "tabs-trigger",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/tabs.tsx",
+            lineNumber: 121,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c2 = TabsTrigger;
+function TabsContent(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "c98c86e5f82110a354c3eca2d8406b574e3b6c8c8e22837bd861918ae9f84675") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "c98c86e5f82110a354c3eca2d8406b574e3b6c8c8e22837bd861918ae9f84675";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex-1 outline-none", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$tabs$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Content"], {
+            "data-slot": "tabs-content",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/tabs.tsx",
+            lineNumber: 162,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c3 = TabsContent;
+;
+var _c, _c1, _c2, _c3;
+__turbopack_context__.k.register(_c, "Tabs");
+__turbopack_context__.k.register(_c1, "TabsList");
+__turbopack_context__.k.register(_c2, "TabsTrigger");
+__turbopack_context__.k.register(_c3, "TabsContent");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/ui/table.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Table",
+    ()=>Table,
+    "TableBody",
+    ()=>TableBody,
+    "TableCaption",
+    ()=>TableCaption,
+    "TableCell",
+    ()=>TableCell,
+    "TableFooter",
+    ()=>TableFooter,
+    "TableHead",
+    ()=>TableHead,
+    "TableHeader",
+    ()=>TableHeader,
+    "TableRow",
+    ()=>TableRow
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/utils.ts [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+function Table(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("w-full caption-bottom text-sm", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            "data-slot": "table-container",
+            className: "relative w-full overflow-x-auto",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("table", {
+                "data-slot": "table",
+                className: t1,
+                ...props
+            }, void 0, false, {
+                fileName: "[project]/my-lms-project/src/app/components/ui/table.tsx",
+                lineNumber: 38,
+                columnNumber: 87
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/table.tsx",
+            lineNumber: 38,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c = Table;
+function TableHeader(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("[&_tr]:border-b", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("thead", {
+            "data-slot": "table-header",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/table.tsx",
+            lineNumber: 79,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c1 = TableHeader;
+function TableBody(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("[&_tr:last-child]:border-0", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tbody", {
+            "data-slot": "table-body",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/table.tsx",
+            lineNumber: 120,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c2 = TableBody;
+function TableFooter(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("bg-muted/50 border-t font-medium [&>tr]:last:border-b-0", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tfoot", {
+            "data-slot": "table-footer",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/table.tsx",
+            lineNumber: 161,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c3 = TableFooter;
+function TableRow(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("hover:bg-muted/50 data-[state=selected]:bg-muted border-b transition-colors", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("tr", {
+            "data-slot": "table-row",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/table.tsx",
+            lineNumber: 202,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c4 = TableRow;
+function TableHead(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("text-foreground h-10 px-2 text-left align-middle font-medium whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("th", {
+            "data-slot": "table-head",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/table.tsx",
+            lineNumber: 243,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c5 = TableHead;
+function TableCell(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("p-2 align-middle whitespace-nowrap [&:has([role=checkbox])]:pr-0 [&>[role=checkbox]]:translate-y-[2px]", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("td", {
+            "data-slot": "table-cell",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/table.tsx",
+            lineNumber: 284,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c6 = TableCell;
+function TableCaption(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "ac4b9419e5ffb549fd1458a60eb90fe05470e4f7ab19b4a1a313dcd42a1f6f9d";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("text-muted-foreground mt-4 text-sm", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("caption", {
+            "data-slot": "table-caption",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/table.tsx",
+            lineNumber: 325,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c7 = TableCaption;
+;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7;
+__turbopack_context__.k.register(_c, "Table");
+__turbopack_context__.k.register(_c1, "TableHeader");
+__turbopack_context__.k.register(_c2, "TableBody");
+__turbopack_context__.k.register(_c3, "TableFooter");
+__turbopack_context__.k.register(_c4, "TableRow");
+__turbopack_context__.k.register(_c5, "TableHead");
+__turbopack_context__.k.register(_c6, "TableCell");
+__turbopack_context__.k.register(_c7, "TableCaption");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/StudentDashboard.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "StudentDashboard",
+    ()=>StudentDashboard
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/lib/supabase.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/card.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/button.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/badge.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/input.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/tabs.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/table.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/book-open.js [app-client] (ecmascript) <export default as BookOpen>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/file-text.js [app-client] (ecmascript) <export default as FileText>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/graduation-cap.js [app-client] (ecmascript) <export default as GraduationCap>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/download.js [app-client] (ecmascript) <export default as Download>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$play$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Play$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/play.js [app-client] (ecmascript) <export default as Play>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bell$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bell$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/bell.js [app-client] (ecmascript) <export default as Bell>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/lock.js [app-client] (ecmascript) <export default as Lock>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/circle-x.js [app-client] (ecmascript) <export default as XCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/send.js [app-client] (ecmascript) <export default as Send>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$question$2d$mark$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__HelpCircle$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/circle-question-mark.js [app-client] (ecmascript) <export default as HelpCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$quote$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Quote$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/quote.js [app-client] (ecmascript) <export default as Quote>");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+function StudentDashboard({ onNavigate }) {
+    _s();
+    const [profile, setProfile] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [enrolledClasses, setEnrolledClasses] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [selectedClassId, setSelectedClassId] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [content, setContent] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [myMarks, setMyMarks] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    // Messaging & Q&A State
+    const [classMessages, setClassMessages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [questionText, setQuestionText] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [myQuestions, setMyQuestions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "StudentDashboard.useEffect": ()=>{
+            fetchInitialData();
+        }
+    }["StudentDashboard.useEffect"], []);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "StudentDashboard.useEffect": ()=>{
+            if (selectedClassId && profile?.is_paid && !profile?.is_suspended) {
+                fetchClassSpecificData();
+            }
+        }
+    }["StudentDashboard.useEffect"], [
+        selectedClassId,
+        profile
+    ]);
+    async function fetchInitialData() {
+        setLoading(true);
+        // Explicitly check session to prevent "undefined" errors
+        const { data: { session } } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].auth.getSession();
+        if (!session?.user) {
+            onNavigate('home');
+            return;
+        }
+        // 1. Fetch User Profile
+        const { data: profileData } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('profiles').select('*').eq('id', session.user.id).single();
+        setProfile(profileData);
+        // 2. Fetch Enrolled Classes
+        const { data: enrollmentData } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('enrollments').select(`classes (*)`).eq('student_id', session.user.id);
+        if (enrollmentData) {
+            const formatted = enrollmentData.map((e)=>e.classes).filter(Boolean);
+            setEnrolledClasses(formatted);
+            if (formatted.length > 0) setSelectedClassId(formatted[0].id);
+        }
+        // 3. Fetch Full Marks History
+        const { data: markData } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('exam_results').select(`*, classes (title)`).eq('student_id', session.user.id).order('created_at', {
+            ascending: false
+        });
+        if (markData) setMyMarks(markData);
+        // 4. Fetch Inquiry History
+        const { data: questions } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('private_questions').select('*').eq('student_id', session.user.id).order('created_at', {
+            ascending: false
+        });
+        setMyQuestions(questions || []);
+        setLoading(false);
+    }
+    async function fetchClassSpecificData() {
+        if (!selectedClassId) return;
+        // Fetch Class Materials
+        const { data: contentData } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('class_content').select('*').eq('class_id', selectedClassId).order('created_at', {
+            ascending: false
+        });
+        if (contentData) setContent(contentData);
+        // Fetch Direct Class Messages
+        const { data: messages } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('class_messages').select('*').eq('class_id', selectedClassId).order('created_at', {
+            ascending: false
+        });
+        setClassMessages(messages || []);
+    }
+    async function handleAskQuestion() {
+        if (!questionText.trim() || !profile) return;
+        const { error } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('private_questions').insert([
+            {
+                student_id: profile.id,
+                student_name: profile.full_name,
+                question_text: questionText.trim()
+            }
+        ]);
+        if (!error) {
+            setQuestionText("");
+            // Refresh Inquiry List
+            const { data } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('private_questions').select('*').eq('student_id', profile.id).order('created_at', {
+                ascending: false
+            });
+            setMyQuestions(data || []);
+        } else {
+            alert("Submission Error: " + error.message);
+        }
+    }
+    const handleLogout = async ()=>{
+        await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].signOut();
+        onNavigate('home');
+    };
+    if (loading) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "h-screen flex items-center justify-center font-bold text-teal-600 animate-pulse italic tracking-tighter",
+        children: "ESTABLISHING SECURE GATEWAY..."
+    }, void 0, false, {
+        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+        lineNumber: 127,
+        columnNumber: 23
+    }, this);
+    if (!profile?.is_paid || profile?.is_suspended) {
+        return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "h-screen flex flex-col items-center justify-center bg-slate-50 p-6 text-center",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                className: "p-10 rounded-[3rem] shadow-2xl max-w-md border-t-8 border-rose-500 bg-white",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "bg-rose-50 p-5 rounded-full w-fit mx-auto mb-6",
+                        children: profile?.is_suspended ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__XCircle$3e$__["XCircle"], {
+                            className: "size-12 text-rose-600"
+                        }, void 0, false, {
+                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                            lineNumber: 132,
+                            columnNumber: 38
+                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
+                            className: "size-12 text-rose-600"
+                        }, void 0, false, {
+                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                            lineNumber: 132,
+                            columnNumber: 86
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                        lineNumber: 131,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        className: "text-3xl font-black mb-4 tracking-tighter uppercase text-slate-800",
+                        children: "Access Restricted"
+                    }, void 0, false, {
+                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                        lineNumber: 134,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-slate-500 mb-8 font-medium leading-relaxed",
+                        children: profile?.is_suspended ? "Your account is currently suspended. Please contact the administration." : "Payment verification pending. Please settle your monthly dues to unlock your course materials."
+                    }, void 0, false, {
+                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                        lineNumber: 135,
+                        columnNumber: 11
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                        className: "w-full py-7 rounded-2xl font-black bg-slate-900 text-white shadow-xl",
+                        onClick: ()=>onNavigate('home'),
+                        children: "Exit Portal"
+                    }, void 0, false, {
+                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                        lineNumber: 138,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                lineNumber: 130,
+                columnNumber: 9
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+            lineNumber: 129,
+            columnNumber: 12
+        }, this);
+    }
+    const selectedClassInfo = enrolledClasses.find((c)=>c.id === selectedClassId);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex h-screen bg-[#F8FAFC] text-slate-900 overflow-hidden",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
+                className: "w-80 border-r p-6 bg-white flex flex-col shadow-sm",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-10 px-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "text-2xl font-black text-slate-800 tracking-tighter uppercase italic",
+                                children: "Logic Student"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                lineNumber: 147,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-[9px] font-bold text-teal-600 tracking-[0.2em] uppercase mt-1",
+                                children: "Authorized Access"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                lineNumber: 148,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                        lineNumber: 146,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "flex-1 space-y-1 overflow-y-auto pr-2 custom-scrollbar",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-[11px] uppercase font-black text-slate-400 ml-3 mb-4 tracking-widest",
+                                children: "Available Folders"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                lineNumber: 152,
+                                columnNumber: 11
+                            }, this),
+                            enrolledClasses.map((cls)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                    variant: selectedClassId === cls.id ? "default" : "ghost",
+                                    className: `w-full justify-start h-auto py-5 px-4 rounded-2xl transition-all mb-2 ${selectedClassId === cls.id ? 'bg-slate-900 shadow-xl ring-4 ring-slate-100' : 'hover:bg-slate-50'}`,
+                                    onClick: ()=>setSelectedClassId(cls.id),
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$book$2d$open$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__BookOpen$3e$__["BookOpen"], {
+                                            className: `mr-4 h-6 w-6 ${selectedClassId === cls.id ? 'text-teal-400' : 'text-slate-400'}`
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 154,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "text-left overflow-hidden",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: `text-sm font-black truncate uppercase ${selectedClassId === cls.id ? 'text-white' : 'text-slate-700'}`,
+                                                    children: cls.title
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 156,
+                                                    columnNumber: 17
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: `text-[10px] font-bold ${selectedClassId === cls.id ? 'text-slate-400' : 'text-slate-400'}`,
+                                                    children: [
+                                                        cls.year,
+                                                        " • ",
+                                                        cls.type
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 157,
+                                                    columnNumber: 17
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 155,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, cls.id, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                    lineNumber: 153,
+                                    columnNumber: 39
+                                }, this))
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                        lineNumber: 151,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "pt-6 border-t mt-auto space-y-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "px-4 py-3 bg-slate-50 rounded-2xl flex items-center gap-3 border",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "size-10 bg-white rounded-xl flex items-center justify-center border shadow-sm font-black text-teal-600 italic",
+                                        children: "L"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                        lineNumber: 166,
+                                        columnNumber: 14
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "overflow-hidden",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-xs font-black truncate",
+                                                children: profile?.full_name
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                lineNumber: 168,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-[9px] text-slate-500 font-bold uppercase truncate",
+                                                children: profile?.school_name
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                lineNumber: 169,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                        lineNumber: 167,
+                                        columnNumber: 14
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                lineNumber: 165,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "grid grid-cols-2 gap-2",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                        variant: "outline",
+                                        className: "text-xs h-10 rounded-xl font-bold",
+                                        onClick: ()=>onNavigate('home'),
+                                        children: "Home"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                        lineNumber: 173,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                        variant: "ghost",
+                                        className: "text-xs h-10 rounded-xl font-bold text-rose-500 hover:bg-rose-50",
+                                        onClick: handleLogout,
+                                        children: "Logout"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                        lineNumber: 174,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                lineNumber: 172,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                        lineNumber: 164,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                lineNumber: 145,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+                className: "flex-1 p-10 overflow-auto",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-5xl mx-auto space-y-8 animate-in fade-in slide-in-from-bottom-4 duration-500",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+                            className: "flex justify-between items-start bg-white p-8 rounded-[2.5rem] shadow-sm border relative overflow-hidden",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "absolute top-0 right-0 w-32 h-full bg-teal-50 -skew-x-12 translate-x-10 opacity-50"
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                    lineNumber: 185,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "space-y-3 relative z-10",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                            className: "text-4xl font-black tracking-tighter uppercase italic text-slate-800",
+                                            children: selectedClassInfo?.title || "Course Portal"
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 187,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex gap-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
+                                                    className: "bg-teal-600 text-white border-none px-4 py-1 font-bold rounded-full",
+                                                    children: selectedClassInfo?.year || "----"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 189,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
+                                                    variant: "outline",
+                                                    className: "border-slate-200 text-slate-500 px-4 py-1 font-bold rounded-full uppercase text-[10px]",
+                                                    children: selectedClassInfo?.type || "----"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 190,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 188,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                    lineNumber: 186,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "text-right relative z-10",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xs uppercase font-black text-slate-400 tracking-widest mb-1",
+                                            children: "Instructor"
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 194,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-xl font-black text-slate-900 italic leading-none",
+                                            children: "Dilshan Uthpala"
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 195,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                    lineNumber: 193,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                            lineNumber: 184,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Tabs"], {
+                            defaultValue: "video",
+                            className: "w-full",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsList"], {
+                                    className: "mb-8 p-1.5 bg-slate-200/50 rounded-[1.5rem] h-16 w-fit shadow-inner",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsTrigger"], {
+                                            value: "video",
+                                            className: "rounded-xl font-black text-xs uppercase px-6 h-full data-[state=active]:bg-white data-[state=active]:shadow-md",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$play$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Play$3e$__["Play"], {
+                                                    size: 14,
+                                                    className: "mr-2"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 201,
+                                                    columnNumber: 165
+                                                }, this),
+                                                " Recordings"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 201,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsTrigger"], {
+                                            value: "notes",
+                                            className: "rounded-xl font-black text-xs uppercase px-6 h-full data-[state=active]:bg-white data-[state=active]:shadow-md",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
+                                                    size: 14,
+                                                    className: "mr-2"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 202,
+                                                    columnNumber: 165
+                                                }, this),
+                                                " Materials"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 202,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsTrigger"], {
+                                            value: "marks",
+                                            className: "rounded-xl font-black text-xs uppercase px-6 h-full data-[state=active]:bg-white data-[state=active]:shadow-md",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__["GraduationCap"], {
+                                                    size: 14,
+                                                    className: "mr-2"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 203,
+                                                    columnNumber: 165
+                                                }, this),
+                                                " Performance"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 203,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsTrigger"], {
+                                            value: "inquiry",
+                                            className: "rounded-xl font-black text-xs uppercase px-6 h-full data-[state=active]:bg-white data-[state=active]:shadow-md",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$question$2d$mark$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__HelpCircle$3e$__["HelpCircle"], {
+                                                    size: 14,
+                                                    className: "mr-2"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 204,
+                                                    columnNumber: 167
+                                                }, this),
+                                                " Q&A Help"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 204,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                    lineNumber: 200,
+                                    columnNumber: 13
+                                }, this),
+                                classMessages.length > 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "mb-10 space-y-3",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                            className: "text-[10px] font-black uppercase text-teal-600 tracking-widest ml-2 flex items-center gap-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bell$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bell$3e$__["Bell"], {
+                                                    size: 12
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 209,
+                                                    columnNumber: 128
+                                                }, this),
+                                                " Class Updates"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 209,
+                                            columnNumber: 21
+                                        }, this),
+                                        classMessages.map((m)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                                className: "border-none bg-teal-600 text-white rounded-3xl shadow-xl shadow-teal-900/10 p-6 relative overflow-hidden group",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$quote$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Quote$3e$__["Quote"], {
+                                                        className: "absolute -right-2 -bottom-2 size-24 opacity-10 group-hover:scale-110 transition-transform"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                        lineNumber: 211,
+                                                        columnNumber: 29
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex justify-between items-center mb-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-[10px] font-black uppercase tracking-[0.2em] text-teal-100",
+                                                                children: "Folder Announcement"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                lineNumber: 213,
+                                                                columnNumber: 33
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                className: "text-[10px] font-bold opacity-60",
+                                                                children: new Date(m.created_at).toLocaleDateString()
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                lineNumber: 214,
+                                                                columnNumber: 33
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                        lineNumber: 212,
+                                                        columnNumber: 29
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "font-bold text-lg leading-relaxed relative z-10",
+                                                        children: m.message_text
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                        lineNumber: 216,
+                                                        columnNumber: 29
+                                                    }, this)
+                                                ]
+                                            }, m.id, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                lineNumber: 210,
+                                                columnNumber: 45
+                                            }, this))
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                    lineNumber: 208,
+                                    columnNumber: 42
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsContent"], {
+                                    value: "video",
+                                    className: "grid gap-4",
+                                    children: content.filter((c_1)=>c_1.type === 'video').length > 0 ? content.filter((c_0)=>c_0.type === 'video').map((v)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                            className: "p-6 flex items-center justify-between bg-white rounded-[2rem] border-none shadow-sm hover:shadow-xl hover:scale-[1.01] transition-all group",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-6",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "bg-slate-100 p-5 rounded-2xl group-hover:bg-slate-900 group-hover:text-white transition-all duration-300",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$play$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Play$3e$__["Play"], {
+                                                                className: "size-7 fill-current"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                lineNumber: 224,
+                                                                columnNumber: 27
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                            lineNumber: 223,
+                                                            columnNumber: 24
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "font-black text-xl block uppercase tracking-tight text-slate-800",
+                                                                    children: v.title
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                    lineNumber: 227,
+                                                                    columnNumber: 27
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "text-[10px] uppercase font-bold text-slate-400 italic",
+                                                                    children: [
+                                                                        "Logical Analysis • ",
+                                                                        new Date(v.created_at).toLocaleDateString()
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                    lineNumber: 228,
+                                                                    columnNumber: 27
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                            lineNumber: 226,
+                                                            columnNumber: 24
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 222,
+                                                    columnNumber: 22
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                    size: "lg",
+                                                    className: "rounded-2xl px-10 font-black bg-teal-600 hover:bg-teal-700 text-white uppercase text-xs h-14",
+                                                    onClick: ()=>window.open(v.url, '_blank'),
+                                                    children: "Play Lesson"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 231,
+                                                    columnNumber: 22
+                                                }, this)
+                                            ]
+                                        }, v.id, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 221,
+                                            columnNumber: 126
+                                        }, this)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "py-24 text-center border-4 border-dashed rounded-[3rem] text-slate-300 font-bold uppercase tracking-widest italic",
+                                        children: "Choose a course folder to view recordings"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                        lineNumber: 232,
+                                        columnNumber: 30
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                    lineNumber: 220,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsContent"], {
+                                    value: "notes",
+                                    className: "grid gap-4",
+                                    children: content.filter((c_2)=>c_2.type === 'note').map((n)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                            className: "p-6 flex items-center justify-between bg-white rounded-[2rem] border-2 border-transparent hover:border-teal-500/20 transition-all shadow-sm",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex items-center gap-6",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            className: "bg-orange-50 p-5 rounded-2xl text-orange-500",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
+                                                                className: "size-7"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                lineNumber: 238,
+                                                                columnNumber: 84
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                            lineNumber: 238,
+                                                            columnNumber: 22
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "font-black text-xl block uppercase tracking-tight text-slate-800",
+                                                                    children: n.title
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                    lineNumber: 240,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                    className: "text-[10px] font-bold text-teal-600 uppercase tracking-widest italic leading-none mt-1",
+                                                                    children: "Verified PDF Material"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                    lineNumber: 241,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                            lineNumber: 239,
+                                                            columnNumber: 22
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 237,
+                                                    columnNumber: 20
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                    variant: "ghost",
+                                                    size: "icon",
+                                                    className: "rounded-2xl size-14 hover:bg-teal-50 text-teal-600 transition-all border border-slate-100",
+                                                    onClick: ()=>window.open(n.url, '_blank'),
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$download$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Download$3e$__["Download"], {
+                                                        className: "h-7 w-7"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                        lineNumber: 245,
+                                                        columnNumber: 23
+                                                    }, this)
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 244,
+                                                    columnNumber: 20
+                                                }, this)
+                                            ]
+                                        }, n.id, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 236,
+                                            columnNumber: 68
+                                        }, this))
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                    lineNumber: 235,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsContent"], {
+                                    value: "marks",
+                                    className: "space-y-6",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex justify-between items-center px-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "text-xl font-black uppercase italic tracking-tight text-slate-800",
+                                                    children: "Verified Result History"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 252,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
+                                                    className: "bg-emerald-50 text-emerald-600 border border-emerald-100 px-4 py-1.5 rounded-full font-bold",
+                                                    children: [
+                                                        "Total Entries: ",
+                                                        myMarks.length
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 253,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 251,
+                                            columnNumber: 15
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                            className: "border-none shadow-2xl overflow-hidden rounded-[2.5rem] bg-white",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"], {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHeader"], {
+                                                        className: "bg-slate-900",
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                            className: "hover:bg-transparent border-none",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                                    className: "py-6 pl-10 font-black uppercase text-[10px] text-white",
+                                                                    children: "Date Released"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                    lineNumber: 259,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                                    className: "font-black uppercase text-[10px] text-white text-center",
+                                                                    children: "Paper / Exam Details"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                    lineNumber: 260,
+                                                                    columnNumber: 23
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                                    className: "text-right pr-10 font-black uppercase text-[10px] text-white",
+                                                                    children: "Final Score"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                    lineNumber: 261,
+                                                                    columnNumber: 23
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                            lineNumber: 258,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                        lineNumber: 257,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableBody"], {
+                                                        children: myMarks.map((m_0, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                                className: `border-slate-50 hover:bg-slate-50 transition-colors ${index === 0 ? 'bg-teal-50/20' : ''}`,
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                                        className: "py-8 pl-10 text-xs font-bold text-slate-400",
+                                                                        children: new Date(m_0.created_at).toLocaleDateString()
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                        lineNumber: 266,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                                        className: "text-center",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "flex flex-col",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "text-[10px] font-black uppercase text-teal-600 mb-0.5",
+                                                                                    children: m_0.classes?.title
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                                    lineNumber: 269,
+                                                                                    columnNumber: 33
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "font-black text-slate-800 uppercase italic text-sm",
+                                                                                    children: m_0.exam_name
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                                    lineNumber: 270,
+                                                                                    columnNumber: 33
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                            lineNumber: 268,
+                                                                            columnNumber: 29
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                        lineNumber: 267,
+                                                                        columnNumber: 25
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                                        className: "text-right pr-10",
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                            className: "flex flex-col items-end",
+                                                                            children: [
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "text-4xl font-black text-teal-600 italic tracking-tighter leading-none",
+                                                                                    children: [
+                                                                                        m_0.marks,
+                                                                                        "%"
+                                                                                    ]
+                                                                                }, void 0, true, {
+                                                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                                    lineNumber: 275,
+                                                                                    columnNumber: 33
+                                                                                }, this),
+                                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                    className: "text-[8px] font-black uppercase text-slate-300 mt-1",
+                                                                                    children: "Assessment Confirmed"
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                                    lineNumber: 276,
+                                                                                    columnNumber: 33
+                                                                                }, this)
+                                                                            ]
+                                                                        }, void 0, true, {
+                                                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                            lineNumber: 274,
+                                                                            columnNumber: 29
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                        lineNumber: 273,
+                                                                        columnNumber: 25
+                                                                    }, this)
+                                                                ]
+                                                            }, m_0.id, true, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                lineNumber: 265,
+                                                                columnNumber: 50
+                                                            }, this))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                        lineNumber: 264,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                lineNumber: 256,
+                                                columnNumber: 17
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 255,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                    lineNumber: 250,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$tabs$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TabsContent"], {
+                                    value: "inquiry",
+                                    className: "grid gap-8",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                            className: "p-8 rounded-[2.5rem] shadow-xl border-t-8 border-teal-500 bg-white",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                                    className: "mb-4 uppercase italic text-xl text-slate-800 flex items-center gap-2",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$question$2d$mark$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__HelpCircle$3e$__["HelpCircle"], {
+                                                            size: 20,
+                                                            className: "text-teal-600"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                            lineNumber: 287,
+                                                            columnNumber: 113
+                                                        }, this),
+                                                        " Help Desk"
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 287,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardDescription"], {
+                                                    className: "mb-6 font-medium text-slate-500",
+                                                    children: "Ask a question directly to Dilshan Uthpala. All inquiries are private between you and the instructor."
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 288,
+                                                    columnNumber: 21
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex gap-2",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                            placeholder: "Describe your logical doubt here...",
+                                                            className: "h-14 rounded-2xl bg-slate-50 border-none px-6 focus-visible:ring-teal-500",
+                                                            value: questionText,
+                                                            onChange: (e_0)=>setQuestionText(e_0.target.value)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                            lineNumber: 290,
+                                                            columnNumber: 25
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                            className: "bg-slate-900 text-white rounded-2xl px-10 font-black uppercase text-xs hover:bg-black transition-all",
+                                                            onClick: handleAskQuestion,
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
+                                                                    size: 16,
+                                                                    className: "mr-2"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                    lineNumber: 291,
+                                                                    columnNumber: 174
+                                                                }, this),
+                                                                " Ask"
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                            lineNumber: 291,
+                                                            columnNumber: 25
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 289,
+                                                    columnNumber: 21
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 286,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-[10px] font-black uppercase text-slate-400 tracking-widest ml-4",
+                                                    children: "Conversation History"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 296,
+                                                    columnNumber: 21
+                                                }, this),
+                                                myQuestions.map((q)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                                        className: "p-6 rounded-[2rem] border-none shadow-md bg-white",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "flex justify-between mb-2",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                        className: "text-[10px] font-black text-slate-400 uppercase tracking-widest",
+                                                                        children: new Date(q.created_at).toLocaleDateString()
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                        lineNumber: 299,
+                                                                        columnNumber: 33
+                                                                    }, this),
+                                                                    q.is_resolved ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
+                                                                        className: "bg-teal-500 text-white border-none",
+                                                                        children: "Answered"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                        lineNumber: 300,
+                                                                        columnNumber: 50
+                                                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
+                                                                        className: "bg-slate-100 text-slate-500 border-none font-bold italic uppercase text-[9px]",
+                                                                        children: "Awaiting Reply"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                        lineNumber: 300,
+                                                                        columnNumber: 123
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                lineNumber: 298,
+                                                                columnNumber: 29
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                className: "font-bold text-slate-700 mb-4 bg-slate-50 p-4 rounded-xl border border-slate-100",
+                                                                children: [
+                                                                    "Q: ",
+                                                                    q.question_text
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                lineNumber: 302,
+                                                                columnNumber: 29
+                                                            }, this),
+                                                            q.admin_reply && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "p-5 bg-teal-50 rounded-2xl border border-teal-100 relative overflow-hidden",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "absolute top-0 right-0 w-24 h-full bg-teal-600/5 -skew-x-12 translate-x-10"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                        lineNumber: 304,
+                                                                        columnNumber: 37
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "text-[10px] font-black text-teal-700 uppercase mb-2 tracking-widest",
+                                                                        children: "Instructor Reply:"
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                        lineNumber: 305,
+                                                                        columnNumber: 37
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "text-sm font-medium text-slate-700 italic relative z-10 leading-relaxed",
+                                                                        children: [
+                                                                            '"',
+                                                                            q.admin_reply,
+                                                                            '"'
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                        lineNumber: 306,
+                                                                        columnNumber: 37
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                                lineNumber: 303,
+                                                                columnNumber: 47
+                                                            }, this)
+                                                        ]
+                                                    }, q.id, true, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                        lineNumber: 297,
+                                                        columnNumber: 43
+                                                    }, this)),
+                                                myQuestions.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "py-24 text-center text-slate-300 font-bold uppercase italic border-4 border-dashed rounded-[3rem]",
+                                                    children: "No recorded inquiries"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                                    lineNumber: 309,
+                                                    columnNumber: 50
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                            lineNumber: 295,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                                    lineNumber: 285,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                            lineNumber: 199,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                    lineNumber: 181,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+                lineNumber: 180,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/my-lms-project/src/app/components/StudentDashboard.tsx",
+        lineNumber: 143,
+        columnNumber: 10
+    }, this);
+}
+_s(StudentDashboard, "sfvgBmHMmBTC65FgDDan38G/XBo=");
+_c = StudentDashboard;
+var _c;
+__turbopack_context__.k.register(_c, "StudentDashboard");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/ui/label.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Label",
+    ()=>Label
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$label$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/@radix-ui/react-label/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/utils.ts [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+;
+function Label(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "7f119b68a800d3226d02ce11be94f490b72d4197eaa0331ecba19f20ad5b70f5") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "7f119b68a800d3226d02ce11be94f490b72d4197eaa0331ecba19f20ad5b70f5";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$label$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Root"], {
+            "data-slot": "label",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/label.tsx",
+            lineNumber: 39,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c = Label;
+;
+var _c;
+__turbopack_context__.k.register(_c, "Label");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/ui/textarea.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "Textarea",
+    ()=>Textarea
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/utils.ts [app-client] (ecmascript)");
+;
+;
+;
+function Textarea(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "0f1959aa730cf0fcd2f2b98115f1d856b39ac147179b5a7bfa082143237092b8") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "0f1959aa730cf0fcd2f2b98115f1d856b39ac147179b5a7bfa082143237092b8";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("resize-none border-input placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring/50 aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 flex field-sizing-content min-h-16 w-full rounded-md border bg-input-background px-3 py-2 text-base transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 md:text-sm", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("textarea", {
+            "data-slot": "textarea",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/textarea.tsx",
+            lineNumber: 36,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c = Textarea;
+;
+var _c;
+__turbopack_context__.k.register(_c, "Textarea");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "DropdownMenu",
+    ()=>DropdownMenu,
+    "DropdownMenuCheckboxItem",
+    ()=>DropdownMenuCheckboxItem,
+    "DropdownMenuContent",
+    ()=>DropdownMenuContent,
+    "DropdownMenuGroup",
+    ()=>DropdownMenuGroup,
+    "DropdownMenuItem",
+    ()=>DropdownMenuItem,
+    "DropdownMenuLabel",
+    ()=>DropdownMenuLabel,
+    "DropdownMenuPortal",
+    ()=>DropdownMenuPortal,
+    "DropdownMenuRadioGroup",
+    ()=>DropdownMenuRadioGroup,
+    "DropdownMenuRadioItem",
+    ()=>DropdownMenuRadioItem,
+    "DropdownMenuSeparator",
+    ()=>DropdownMenuSeparator,
+    "DropdownMenuShortcut",
+    ()=>DropdownMenuShortcut,
+    "DropdownMenuSub",
+    ()=>DropdownMenuSub,
+    "DropdownMenuSubContent",
+    ()=>DropdownMenuSubContent,
+    "DropdownMenuSubTrigger",
+    ()=>DropdownMenuSubTrigger,
+    "DropdownMenuTrigger",
+    ()=>DropdownMenuTrigger
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/@radix-ui/react-dropdown-menu/dist/index.mjs [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckIcon$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/check.js [app-client] (ecmascript) <export default as CheckIcon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRightIcon$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/chevron-right.js [app-client] (ecmascript) <export default as ChevronRightIcon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CircleIcon$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/circle.js [app-client] (ecmascript) <export default as CircleIcon>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/utils.ts [app-client] (ecmascript)");
+"use client";
+;
+;
+;
+;
+;
+function DropdownMenu(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
+    if ($[0] !== "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04") {
+        for(let $i = 0; $i < 5; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04";
+    }
+    let props;
+    if ($[1] !== t0) {
+        ({ ...props } = t0);
+        $[1] = t0;
+        $[2] = props;
+    } else {
+        props = $[2];
+    }
+    let t1;
+    if ($[3] !== props) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Root"], {
+            "data-slot": "dropdown-menu",
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 28,
+            columnNumber: 10
+        }, this);
+        $[3] = props;
+        $[4] = t1;
+    } else {
+        t1 = $[4];
+    }
+    return t1;
+}
+_c = DropdownMenu;
+function DropdownMenuPortal(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
+    if ($[0] !== "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04") {
+        for(let $i = 0; $i < 5; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04";
+    }
+    let props;
+    if ($[1] !== t0) {
+        ({ ...props } = t0);
+        $[1] = t0;
+        $[2] = props;
+    } else {
+        props = $[2];
+    }
+    let t1;
+    if ($[3] !== props) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Portal"], {
+            "data-slot": "dropdown-menu-portal",
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 56,
+            columnNumber: 10
+        }, this);
+        $[3] = props;
+        $[4] = t1;
+    } else {
+        t1 = $[4];
+    }
+    return t1;
+}
+_c1 = DropdownMenuPortal;
+function DropdownMenuTrigger(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
+    if ($[0] !== "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04") {
+        for(let $i = 0; $i < 5; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04";
+    }
+    let props;
+    if ($[1] !== t0) {
+        ({ ...props } = t0);
+        $[1] = t0;
+        $[2] = props;
+    } else {
+        props = $[2];
+    }
+    let t1;
+    if ($[3] !== props) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Trigger"], {
+            "data-slot": "dropdown-menu-trigger",
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 84,
+            columnNumber: 10
+        }, this);
+        $[3] = props;
+        $[4] = t1;
+    } else {
+        t1 = $[4];
+    }
+    return t1;
+}
+_c2 = DropdownMenuTrigger;
+function DropdownMenuContent(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
+    if ($[0] !== "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04") {
+        for(let $i = 0; $i < 11; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04";
+    }
+    let className;
+    let props;
+    let t1;
+    if ($[1] !== t0) {
+        ({ className, sideOffset: t1, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+        $[4] = t1;
+    } else {
+        className = $[2];
+        props = $[3];
+        t1 = $[4];
+    }
+    const sideOffset = t1 === undefined ? 4 : t1;
+    let t2;
+    if ($[5] !== className) {
+        t2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 max-h-(--radix-dropdown-menu-content-available-height) min-w-[8rem] origin-(--radix-dropdown-menu-content-transform-origin) overflow-x-hidden overflow-y-auto rounded-md border p-1 shadow-md", className);
+        $[5] = className;
+        $[6] = t2;
+    } else {
+        t2 = $[6];
+    }
+    let t3;
+    if ($[7] !== props || $[8] !== sideOffset || $[9] !== t2) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Portal"], {
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Content"], {
+                "data-slot": "dropdown-menu-content",
+                sideOffset: sideOffset,
+                className: t2,
+                ...props
+            }, void 0, false, {
+                fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+                lineNumber: 129,
+                columnNumber: 40
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 129,
+            columnNumber: 10
+        }, this);
+        $[7] = props;
+        $[8] = sideOffset;
+        $[9] = t2;
+        $[10] = t3;
+    } else {
+        t3 = $[10];
+    }
+    return t3;
+}
+_c3 = DropdownMenuContent;
+function DropdownMenuGroup(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
+    if ($[0] !== "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04") {
+        for(let $i = 0; $i < 5; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04";
+    }
+    let props;
+    if ($[1] !== t0) {
+        ({ ...props } = t0);
+        $[1] = t0;
+        $[2] = props;
+    } else {
+        props = $[2];
+    }
+    let t1;
+    if ($[3] !== props) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Group"], {
+            "data-slot": "dropdown-menu-group",
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 159,
+            columnNumber: 10
+        }, this);
+        $[3] = props;
+        $[4] = t1;
+    } else {
+        t1 = $[4];
+    }
+    return t1;
+}
+_c4 = DropdownMenuGroup;
+function DropdownMenuItem(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(13);
+    if ($[0] !== "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04") {
+        for(let $i = 0; $i < 13; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04";
+    }
+    let className;
+    let inset;
+    let props;
+    let t1;
+    if ($[1] !== t0) {
+        ({ className, inset, variant: t1, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = inset;
+        $[4] = props;
+        $[5] = t1;
+    } else {
+        className = $[2];
+        inset = $[3];
+        props = $[4];
+        t1 = $[5];
+    }
+    const variant = t1 === undefined ? "default" : t1;
+    let t2;
+    if ($[6] !== className) {
+        t2 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("focus:bg-accent focus:text-accent-foreground data-[variant=destructive]:text-destructive data-[variant=destructive]:focus:bg-destructive/10 dark:data-[variant=destructive]:focus:bg-destructive/20 data-[variant=destructive]:focus:text-destructive data-[variant=destructive]:*:[svg]:!text-destructive [&_svg:not([class*='text-'])]:text-muted-foreground relative flex cursor-default items-center gap-2 rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 data-[inset]:pl-8 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4", className);
+        $[6] = className;
+        $[7] = t2;
+    } else {
+        t2 = $[7];
+    }
+    let t3;
+    if ($[8] !== inset || $[9] !== props || $[10] !== t2 || $[11] !== variant) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Item"], {
+            "data-slot": "dropdown-menu-item",
+            "data-inset": inset,
+            "data-variant": variant,
+            className: t2,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 208,
+            columnNumber: 10
+        }, this);
+        $[8] = inset;
+        $[9] = props;
+        $[10] = t2;
+        $[11] = variant;
+        $[12] = t3;
+    } else {
+        t3 = $[12];
+    }
+    return t3;
+}
+_c5 = DropdownMenuItem;
+function DropdownMenuCheckboxItem(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(14);
+    if ($[0] !== "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04") {
+        for(let $i = 0; $i < 14; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04";
+    }
+    let checked;
+    let children;
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, children, checked, ...props } = t0);
+        $[1] = t0;
+        $[2] = checked;
+        $[3] = children;
+        $[4] = className;
+        $[5] = props;
+    } else {
+        checked = $[2];
+        children = $[3];
+        className = $[4];
+        props = $[5];
+    }
+    let t1;
+    if ($[6] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-sm py-1.5 pr-2 pl-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4", className);
+        $[6] = className;
+        $[7] = t1;
+    } else {
+        t1 = $[7];
+    }
+    let t2;
+    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "pointer-events-none absolute left-2 flex size-3.5 items-center justify-center",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ItemIndicator"], {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckIcon$3e$__["CheckIcon"], {
+                    className: "size-4"
+                }, void 0, false, {
+                    fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+                    lineNumber: 259,
+                    columnNumber: 143
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+                lineNumber: 259,
+                columnNumber: 106
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 259,
+            columnNumber: 10
+        }, this);
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    let t3;
+    if ($[9] !== checked || $[10] !== children || $[11] !== props || $[12] !== t1) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CheckboxItem"], {
+            "data-slot": "dropdown-menu-checkbox-item",
+            className: t1,
+            checked: checked,
+            ...props,
+            children: [
+                t2,
+                children
+            ]
+        }, void 0, true, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 266,
+            columnNumber: 10
+        }, this);
+        $[9] = checked;
+        $[10] = children;
+        $[11] = props;
+        $[12] = t1;
+        $[13] = t3;
+    } else {
+        t3 = $[13];
+    }
+    return t3;
+}
+_c6 = DropdownMenuCheckboxItem;
+function DropdownMenuRadioGroup(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
+    if ($[0] !== "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04") {
+        for(let $i = 0; $i < 5; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04";
+    }
+    let props;
+    if ($[1] !== t0) {
+        ({ ...props } = t0);
+        $[1] = t0;
+        $[2] = props;
+    } else {
+        props = $[2];
+    }
+    let t1;
+    if ($[3] !== props) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RadioGroup"], {
+            "data-slot": "dropdown-menu-radio-group",
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 297,
+            columnNumber: 10
+        }, this);
+        $[3] = props;
+        $[4] = t1;
+    } else {
+        t1 = $[4];
+    }
+    return t1;
+}
+_c7 = DropdownMenuRadioGroup;
+function DropdownMenuRadioItem(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(12);
+    if ($[0] !== "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04") {
+        for(let $i = 0; $i < 12; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04";
+    }
+    let children;
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, children, ...props } = t0);
+        $[1] = t0;
+        $[2] = children;
+        $[3] = className;
+        $[4] = props;
+    } else {
+        children = $[2];
+        className = $[3];
+        props = $[4];
+    }
+    let t1;
+    if ($[5] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("focus:bg-accent focus:text-accent-foreground relative flex cursor-default items-center gap-2 rounded-sm py-1.5 pr-2 pl-8 text-sm outline-hidden select-none data-[disabled]:pointer-events-none data-[disabled]:opacity-50 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4", className);
+        $[5] = className;
+        $[6] = t1;
+    } else {
+        t1 = $[6];
+    }
+    let t2;
+    if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            className: "pointer-events-none absolute left-2 flex size-3.5 items-center justify-center",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ItemIndicator"], {
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CircleIcon$3e$__["CircleIcon"], {
+                    className: "size-2 fill-current"
+                }, void 0, false, {
+                    fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+                    lineNumber: 341,
+                    columnNumber: 143
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+                lineNumber: 341,
+                columnNumber: 106
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 341,
+            columnNumber: 10
+        }, this);
+        $[7] = t2;
+    } else {
+        t2 = $[7];
+    }
+    let t3;
+    if ($[8] !== children || $[9] !== props || $[10] !== t1) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["RadioItem"], {
+            "data-slot": "dropdown-menu-radio-item",
+            className: t1,
+            ...props,
+            children: [
+                t2,
+                children
+            ]
+        }, void 0, true, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 348,
+            columnNumber: 10
+        }, this);
+        $[8] = children;
+        $[9] = props;
+        $[10] = t1;
+        $[11] = t3;
+    } else {
+        t3 = $[11];
+    }
+    return t3;
+}
+_c8 = DropdownMenuRadioItem;
+function DropdownMenuLabel(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(11);
+    if ($[0] !== "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04") {
+        for(let $i = 0; $i < 11; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04";
+    }
+    let className;
+    let inset;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, inset, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = inset;
+        $[4] = props;
+    } else {
+        className = $[2];
+        inset = $[3];
+        props = $[4];
+    }
+    let t1;
+    if ($[5] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("px-2 py-1.5 text-sm font-medium data-[inset]:pl-8", className);
+        $[5] = className;
+        $[6] = t1;
+    } else {
+        t1 = $[6];
+    }
+    let t2;
+    if ($[7] !== inset || $[8] !== props || $[9] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+            "data-slot": "dropdown-menu-label",
+            "data-inset": inset,
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 394,
+            columnNumber: 10
+        }, this);
+        $[7] = inset;
+        $[8] = props;
+        $[9] = t1;
+        $[10] = t2;
+    } else {
+        t2 = $[10];
+    }
+    return t2;
+}
+_c9 = DropdownMenuLabel;
+function DropdownMenuSeparator(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("bg-border -mx-1 my-1 h-px", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Separator"], {
+            "data-slot": "dropdown-menu-separator",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 436,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c10 = DropdownMenuSeparator;
+function DropdownMenuShortcut(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("text-muted-foreground ml-auto text-xs tracking-widest", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+            "data-slot": "dropdown-menu-shortcut",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 477,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c11 = DropdownMenuShortcut;
+function DropdownMenuSub(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(5);
+    if ($[0] !== "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04") {
+        for(let $i = 0; $i < 5; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04";
+    }
+    let props;
+    if ($[1] !== t0) {
+        ({ ...props } = t0);
+        $[1] = t0;
+        $[2] = props;
+    } else {
+        props = $[2];
+    }
+    let t1;
+    if ($[3] !== props) {
+        t1 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Sub"], {
+            "data-slot": "dropdown-menu-sub",
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 506,
+            columnNumber: 10
+        }, this);
+        $[3] = props;
+        $[4] = t1;
+    } else {
+        t1 = $[4];
+    }
+    return t1;
+}
+_c12 = DropdownMenuSub;
+function DropdownMenuSubTrigger(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(14);
+    if ($[0] !== "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04") {
+        for(let $i = 0; $i < 14; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04";
+    }
+    let children;
+    let className;
+    let inset;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, inset, children, ...props } = t0);
+        $[1] = t0;
+        $[2] = children;
+        $[3] = className;
+        $[4] = inset;
+        $[5] = props;
+    } else {
+        children = $[2];
+        className = $[3];
+        inset = $[4];
+        props = $[5];
+    }
+    let t1;
+    if ($[6] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("focus:bg-accent focus:text-accent-foreground data-[state=open]:bg-accent data-[state=open]:text-accent-foreground flex cursor-default items-center rounded-sm px-2 py-1.5 text-sm outline-hidden select-none data-[inset]:pl-8", className);
+        $[6] = className;
+        $[7] = t1;
+    } else {
+        t1 = $[7];
+    }
+    let t2;
+    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$right$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronRightIcon$3e$__["ChevronRightIcon"], {
+            className: "ml-auto size-4"
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 554,
+            columnNumber: 10
+        }, this);
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    let t3;
+    if ($[9] !== children || $[10] !== inset || $[11] !== props || $[12] !== t1) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SubTrigger"], {
+            "data-slot": "dropdown-menu-sub-trigger",
+            "data-inset": inset,
+            className: t1,
+            ...props,
+            children: [
+                children,
+                t2
+            ]
+        }, void 0, true, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 561,
+            columnNumber: 10
+        }, this);
+        $[9] = children;
+        $[10] = inset;
+        $[11] = props;
+        $[12] = t1;
+        $[13] = t3;
+    } else {
+        t3 = $[13];
+    }
+    return t3;
+}
+_c13 = DropdownMenuSubTrigger;
+function DropdownMenuSubContent(t0) {
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(9);
+    if ($[0] !== "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04") {
+        for(let $i = 0; $i < 9; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "65469dbfc90123fd309da70a3669ca948883c5fe303cad3f1765316cbad2ce04";
+    }
+    let className;
+    let props;
+    if ($[1] !== t0) {
+        ({ className, ...props } = t0);
+        $[1] = t0;
+        $[2] = className;
+        $[3] = props;
+    } else {
+        className = $[2];
+        props = $[3];
+    }
+    let t1;
+    if ($[4] !== className) {
+        t1 = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$utils$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["cn"])("bg-popover text-popover-foreground data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2 z-50 min-w-[8rem] origin-(--radix-dropdown-menu-content-transform-origin) overflow-hidden rounded-md border p-1 shadow-lg", className);
+        $[4] = className;
+        $[5] = t1;
+    } else {
+        t1 = $[5];
+    }
+    let t2;
+    if ($[6] !== props || $[7] !== t1) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f40$radix$2d$ui$2f$react$2d$dropdown$2d$menu$2f$dist$2f$index$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__["SubContent"], {
+            "data-slot": "dropdown-menu-sub-content",
+            className: t1,
+            ...props
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx",
+            lineNumber: 604,
+            columnNumber: 10
+        }, this);
+        $[6] = props;
+        $[7] = t1;
+        $[8] = t2;
+    } else {
+        t2 = $[8];
+    }
+    return t2;
+}
+_c14 = DropdownMenuSubContent;
+;
+var _c, _c1, _c2, _c3, _c4, _c5, _c6, _c7, _c8, _c9, _c10, _c11, _c12, _c13, _c14;
+__turbopack_context__.k.register(_c, "DropdownMenu");
+__turbopack_context__.k.register(_c1, "DropdownMenuPortal");
+__turbopack_context__.k.register(_c2, "DropdownMenuTrigger");
+__turbopack_context__.k.register(_c3, "DropdownMenuContent");
+__turbopack_context__.k.register(_c4, "DropdownMenuGroup");
+__turbopack_context__.k.register(_c5, "DropdownMenuItem");
+__turbopack_context__.k.register(_c6, "DropdownMenuCheckboxItem");
+__turbopack_context__.k.register(_c7, "DropdownMenuRadioGroup");
+__turbopack_context__.k.register(_c8, "DropdownMenuRadioItem");
+__turbopack_context__.k.register(_c9, "DropdownMenuLabel");
+__turbopack_context__.k.register(_c10, "DropdownMenuSeparator");
+__turbopack_context__.k.register(_c11, "DropdownMenuShortcut");
+__turbopack_context__.k.register(_c12, "DropdownMenuSub");
+__turbopack_context__.k.register(_c13, "DropdownMenuSubTrigger");
+__turbopack_context__.k.register(_c14, "DropdownMenuSubContent");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/AdminDashboard.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "AdminDashboard",
+    ()=>AdminDashboard
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/lib/supabase.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/card.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/button.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/input.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/badge.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/table.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/label.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/textarea.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/dialog.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/dropdown-menu.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/users.js [app-client] (ecmascript) <export default as Users>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/trophy.js [app-client] (ecmascript) <export default as Trophy>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/trash-2.js [app-client] (ecmascript) <export default as Trash2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$video$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Video$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/video.js [app-client] (ecmascript) <export default as Video>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/file-text.js [app-client] (ecmascript) <export default as FileText>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$folder$2d$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FolderPlus$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/folder-plus.js [app-client] (ecmascript) <export default as FolderPlus>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/chevron-left.js [app-client] (ecmascript) <export default as ChevronLeft>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserPlus$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/user-plus.js [app-client] (ecmascript) <export default as UserPlus>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/clock.js [app-client] (ecmascript) <export default as Clock>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/search.js [app-client] (ecmascript) <export default as Search>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2d$vertical$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreVertical$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/ellipsis-vertical.js [app-client] (ecmascript) <export default as MoreVertical>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ban$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Ban$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/ban.js [app-client] (ecmascript) <export default as Ban>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$school$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__School$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/school.js [app-client] (ecmascript) <export default as School>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$upload$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Upload$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/upload.js [app-client] (ecmascript) <export default as Upload>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pencil$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Pencil$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/pencil.js [app-client] (ecmascript) <export default as Pencil>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/check.js [app-client] (ecmascript) <export default as Check>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Image$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/image.js [app-client] (ecmascript) <export default as Image>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2d$off$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeOff$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/eye-off.js [app-client] (ecmascript) <export default as EyeOff>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bell$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bell$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/bell.js [app-client] (ecmascript) <export default as Bell>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/shield-check.js [app-client] (ecmascript) <export default as ShieldCheck>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/send.js [app-client] (ecmascript) <export default as Send>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/message-square.js [app-client] (ecmascript) <export default as MessageSquare>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/external-link.js [app-client] (ecmascript) <export default as ExternalLink>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$question$2d$mark$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__HelpCircle$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/circle-question-mark.js [app-client] (ecmascript) <export default as HelpCircle>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/phone.js [app-client] (ecmascript) <export default as Phone>");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+;
+function AdminDashboard({ onNavigate }) {
+    _s();
+    const [activeView, setActiveView] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])('classes');
+    const [classes, setClasses] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [notices, setNotices] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [staff, setStaff] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [galleries, setGalleries] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [selectedClass, setSelectedClass] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [classContent, setClassContent] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [students, setStudents] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [classStudents, setClassStudents] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [searchQuery, setSearchQuery] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(true);
+    const [uploading, setUploading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [messageText, setMessageText] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [classMessages, setClassMessages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [allQuestions, setAllQuestions] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [replyText, setReplyText] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({});
+    const [isRegModalOpen, setIsRegModalOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [newNotice, setNewNotice] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
+        title: "",
+        content: ""
+    });
+    const [newStaff, setNewStaff] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
+        email: "",
+        password: "",
+        fullName: ""
+    });
+    const [examName, setExamName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("Monthly Test");
+    const [studentMarks, setStudentMarks] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({});
+    const [existingResults, setExistingResults] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [newGalleryName, setNewGalleryName] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [galleryImages, setGalleryImages] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])([]);
+    const [regData, setRegData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
+        email: "",
+        password: "",
+        fullName: "",
+        academicYear: "",
+        schoolName: "",
+        phoneNumber: "",
+        institute: ""
+    });
+    const [newClass, setNewClass] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
+        title: "",
+        year: "",
+        type: "Theory",
+        class_day: "",
+        class_time: "",
+        institute_name: "",
+        class_category: "Group",
+        instructor: "Dilshan Uthpala"
+    });
+    const [editClassData, setEditClassData] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(null);
+    const [newContent, setNewContent] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])({
+        title: "",
+        url: "",
+        type: "video"
+    });
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "AdminDashboard.useEffect": ()=>{
+            fetchInitialData();
+        }
+    }["AdminDashboard.useEffect"], [
+        activeView
+    ]);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "AdminDashboard.useEffect": ()=>{
+            if (selectedClass) {
+                fetchFolderContent();
+                fetchStudentsInClass(selectedClass.id);
+                fetchExistingResults(selectedClass.id);
+                fetchClassMessages(selectedClass.id);
+            }
+        }
+    }["AdminDashboard.useEffect"], [
+        selectedClass
+    ]);
+    async function fetchInitialData() {
+        setLoading(true);
+        try {
+            const { data: cls } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('classes').select('*').order('year', {
+                ascending: false
+            });
+            const classesData = cls || [];
+            setClasses(classesData);
+            const { data: nts } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('notices').select('*').order('created_at', {
+                ascending: false
+            });
+            setNotices(nts || []);
+            const { data: stf } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('profiles').select('*').eq('role', 'admin');
+            setStaff(stf || []);
+            const { data: gals } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('galleries').select('*').order('created_at', {
+                ascending: false
+            });
+            setGalleries(gals || []);
+            const { data: profiles } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('profiles').select('*').eq('role', 'student').order('full_name');
+            const { data: enrolls } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('enrollments').select('student_id, class_id');
+            if (profiles) {
+                const merged = profiles.map((p)=>({
+                        ...p,
+                        enrolled_folders: enrolls?.filter((e)=>e.student_id === p.id).map((e_0)=>(cls || []).find((c)=>c.id === e_0.class_id)).filter(Boolean) || []
+                    }));
+                setStudents(merged);
+            }
+            if (activeView === 'inquiries') await fetchAllQuestions();
+        } catch (err) {
+            console.error("Sync Error:", err.message);
+        }
+        setLoading(false);
+    }
+    const filteredStudents = students.filter((s)=>s.full_name?.toLowerCase().includes(searchQuery.toLowerCase()) || s.email?.toLowerCase().includes(searchQuery.toLowerCase()) || s.phone_number?.includes(searchQuery));
+    async function fetchAllQuestions() {
+        const { data } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('private_questions').select('*').order('is_resolved', {
+            ascending: true
+        }).order('created_at', {
+            ascending: false
+        });
+        setAllQuestions(data || []);
+    }
+    async function submitReply(id) {
+        const text = replyText[id];
+        if (!text) return alert("Type a reply first");
+        const { error } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('private_questions').update({
+            admin_reply: text,
+            is_resolved: true,
+            replied_at: new Date().toISOString()
+        }).eq('id', id);
+        if (!error) {
+            alert("Reply Sent!");
+            setReplyText((prev)=>{
+                const updated = {
+                    ...prev
+                };
+                delete updated[id];
+                return updated;
+            });
+            fetchAllQuestions();
+        } else {
+            alert("Reply failed: " + error.message);
+        }
+    }
+    async function handleSendMessage() {
+        const { data: { session } } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].auth.getSession();
+        if (!session?.user) {
+            alert("Your login session is invalid. Please log out and log back in.");
+            return;
+        }
+        if (!messageText || !selectedClass) return alert("Enter message text.");
+        const { error: error_0 } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('class_messages').insert([
+            {
+                class_id: selectedClass.id,
+                sender_id: session.user.id,
+                sender_name: "Dilshan Uthpala",
+                message_text: messageText
+            }
+        ]);
+        if (!error_0) {
+            setMessageText("");
+            fetchClassMessages(selectedClass.id);
+        } else {
+            alert("Error: " + error_0.message);
+        }
+    }
+    async function fetchClassMessages(classId) {
+        const { data: data_0 } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('class_messages').select('*').eq('class_id', classId).order('created_at', {
+            ascending: false
+        });
+        setClassMessages(data_0 || []);
+    }
+    async function handleAddAdmin() {
+        if (!newStaff.email || !newStaff.password || !newStaff.fullName) return alert("Fill all fields");
+        setLoading(true);
+        const { data: authData, error: authError } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].auth.signUp({
+            email: newStaff.email,
+            password: newStaff.password,
+            options: {
+                data: {
+                    full_name: newStaff.fullName,
+                    role: 'admin'
+                }
+            }
+        });
+        if (authData.user) {
+            const { error: error_1 } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('profiles').upsert([
+                {
+                    id: authData.user.id,
+                    full_name: newStaff.fullName,
+                    email: newStaff.email,
+                    role: 'admin'
+                }
+            ]);
+            if (error_1) alert("DB Error: " + error_1.message);
+            else {
+                alert("Admin registered!");
+                setNewStaff({
+                    email: "",
+                    password: "",
+                    fullName: ""
+                });
+                fetchInitialData();
+            }
+        } else if (authError) {
+            alert(authError.message);
+        }
+        setLoading(false);
+    }
+    async function removeAdmin(id_0) {
+        if (confirm("Revoke admin access?")) {
+            const { error: error_2 } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('profiles').delete().eq('id', id_0);
+            if (error_2) alert("Deletion Error: " + error_2.message);
+            else fetchInitialData();
+        }
+    }
+    async function removeStudent(id_1) {
+        if (confirm("Permanently delete this student account? This cannot be undone.")) {
+            const { error: error_3 } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('profiles').delete().eq('id', id_1);
+            if (error_3) {
+                alert("Delete failed: " + error_3.message);
+            } else {
+                alert("Student profile removed.");
+                fetchInitialData();
+            }
+        }
+    }
+    async function handleRegisterStudent() {
+        setLoading(true);
+        const { data: authData_0, error: authError_0 } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].auth.signUp({
+            email: regData.email,
+            password: regData.password,
+            options: {
+                data: {
+                    full_name: regData.fullName,
+                    role: 'student'
+                }
+            }
+        });
+        if (authData_0.user) {
+            const { error: dbError } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('profiles').upsert([
+                {
+                    id: authData_0.user.id,
+                    full_name: regData.fullName,
+                    email: regData.email,
+                    academic_year: regData.academicYear,
+                    role: 'student',
+                    is_paid: false,
+                    is_suspended: false
+                }
+            ]);
+            if (dbError) alert("DB Error: " + dbError.message);
+            else {
+                setIsRegModalOpen(false);
+                fetchInitialData();
+            }
+        } else if (authError_0) {
+            alert("Auth Error: " + authError_0.message);
+        }
+        setLoading(false);
+    }
+    async function handleCreateClass() {
+        if (!newClass.title || !newClass.year) return alert("Fill details");
+        await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('classes').insert([
+            newClass
+        ]);
+        setNewClass({
+            title: "",
+            year: "",
+            type: "Theory",
+            class_day: "",
+            class_time: "",
+            institute_name: "",
+            class_category: "Group",
+            instructor: "Dilshan Uthpala"
+        });
+        fetchInitialData();
+    }
+    async function handleUpdateClass() {
+        await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('classes').update(editClassData).eq('id', editClassData.id);
+        setEditClassData(null);
+        fetchInitialData();
+    }
+    async function handleDeleteClass(id_2) {
+        if (confirm("Delete class folder?")) {
+            await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('classes').delete().eq('id', id_2);
+            setSelectedClass(null);
+            fetchInitialData();
+        }
+    }
+    async function handleDeleteContent(id_3) {
+        if (confirm("Remove material?")) {
+            await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('class_content').delete().eq('id', id_3);
+            fetchFolderContent();
+        }
+    }
+    async function fetchFolderContent() {
+        const { data: data_1 } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('class_content').select('*').eq('class_id', selectedClass.id);
+        setClassContent(data_1 || []);
+    }
+    async function toggleClassAssignment(studentId, classId_0) {
+        const { data: existing } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('enrollments').select('*').eq('student_id', studentId).eq('class_id', classId_0).maybeSingle();
+        if (existing) {
+            await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('enrollments').delete().eq('student_id', studentId).eq('class_id', classId_0);
+        } else {
+            await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('enrollments').insert([
+                {
+                    student_id: studentId,
+                    class_id: classId_0
+                }
+            ]);
+        }
+        fetchInitialData();
+    }
+    async function handleFileUpload(e_1) {
+        const file = e_1.target.files?.[0];
+        if (!file || !selectedClass) return;
+        setUploading(true);
+        try {
+            const cleanName = file.name.replace(/[^a-z0-9.]/gi, '_').toLowerCase();
+            const filePath = `${selectedClass.id}/${Date.now()}_${cleanName}`;
+            const { error: error_4 } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].storage.from('class-materials').upload(filePath, file);
+            if (error_4) throw error_4;
+            const { data: urlData } = __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].storage.from('class-materials').getPublicUrl(filePath);
+            setNewContent((prev_0)=>({
+                    ...prev_0,
+                    url: urlData.publicUrl,
+                    type: 'note'
+                }));
+        } catch (err_0) {
+            alert("Upload failed");
+        } finally{
+            setUploading(false);
+        }
+    }
+    async function handleAddContent() {
+        if (!newContent.title || !newContent.url) return alert("Fill details");
+        await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('class_content').insert([
+            {
+                ...newContent,
+                class_id: selectedClass.id
+            }
+        ]);
+        setNewContent({
+            title: "",
+            url: "",
+            type: "video"
+        });
+        fetchFolderContent();
+    }
+    async function toggleStatus(id_4, field, currentVal) {
+        const { error: error_5 } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('profiles').update({
+            [field]: !currentVal
+        }).eq('id', id_4);
+        if (error_5) alert("Update failed: " + error_5.message);
+        else fetchInitialData();
+    }
+    async function handlePostNotice() {
+        if (!newNotice.title || !newNotice.content) return alert("Fill all fields");
+        await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('notices').insert([
+            newNotice
+        ]);
+        setNewNotice({
+            title: "",
+            content: ""
+        });
+        fetchInitialData();
+    }
+    async function deleteNotice(id_5) {
+        if (confirm("Remove notice?")) {
+            await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('notices').delete().eq('id', id_5);
+            fetchInitialData();
+        }
+    }
+    async function fetchExistingResults(classId_1) {
+        const { data: data_2 } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('exam_results').select('*').eq('class_id', classId_1).order('created_at', {
+            ascending: false
+        });
+        setExistingResults(data_2 || []);
+    }
+    async function fetchStudentsInClass(classId_2) {
+        const { data: enrollData } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('enrollments').select('student_id').eq('class_id', classId_2);
+        const ids = enrollData?.map((e_2)=>e_2.student_id) || [];
+        if (ids.length > 0) {
+            const { data: profileData } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('profiles').select('*').in('id', ids);
+            setClassStudents(profileData || []);
+        } else setClassStudents([]);
+    }
+    async function handleSaveMark(studentId_0, studentName, schoolName) {
+        const mark = studentMarks[studentId_0];
+        if (!mark) return alert("Enter mark");
+        await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('exam_results').insert([
+            {
+                student_id: studentId_0,
+                class_id: selectedClass.id,
+                student_name: studentName,
+                school_name: schoolName || "N/A",
+                marks: parseFloat(mark),
+                exam_name: examName,
+                is_public: true
+            }
+        ]);
+        setStudentMarks((prev_1)=>({
+                ...prev_1,
+                [studentId_0]: ""
+            }));
+        fetchExistingResults(selectedClass.id);
+    }
+    async function handleHideFromPublic(resultId) {
+        await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('exam_results').update({
+            is_public: false
+        }).eq('id', resultId);
+        fetchExistingResults(selectedClass.id);
+    }
+    async function handleGalleryUpload(e_3) {
+        const files = e_3.target.files;
+        if (!files || files.length === 0) return;
+        setUploading(true);
+        for(let i = 0; i < files.length; i++){
+            const file_0 = files[i];
+            const cleanName_0 = file_0.name.replace(/[^a-z0-9.]/gi, '_').toLowerCase();
+            const filePath_0 = `images/${Date.now()}_${cleanName_0}`;
+            const { error: error_6 } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].storage.from('gallery').upload(filePath_0, file_0);
+            if (!error_6) {
+                const { data: urlData_0 } = __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].storage.from('gallery').getPublicUrl(filePath_0);
+                setGalleryImages((prev_2)=>[
+                        ...prev_2,
+                        urlData_0.publicUrl
+                    ]);
+            }
+        }
+        setUploading(false);
+    }
+    async function handleSaveGallery() {
+        if (!newGalleryName || galleryImages.length === 0) return alert("Fill details");
+        await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('galleries').insert([
+            {
+                name: newGalleryName,
+                image_urls: galleryImages
+            }
+        ]);
+        setNewGalleryName("");
+        setGalleryImages([]);
+        fetchInitialData();
+    }
+    async function handleDeleteGallery(id_6, urls) {
+        if (confirm("Delete gallery?")) {
+            await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('galleries').delete().eq('id', id_6);
+            fetchInitialData();
+        }
+    }
+    if (loading) return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "h-screen flex items-center justify-center font-bold text-slate-900 italic",
+        children: "Syncing Admin Hub..."
+    }, void 0, false, {
+        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+        lineNumber: 496,
+        columnNumber: 23
+    }, this);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "flex h-screen bg-[#F8FAFC] text-foreground",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
+                className: "w-72 border-r bg-white p-6 flex flex-col shadow-sm",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "mb-8 px-2",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                className: "text-2xl font-black text-slate-800 tracking-tighter uppercase italic leading-none",
+                                children: "Logic Admin"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 500,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-[9px] font-bold text-teal-600 mt-2 tracking-widest uppercase",
+                                children: "මොළ හදන ලොජික් පන්තිය"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 501,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                        lineNumber: 499,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+                        className: "space-y-1 flex-1",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                variant: activeView === 'classes' ? 'default' : 'ghost',
+                                className: "w-full justify-start gap-3 rounded-xl h-11 font-bold",
+                                onClick: ()=>{
+                                    setActiveView('classes');
+                                    setSelectedClass(null);
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$folder$2d$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FolderPlus$3e$__["FolderPlus"], {
+                                        size: 18
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 509,
+                                        columnNumber: 13
+                                    }, this),
+                                    " Course Folders"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 505,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                variant: activeView === 'students' ? 'default' : 'ghost',
+                                className: "w-full justify-start gap-3 rounded-xl h-11 font-bold",
+                                onClick: ()=>setActiveView('students'),
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {
+                                        size: 18
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 512,
+                                        columnNumber: 13
+                                    }, this),
+                                    " Student Access"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 511,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                variant: activeView === 'inquiries' ? 'default' : 'ghost',
+                                className: "w-full justify-start gap-3 rounded-xl h-11 font-bold",
+                                onClick: ()=>setActiveView('inquiries'),
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$question$2d$mark$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__HelpCircle$3e$__["HelpCircle"], {
+                                        size: 18
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 515,
+                                        columnNumber: 13
+                                    }, this),
+                                    " Student Inquiries"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 514,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                variant: activeView === 'notices' ? 'default' : 'ghost',
+                                className: "w-full justify-start gap-3 rounded-xl h-11 font-bold",
+                                onClick: ()=>setActiveView('notices'),
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$bell$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Bell$3e$__["Bell"], {
+                                        size: 18
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 518,
+                                        columnNumber: 13
+                                    }, this),
+                                    " Notice Board"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 517,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                variant: activeView === 'gallery' ? 'default' : 'ghost',
+                                className: "w-full justify-start gap-3 rounded-xl h-11 font-bold",
+                                onClick: ()=>setActiveView('gallery'),
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Image$3e$__["Image"], {
+                                        size: 18
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 521,
+                                        columnNumber: 13
+                                    }, this),
+                                    " Gallery Card"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 520,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "h-px bg-zinc-100 my-4"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 523,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                variant: activeView === 'staff' ? 'default' : 'ghost',
+                                className: "w-full justify-start gap-3 rounded-xl h-11 font-bold",
+                                onClick: ()=>setActiveView('staff'),
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$shield$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ShieldCheck$3e$__["ShieldCheck"], {
+                                        size: 18
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 525,
+                                        columnNumber: 13
+                                    }, this),
+                                    " Staff Details"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 524,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                        lineNumber: 504,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                        variant: "outline",
+                        className: "w-full rounded-xl border-2 font-black uppercase text-xs tracking-widest",
+                        onClick: ()=>onNavigate('home'),
+                        children: "Exit Portal"
+                    }, void 0, false, {
+                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                        lineNumber: 528,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                lineNumber: 498,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("main", {
+                className: "flex-1 p-10 overflow-auto",
+                children: [
+                    activeView === 'students' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "max-w-6xl mx-auto space-y-6",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+                                className: "flex justify-between items-center",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                        className: "text-4xl font-black italic tracking-tighter uppercase text-slate-800",
+                                        children: "Student Access"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 534,
+                                        columnNumber: 67
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                        className: "bg-blue-700 h-12 px-6 rounded-xl font-bold text-white shadow-lg",
+                                        onClick: ()=>setIsRegModalOpen(true),
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$user$2d$plus$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__UserPlus$3e$__["UserPlus"], {
+                                                className: "mr-2"
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 534,
+                                                columnNumber: 295
+                                            }, this),
+                                            " Enroll Student"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 534,
+                                        columnNumber: 171
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 534,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                className: "shadow-sm p-4 flex items-center gap-3 rounded-2xl border bg-white",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$search$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Search$3e$__["Search"], {
+                                        className: "text-slate-400 size-5"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 535,
+                                        columnNumber: 97
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                        placeholder: "Search students...",
+                                        className: "border-none shadow-none focus-visible:ring-0 text-lg",
+                                        value: searchQuery,
+                                        onChange: (e_4)=>setSearchQuery(e_4.target.value)
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 535,
+                                        columnNumber: 141
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 535,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                className: "shadow-md border-none rounded-3xl overflow-hidden bg-white",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHeader"], {
+                                            className: "bg-zinc-950",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        className: "text-white font-bold py-5 pl-8",
+                                                        children: "Student Detail"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 539,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        className: "text-white font-bold",
+                                                        children: "Contact Info"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 540,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        className: "text-white font-bold",
+                                                        children: "Access Folders"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 541,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        className: "text-white font-bold text-center",
+                                                        children: "Fee Status"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 542,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        className: "text-white text-right pr-8 font-bold",
+                                                        children: "Manage"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 543,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 538,
+                                                columnNumber: 54
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 538,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableBody"], {
+                                            children: filteredStudents.map((s_0)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                    className: s_0.is_suspended ? "opacity-50 grayscale" : "border-zinc-50",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                            className: "py-6 pl-8",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "font-black uppercase text-sm text-slate-800",
+                                                                    children: s_0.full_name
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                    lineNumber: 548,
+                                                                    columnNumber: 25
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "text-[10px] text-slate-400 font-bold italic lowercase",
+                                                                    children: [
+                                                                        s_0.academic_year || "---",
+                                                                        " Exam Year"
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                    lineNumber: 549,
+                                                                    columnNumber: 25
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 547,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "flex flex-col",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "flex items-center gap-1.5 font-bold text-slate-600 text-xs",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
+                                                                                size: 12,
+                                                                                className: "text-teal-600"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                lineNumber: 553,
+                                                                                columnNumber: 105
+                                                                            }, this),
+                                                                            " ",
+                                                                            s_0.phone_number || "N/A"
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                        lineNumber: 553,
+                                                                        columnNumber: 29
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "text-[10px] text-slate-400 font-medium lowercase",
+                                                                        children: s_0.email
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                        lineNumber: 554,
+                                                                        columnNumber: 29
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 552,
+                                                                columnNumber: 26
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 551,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "flex gap-1 flex-wrap",
+                                                                children: s_0.enrolled_folders?.map((f, i_0)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
+                                                                        className: "bg-blue-50 text-blue-700 border-none text-[9px] font-black uppercase",
+                                                                        children: [
+                                                                            f.year,
+                                                                            " ",
+                                                                            f.title
+                                                                        ]
+                                                                    }, i_0, true, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                        lineNumber: 557,
+                                                                        columnNumber: 124
+                                                                    }, this)) || /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                    className: "text-xs text-slate-300 italic",
+                                                                    children: "None"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                    lineNumber: 557,
+                                                                    columnNumber: 253
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 557,
+                                                                columnNumber: 34
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 557,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                            className: "text-center",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                                variant: "ghost",
+                                                                size: "sm",
+                                                                onClick: ()=>toggleStatus(s_0.id, 'is_paid', s_0.is_paid),
+                                                                className: `rounded-full px-4 h-8 font-black text-[10px] tracking-widest ${s_0.is_paid ? 'bg-emerald-50 text-emerald-600' : 'bg-rose-50 text-rose-600'}`,
+                                                                children: s_0.is_paid ? 'PAID' : 'PENDING'
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 558,
+                                                                columnNumber: 58
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 558,
+                                                            columnNumber: 23
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                            className: "text-right pr-8",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenu"], {
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuTrigger"], {
+                                                                        asChild: true,
+                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                                            variant: "ghost",
+                                                                            size: "icon",
+                                                                            className: "rounded-full",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ellipsis$2d$vertical$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MoreVertical$3e$__["MoreVertical"], {
+                                                                                size: 18
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                lineNumber: 560,
+                                                                                columnNumber: 129
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                            lineNumber: 560,
+                                                                            columnNumber: 68
+                                                                        }, this)
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                        lineNumber: 560,
+                                                                        columnNumber: 39
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuContent"], {
+                                                                        align: "end",
+                                                                        className: "w-56 p-2 rounded-2xl shadow-2xl",
+                                                                        children: [
+                                                                            classes.map((c_0)=>{
+                                                                                const isEnrolled = s_0.enrolled_folders?.some((f_0)=>f_0.id === c_0.id);
+                                                                                return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
+                                                                                    onClick: ()=>toggleClassAssignment(s_0.id, c_0.id),
+                                                                                    className: "flex justify-between items-center text-xs font-bold px-3",
+                                                                                    children: [
+                                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                            children: [
+                                                                                                c_0.year,
+                                                                                                " ",
+                                                                                                c_0.title
+                                                                                            ]
+                                                                                        }, void 0, true, {
+                                                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                            lineNumber: 563,
+                                                                                            columnNumber: 186
+                                                                                        }, this),
+                                                                                        isEnrolled && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Check$3e$__["Check"], {
+                                                                                            size: 14,
+                                                                                            className: "text-blue-600"
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                            lineNumber: 563,
+                                                                                            columnNumber: 236
+                                                                                        }, this)
+                                                                                    ]
+                                                                                }, c_0.id, true, {
+                                                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                    lineNumber: 563,
+                                                                                    columnNumber: 32
+                                                                                }, this);
+                                                                            }),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "h-px bg-slate-100 my-2"
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                lineNumber: 565,
+                                                                                columnNumber: 27
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
+                                                                                className: "gap-2 font-bold",
+                                                                                onClick: ()=>toggleStatus(s_0.id, 'is_suspended', s_0.is_suspended),
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$ban$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Ban$3e$__["Ban"], {
+                                                                                        size: 16
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                        lineNumber: 565,
+                                                                                        columnNumber: 186
+                                                                                    }, this),
+                                                                                    " ",
+                                                                                    s_0.is_suspended ? 'Activate' : 'Suspend'
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                lineNumber: 565,
+                                                                                columnNumber: 69
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dropdown$2d$menu$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DropdownMenuItem"], {
+                                                                                className: "text-red-600 gap-2 font-bold",
+                                                                                onClick: ()=>removeStudent(s_0.id),
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
+                                                                                        size: 16
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                        lineNumber: 565,
+                                                                                        columnNumber: 363
+                                                                                    }, this),
+                                                                                    " Delete Account"
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                lineNumber: 565,
+                                                                                columnNumber: 266
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                        lineNumber: 560,
+                                                                        columnNumber: 186
+                                                                    }, this)
+                                                                ]
+                                                            }, void 0, true, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 560,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 559,
+                                                            columnNumber: 23
+                                                        }, this)
+                                                    ]
+                                                }, s_0.id, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 546,
+                                                    columnNumber: 48
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 545,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                    lineNumber: 537,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 536,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                        lineNumber: 533,
+                        columnNumber: 39
+                    }, this),
+                    activeView === 'staff' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "max-w-4xl mx-auto space-y-8 animate-in fade-in duration-500",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                    className: "text-4xl font-black italic tracking-tighter text-slate-800 uppercase leading-none",
+                                    children: "Administrators"
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                    lineNumber: 576,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 576,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                className: "p-8 rounded-[2.5rem] shadow-xl border-none bg-white",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "grid grid-cols-3 gap-4 items-end",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "space-y-1",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                        children: "Full Name"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 579,
+                                                        columnNumber: 52
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                        value: newStaff.fullName,
+                                                        onChange: (e_5)=>setNewStaff({
+                                                                ...newStaff,
+                                                                fullName: e_5.target.value
+                                                            })
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 579,
+                                                        columnNumber: 76
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 579,
+                                                columnNumber: 25
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "space-y-1",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                        children: "Email"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 583,
+                                                        columnNumber: 52
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                        value: newStaff.email,
+                                                        onChange: (e_6)=>setNewStaff({
+                                                                ...newStaff,
+                                                                email: e_6.target.value
+                                                            })
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 583,
+                                                        columnNumber: 72
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 583,
+                                                columnNumber: 25
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "space-y-1",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                        children: "Password"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 587,
+                                                        columnNumber: 52
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                        type: "password",
+                                                        value: newStaff.password,
+                                                        onChange: (e_7)=>setNewStaff({
+                                                                ...newStaff,
+                                                                password: e_7.target.value
+                                                            })
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 587,
+                                                        columnNumber: 75
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 587,
+                                                columnNumber: 25
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 578,
+                                        columnNumber: 21
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                        className: "w-full mt-6 py-6 font-black uppercase text-xs tracking-widest bg-slate-900 text-white rounded-2xl",
+                                        onClick: handleAddAdmin,
+                                        children: "Register New Admin"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 592,
+                                        columnNumber: 21
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 577,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                className: "rounded-[2.5rem] overflow-hidden border-none shadow-md bg-white",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"], {
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHeader"], {
+                                            className: "bg-slate-900",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        className: "text-white py-6 pl-10 font-black uppercase text-[10px] tracking-widest",
+                                                        children: "Admin Name"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 597,
+                                                        columnNumber: 29
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                        className: "text-white text-right pr-10 font-black uppercase text-[10px] tracking-widest",
+                                                        children: "Actions"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 598,
+                                                        columnNumber: 29
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 596,
+                                                columnNumber: 63
+                                            }, this)
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 596,
+                                            columnNumber: 25
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableBody"], {
+                                            children: staff.map((s_1)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                    className: "border-slate-50 hover:bg-slate-50",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                            className: "py-6 pl-10",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "font-black uppercase text-sm italic",
+                                                                    children: s_1.full_name
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                    lineNumber: 603,
+                                                                    columnNumber: 41
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                    className: "text-[10px] font-bold text-slate-400",
+                                                                    children: s_1.email
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                    lineNumber: 604,
+                                                                    columnNumber: 41
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 602,
+                                                            columnNumber: 37
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                            className: "text-right pr-10",
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                                variant: "ghost",
+                                                                className: "text-rose-500 font-black text-[10px] uppercase",
+                                                                onClick: ()=>removeAdmin(s_1.id),
+                                                                children: "Revoke"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 606,
+                                                                columnNumber: 77
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 606,
+                                                            columnNumber: 37
+                                                        }, this)
+                                                    ]
+                                                }, s_1.id, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 601,
+                                                    columnNumber: 47
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 600,
+                                            columnNumber: 25
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                    lineNumber: 595,
+                                    columnNumber: 21
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 594,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                        lineNumber: 575,
+                        columnNumber: 36
+                    }, this),
+                    activeView === 'inquiries' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "max-w-5xl mx-auto space-y-8 animate-in fade-in duration-500",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                    className: "text-4xl font-black italic tracking-tighter text-slate-800 uppercase leading-none",
+                                    children: "Student Inquiries"
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                    lineNumber: 615,
+                                    columnNumber: 25
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 615,
+                                columnNumber: 17
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "grid gap-6",
+                                children: [
+                                    allQuestions.map((q)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                            className: `p-6 rounded-[2rem] border-none shadow-xl bg-white ${!q.is_resolved ? 'ring-2 ring-teal-500' : ''}`,
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex justify-between items-start mb-4",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                                    className: "font-black text-slate-800 uppercase text-lg",
+                                                                    children: q.student_name
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                    lineNumber: 619,
+                                                                    columnNumber: 38
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                    className: "text-[10px] font-bold text-slate-400",
+                                                                    children: new Date(q.created_at).toLocaleString()
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                    lineNumber: 619,
+                                                                    columnNumber: 119
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 619,
+                                                            columnNumber: 33
+                                                        }, this),
+                                                        q.is_resolved ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
+                                                            className: "bg-teal-500 text-white",
+                                                            children: "Replied"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 620,
+                                                            columnNumber: 50
+                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
+                                                            className: "bg-rose-500 text-white animate-pulse",
+                                                            children: "Pending"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 620,
+                                                            columnNumber: 110
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 618,
+                                                    columnNumber: 29
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                    className: "text-slate-600 font-medium mb-6 bg-slate-50 p-4 rounded-2xl border",
+                                                    children: [
+                                                        "Q: ",
+                                                        q.question_text
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 622,
+                                                    columnNumber: 29
+                                                }, this),
+                                                !q.is_resolved ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "flex gap-2",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                            placeholder: "Type your reply...",
+                                                            className: "h-12 rounded-xl",
+                                                            value: replyText[q.id] || "",
+                                                            onChange: (e_8)=>setReplyText({
+                                                                    ...replyText,
+                                                                    [q.id]: e_8.target.value
+                                                                })
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 624,
+                                                            columnNumber: 37
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                            onClick: ()=>submitReply(q.id),
+                                                            className: "bg-teal-600 h-12 px-8 rounded-xl font-bold uppercase text-xs tracking-widest text-white",
+                                                            children: "Deliver Reply"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 628,
+                                                            columnNumber: 37
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 623,
+                                                    columnNumber: 47
+                                                }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "p-4 bg-teal-50 rounded-2xl border border-teal-100",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-[10px] font-black text-teal-700 uppercase mb-1",
+                                                            children: "Reply:"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 629,
+                                                            columnNumber: 109
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "text-sm font-medium text-slate-700 italic",
+                                                            children: [
+                                                                '"',
+                                                                q.admin_reply,
+                                                                '"'
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 629,
+                                                            columnNumber: 186
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 629,
+                                                    columnNumber: 42
+                                                }, this)
+                                            ]
+                                        }, q.id, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 617,
+                                            columnNumber: 44
+                                        }, this)),
+                                    allQuestions.length === 0 && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "py-20 text-center text-slate-300 font-bold uppercase tracking-widest italic border-4 border-dashed rounded-[3rem]",
+                                        children: "No student questions found."
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 631,
+                                        columnNumber: 51
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 616,
+                                columnNumber: 17
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                        lineNumber: 614,
+                        columnNumber: 40
+                    }, this),
+                    activeView === 'classes' && selectedClass && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "max-w-6xl mx-auto space-y-6",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                variant: "ghost",
+                                onClick: ()=>setSelectedClass(null),
+                                className: "gap-2 font-bold",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__["ChevronLeft"], {
+                                        size: 16
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 637,
+                                        columnNumber: 104
+                                    }, this),
+                                    " Folders"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 637,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex justify-between items-center bg-white p-8 rounded-[2.5rem] border shadow-sm",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                                className: "text-4xl font-black italic uppercase tracking-tighter text-slate-800",
+                                                children: selectedClass.title
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 639,
+                                                columnNumber: 22
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-teal-600 font-bold uppercase text-[10px] tracking-widest",
+                                                children: [
+                                                    selectedClass.institute_name,
+                                                    " • ",
+                                                    selectedClass.year
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 639,
+                                                columnNumber: 133
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 639,
+                                        columnNumber: 17
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex gap-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                variant: "outline",
+                                                className: "rounded-xl font-bold",
+                                                onClick: ()=>setEditClassData(selectedClass),
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$pencil$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Pencil$3e$__["Pencil"], {
+                                                        className: "mr-2 size-4"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 640,
+                                                        columnNumber: 152
+                                                    }, this),
+                                                    " Edit"
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 640,
+                                                columnNumber: 45
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                variant: "destructive",
+                                                size: "icon",
+                                                className: "rounded-xl",
+                                                onClick: ()=>handleDeleteClass(selectedClass.id),
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
+                                                    size: 18
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 640,
+                                                    columnNumber: 317
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 640,
+                                                columnNumber: 200
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 640,
+                                        columnNumber: 17
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 638,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "grid md:grid-cols-2 gap-8",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-8",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                                className: "p-6 rounded-[2.5rem] bg-white shadow-xl border-t-8 border-slate-900",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                                        className: "flex gap-2 items-center mb-4 italic uppercase text-lg text-slate-800",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$message$2d$square$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MessageSquare$3e$__["MessageSquare"], {
+                                                                size: 20
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 645,
+                                                                columnNumber: 113
+                                                            }, this),
+                                                            " Message Enrolled Students"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 645,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Textarea"], {
+                                                        placeholder: "Post an update...",
+                                                        className: "mb-4 rounded-2xl bg-slate-50 border-none p-4 font-medium",
+                                                        value: messageText,
+                                                        onChange: (e_9)=>setMessageText(e_9.target.value)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 646,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                        className: "w-full font-black uppercase text-xs tracking-widest bg-teal-600 text-white h-14 rounded-2xl shadow-lg",
+                                                        onClick: handleSendMessage,
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
+                                                                size: 14,
+                                                                className: "mr-2"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 647,
+                                                                columnNumber: 171
+                                                            }, this),
+                                                            " Post Message"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 647,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "mt-8 space-y-3 max-h-64 overflow-y-auto pr-2 custom-scrollbar",
+                                                        children: classMessages.map((m)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                className: "p-4 bg-slate-50 rounded-2xl border",
+                                                                children: [
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                        className: "flex justify-between text-[9px] font-black text-slate-400 uppercase mb-1",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                children: m.sender_name
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                lineNumber: 650,
+                                                                                columnNumber: 123
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                                                children: new Date(m.created_at).toLocaleDateString()
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                lineNumber: 650,
+                                                                                columnNumber: 151
+                                                                            }, this)
+                                                                        ]
+                                                                    }, void 0, true, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                        lineNumber: 650,
+                                                                        columnNumber: 33
+                                                                    }, this),
+                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                                        className: "text-sm font-medium text-slate-700",
+                                                                        children: m.message_text
+                                                                    }, void 0, false, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                        lineNumber: 651,
+                                                                        columnNumber: 33
+                                                                    }, this)
+                                                                ]
+                                                            }, m.id, true, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 649,
+                                                                columnNumber: 49
+                                                            }, this))
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 648,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 644,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                                className: "p-6 rounded-[2.5rem] bg-white shadow-md space-y-4",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                                        className: "flex gap-2 items-center italic uppercase text-lg text-slate-800",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$upload$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Upload$3e$__["Upload"], {
+                                                                size: 20
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 656,
+                                                                columnNumber: 106
+                                                            }, this),
+                                                            " Upload Materials"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 656,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                        placeholder: "Title",
+                                                        className: "h-12 rounded-xl",
+                                                        value: newContent.title,
+                                                        onChange: (e_10)=>setNewContent({
+                                                                ...newContent,
+                                                                title: e_10.target.value
+                                                            })
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 657,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    newContent.type === 'video' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                        placeholder: "Link",
+                                                        className: "h-12 rounded-xl",
+                                                        value: newContent.url,
+                                                        onChange: (e_11)=>setNewContent({
+                                                                ...newContent,
+                                                                url: e_11.target.value
+                                                            })
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 661,
+                                                        columnNumber: 50
+                                                    }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "border-2 border-dashed p-6 rounded-[1.5rem] text-center bg-slate-50 relative",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                                type: "file",
+                                                                className: "absolute inset-0 opacity-0 cursor-pointer",
+                                                                id: "file-up",
+                                                                onChange: handleFileUpload
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 664,
+                                                                columnNumber: 118
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                                htmlFor: "file-up",
+                                                                className: "cursor-pointer font-black uppercase text-[10px] tracking-widest text-slate-400",
+                                                                children: uploading ? "Wait..." : newContent.url ? "File Attached ✅" : "Select PDF"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 664,
+                                                                columnNumber: 234
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 664,
+                                                        columnNumber: 24
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "flex gap-2 pt-2",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                                variant: newContent.type === 'video' ? 'default' : 'outline',
+                                                                className: "flex-1 rounded-xl",
+                                                                onClick: ()=>setNewContent((p_0)=>({
+                                                                            ...p_0,
+                                                                            type: 'video',
+                                                                            url: ''
+                                                                        })),
+                                                                children: "Video URL"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 665,
+                                                                columnNumber: 52
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                                variant: newContent.type === 'note' ? 'default' : 'outline',
+                                                                className: "flex-1 rounded-xl",
+                                                                onClick: ()=>setNewContent((p_1)=>({
+                                                                            ...p_1,
+                                                                            type: 'note',
+                                                                            url: ''
+                                                                        })),
+                                                                children: "PDF Handout"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 669,
+                                                                columnNumber: 40
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 665,
+                                                        columnNumber: 19
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                        className: "w-full py-7 font-black uppercase text-xs tracking-widest bg-slate-900 text-white rounded-2xl shadow-xl",
+                                                        onClick: handleAddContent,
+                                                        disabled: uploading,
+                                                        children: "Confirm Upload"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 674,
+                                                        columnNumber: 19
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 655,
+                                                columnNumber: 17
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 643,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-8",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                                className: "p-8 rounded-[2.5rem] bg-white shadow-md border-none",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                                        className: "mb-6 italic uppercase text-lg text-slate-800 flex justify-between",
+                                                        children: [
+                                                            "Folder Content ",
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
+                                                                className: "bg-slate-100 text-slate-500 border-none font-bold",
+                                                                children: classContent.length
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 679,
+                                                                columnNumber: 125
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 679,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"], {
+                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableBody"], {
+                                                            children: classContent.map((item)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                                    className: "group border-slate-50 hover:bg-slate-50",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                                            className: "py-4 font-black uppercase text-xs tracking-tight text-slate-700",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                className: "flex items-center gap-3",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                                                        className: `p-2 rounded-lg ${item.type === 'video' ? 'bg-blue-50 text-blue-500' : 'bg-orange-50 text-orange-500'}`,
+                                                                                        children: item.type === 'video' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$video$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Video$3e$__["Video"], {
+                                                                                            size: 16
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                            lineNumber: 680,
+                                                                                            columnNumber: 415
+                                                                                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$file$2d$text$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__FileText$3e$__["FileText"], {
+                                                                                            size: 16
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                            lineNumber: 680,
+                                                                                            columnNumber: 437
+                                                                                        }, this)
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                        lineNumber: 680,
+                                                                                        columnNumber: 269
+                                                                                    }, this),
+                                                                                    item.title
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                lineNumber: 680,
+                                                                                columnNumber: 228
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                            lineNumber: 680,
+                                                                            columnNumber: 141
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                                                href: item.url,
+                                                                                target: "_blank",
+                                                                                className: "p-2 bg-slate-100 rounded-lg inline-block hover:bg-teal-500 text-slate-700 transition-all",
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$external$2d$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ExternalLink$3e$__["ExternalLink"], {
+                                                                                    size: 14
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                    lineNumber: 680,
+                                                                                    columnNumber: 643
+                                                                                }, this)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                lineNumber: 680,
+                                                                                columnNumber: 507
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                            lineNumber: 680,
+                                                                            columnNumber: 496
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                                            className: "text-right pr-0",
+                                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                                                variant: "ghost",
+                                                                                size: "icon",
+                                                                                className: "text-rose-500 opacity-0 group-hover:opacity-100 transition-all",
+                                                                                onClick: ()=>handleDeleteContent(item.id),
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
+                                                                                    size: 16
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                    lineNumber: 680,
+                                                                                    columnNumber: 880
+                                                                                }, this)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                lineNumber: 680,
+                                                                                columnNumber: 724
+                                                                            }, this)
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                            lineNumber: 680,
+                                                                            columnNumber: 685
+                                                                        }, this)
+                                                                    ]
+                                                                }, item.id, true, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                    lineNumber: 680,
+                                                                    columnNumber: 65
+                                                                }, this))
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 680,
+                                                            columnNumber: 28
+                                                        }, this)
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 680,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 678,
+                                                columnNumber: 17
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                                className: "p-8 rounded-[2.5rem] bg-white shadow-xl",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                                        className: "flex items-center gap-2 italic uppercase text-lg text-slate-800 mb-6",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trophy$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trophy$3e$__["Trophy"], {
+                                                                className: "text-yellow-500"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 683,
+                                                                columnNumber: 113
+                                                            }, this),
+                                                            " Marks Console"
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 683,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                        className: "mb-6 p-4 bg-slate-50 rounded-2xl border border-dashed border-teal-500/30",
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                                className: "text-[9px] font-black uppercase text-teal-600 tracking-widest ml-1",
+                                                                children: "Current Exam"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 685,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                                placeholder: "Unit Test #01",
+                                                                value: examName,
+                                                                onChange: (e_12)=>setExamName(e_12.target.value),
+                                                                className: "mt-1 font-black uppercase h-12 bg-white border-none shadow-sm"
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 686,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 684,
+                                                        columnNumber: 21
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Table"], {
+                                                        children: [
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHeader"], {
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                                    className: "hover:bg-transparent",
+                                                                    children: [
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                                            className: "font-black uppercase text-[10px]",
+                                                                            children: "Student"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                            lineNumber: 689,
+                                                                            columnNumber: 81
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                                            className: "font-black uppercase text-[10px]",
+                                                                            children: "Score %"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                            lineNumber: 689,
+                                                                            columnNumber: 156
+                                                                        }, this),
+                                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableHead"], {
+                                                                            className: "text-right font-black uppercase text-[10px]",
+                                                                            children: "Action"
+                                                                        }, void 0, false, {
+                                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                            lineNumber: 689,
+                                                                            columnNumber: 231
+                                                                        }, this)
+                                                                    ]
+                                                                }, void 0, true, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                    lineNumber: 689,
+                                                                    columnNumber: 38
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 689,
+                                                                columnNumber: 25
+                                                            }, this),
+                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableBody"], {
+                                                                children: classStudents.map((student)=>{
+                                                                    const res = existingResults.find((r)=>r.student_id === student.id);
+                                                                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableRow"], {
+                                                                        className: "border-slate-50",
+                                                                        children: [
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                                                className: "font-bold text-xs uppercase text-slate-700",
+                                                                                children: student.full_name
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                lineNumber: 694,
+                                                                                columnNumber: 41
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                                                    type: "number",
+                                                                                    className: "w-16 h-10 font-black text-teal-600 bg-slate-50 border-none shadow-inner",
+                                                                                    placeholder: "0",
+                                                                                    value: studentMarks[student.id] || "",
+                                                                                    onChange: (e_13)=>setStudentMarks({
+                                                                                            ...studentMarks,
+                                                                                            [student.id]: e_13.target.value
+                                                                                        })
+                                                                                }, void 0, false, {
+                                                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                    lineNumber: 695,
+                                                                                    columnNumber: 52
+                                                                                }, this)
+                                                                            }, void 0, false, {
+                                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                lineNumber: 695,
+                                                                                columnNumber: 41
+                                                                            }, this),
+                                                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$table$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["TableCell"], {
+                                                                                className: "text-right flex gap-1 justify-end pt-5",
+                                                                                children: [
+                                                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                                                        size: "sm",
+                                                                                        variant: "outline",
+                                                                                        className: "h-10 px-4 rounded-xl font-bold uppercase text-[10px] border-2",
+                                                                                        onClick: ()=>handleSaveMark(student.id, student.full_name, student.school_name),
+                                                                                        children: "Add"
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                        lineNumber: 700,
+                                                                                        columnNumber: 45
+                                                                                    }, this),
+                                                                                    res && res.is_public && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                                                        size: "sm",
+                                                                                        variant: "ghost",
+                                                                                        className: "h-10 w-10 p-0",
+                                                                                        onClick: ()=>handleHideFromPublic(res.id),
+                                                                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$eye$2d$off$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__EyeOff$3e$__["EyeOff"], {
+                                                                                            size: 14,
+                                                                                            className: "text-rose-500"
+                                                                                        }, void 0, false, {
+                                                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                            lineNumber: 701,
+                                                                                            columnNumber: 175
+                                                                                        }, this)
+                                                                                    }, void 0, false, {
+                                                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                        lineNumber: 701,
+                                                                                        columnNumber: 70
+                                                                                    }, this)
+                                                                                ]
+                                                                            }, void 0, true, {
+                                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                                lineNumber: 699,
+                                                                                columnNumber: 41
+                                                                            }, this)
+                                                                        ]
+                                                                    }, student.id, true, {
+                                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                        lineNumber: 693,
+                                                                        columnNumber: 28
+                                                                    }, this);
+                                                                })
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                lineNumber: 690,
+                                                                columnNumber: 25
+                                                            }, this)
+                                                        ]
+                                                    }, void 0, true, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 688,
+                                                        columnNumber: 21
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 682,
+                                                columnNumber: 18
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 677,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 642,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                        lineNumber: 636,
+                        columnNumber: 55
+                    }, this),
+                    activeView === 'classes' && !selectedClass && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "space-y-6",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                className: "text-4xl font-black italic tracking-tighter text-slate-800 uppercase leading-none",
+                                children: "Course Management"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 714,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                className: "p-8 border-dashed border-2 bg-white/50 rounded-[2.5rem]",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "grid md:grid-cols-3 gap-6",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    children: "Year"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 717,
+                                                    columnNumber: 46
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    placeholder: "2026",
+                                                    value: newClass.year,
+                                                    onChange: (e_14)=>setNewClass({
+                                                            ...newClass,
+                                                            year: e_14.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 717,
+                                                    columnNumber: 65
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 717,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    children: "Course Name"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 721,
+                                                    columnNumber: 46
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    placeholder: "Logic",
+                                                    value: newClass.title,
+                                                    onChange: (e_15)=>setNewClass({
+                                                            ...newClass,
+                                                            title: e_15.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 721,
+                                                    columnNumber: 72
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 721,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    children: "Institute"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 725,
+                                                    columnNumber: 46
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    placeholder: "Sakya",
+                                                    value: newClass.institute_name,
+                                                    onChange: (e_16)=>setNewClass({
+                                                            ...newClass,
+                                                            institute_name: e_16.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 725,
+                                                    columnNumber: 70
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 725,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    children: "Type"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 729,
+                                                    columnNumber: 46
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                                    className: "flex h-10 w-full rounded-md border bg-white px-3 py-2 text-sm",
+                                                    value: newClass.type,
+                                                    onChange: (e_17)=>setNewClass({
+                                                            ...newClass,
+                                                            type: e_17.target.value
+                                                        }),
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                            value: "Theory",
+                                                            children: "Theory"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 732,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                            value: "Revision",
+                                                            children: "Revision"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 732,
+                                                            columnNumber: 57
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 729,
+                                                    columnNumber: 65
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 729,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    children: "Category"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 733,
+                                                    columnNumber: 46
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                                    className: "flex h-10 w-full rounded-md border bg-white px-3 py-2 text-sm",
+                                                    value: newClass.class_category,
+                                                    onChange: (e_18)=>setNewClass({
+                                                            ...newClass,
+                                                            class_category: e_18.target.value
+                                                        }),
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                            value: "Group",
+                                                            children: "Group Class"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 736,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                            value: "Hall",
+                                                            children: "Hall Class"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 736,
+                                                            columnNumber: 61
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 733,
+                                                    columnNumber: 69
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 733,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    children: "Day"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 737,
+                                                    columnNumber: 46
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    placeholder: "Sunday",
+                                                    value: newClass.class_day,
+                                                    onChange: (e_19)=>setNewClass({
+                                                            ...newClass,
+                                                            class_day: e_19.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 737,
+                                                    columnNumber: 64
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 737,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    children: "Time"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 741,
+                                                    columnNumber: 46
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    placeholder: "8:30 AM",
+                                                    value: newClass.class_time,
+                                                    onChange: (e_20)=>setNewClass({
+                                                            ...newClass,
+                                                            class_time: e_20.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 741,
+                                                    columnNumber: 65
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 741,
+                                            columnNumber: 19
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                            onClick: handleCreateClass,
+                                            className: "w-full mt-auto py-6 font-black uppercase text-xs tracking-widest bg-slate-900 text-white rounded-2xl shadow-xl",
+                                            children: "Create New Folder"
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 745,
+                                            columnNumber: 19
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                    lineNumber: 716,
+                                    columnNumber: 17
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 715,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "grid grid-cols-1 md:grid-cols-3 gap-8 pt-10",
+                                children: classes.map((c_1)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                        className: "hover:border-teal-500 cursor-pointer transition-all shadow-xl group relative rounded-[2.5rem] overflow-hidden bg-white border border-slate-100",
+                                        onClick: ()=>setSelectedClass(c_1),
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                                            className: "p-8",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$badge$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Badge"], {
+                                                    variant: "secondary",
+                                                    className: "w-fit mb-3 font-bold",
+                                                    children: [
+                                                        c_1.year,
+                                                        " ",
+                                                        c_1.type
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 750,
+                                                    columnNumber: 47
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                                    className: "text-2xl font-black italic uppercase tracking-tighter text-slate-800 leading-tight",
+                                                    children: c_1.title
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 750,
+                                                    columnNumber: 136
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "mt-4 space-y-1 text-slate-500",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "flex items-center gap-2 text-sm font-bold",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$school$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__School$3e$__["School"], {
+                                                                    size: 14,
+                                                                    className: "text-teal-600"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                    lineNumber: 750,
+                                                                    columnNumber: 369
+                                                                }, this),
+                                                                " ",
+                                                                c_1.institute_name
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 750,
+                                                            columnNumber: 312
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "flex items-center gap-2 text-xs font-medium",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$clock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Clock$3e$__["Clock"], {
+                                                                    size: 14
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                                    lineNumber: 750,
+                                                                    columnNumber: 499
+                                                                }, this),
+                                                                " ",
+                                                                c_1.class_day,
+                                                                " @ ",
+                                                                c_1.class_time
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 750,
+                                                            columnNumber: 440
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 750,
+                                                    columnNumber: 265
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 750,
+                                            columnNumber: 19
+                                        }, this)
+                                    }, c_1.id, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 749,
+                                        columnNumber: 35
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 748,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                        lineNumber: 713,
+                        columnNumber: 56
+                    }, this),
+                    activeView === 'gallery' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "max-w-6xl mx-auto space-y-10",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                className: "text-4xl font-black italic tracking-tighter uppercase text-slate-800",
+                                children: "Visual Archive"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 757,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                className: "p-8 border-dashed border-2 rounded-[2rem] bg-white",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "grid md:grid-cols-2 gap-8",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-4",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "space-y-1",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                            children: "Album Name"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 761,
+                                                            columnNumber: 46
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                            value: newGalleryName,
+                                                            onChange: (e_21)=>setNewGalleryName(e_21.target.value)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 761,
+                                                            columnNumber: 71
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 761,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                    className: "border-2 border-dashed rounded-xl p-8 text-center bg-zinc-50 relative",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                                            type: "file",
+                                                            multiple: true,
+                                                            className: "absolute inset-0 opacity-0 cursor-pointer",
+                                                            onChange: handleGalleryUpload
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 763,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Image$3e$__["Image"], {
+                                                            className: "mx-auto size-10 text-zinc-400 mb-2"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 764,
+                                                            columnNumber: 21
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                            className: "font-bold text-slate-400 uppercase text-xs tracking-widest",
+                                                            children: uploading ? "Uploading..." : "Click to Add Images"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 765,
+                                                            columnNumber: 21
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 762,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                    className: "w-full py-6 bg-slate-900 text-white rounded-2xl shadow-xl font-bold uppercase tracking-widest",
+                                                    onClick: handleSaveGallery,
+                                                    children: "Save to Gallery"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 767,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 760,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "grid grid-cols-4 gap-2 h-fit",
+                                            children: galleryImages.map((img, i_1)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                    src: img,
+                                                    className: "size-20 object-cover rounded-xl border shadow-sm"
+                                                }, i_1, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 770,
+                                                    columnNumber: 53
+                                                }, this))
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 769,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                    lineNumber: 759,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 758,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "grid grid-cols-1 md:grid-cols-3 gap-6 pt-10",
+                                children: galleries.map((gal)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                        className: "relative group overflow-hidden rounded-[2.5rem] shadow-xl border-none",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                src: gal.image_urls[0],
+                                                className: "h-56 w-full object-cover transition-transform group-hover:scale-110 duration-700"
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 776,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8",
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                    className: "text-white font-black uppercase italic text-xl",
+                                                    children: gal.name
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 777,
+                                                    columnNumber: 129
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 777,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                variant: "destructive",
+                                                size: "icon",
+                                                className: "absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all rounded-full shadow-lg",
+                                                onClick: ()=>handleDeleteGallery(gal.id, gal.image_urls),
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
+                                                    size: 16
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 778,
+                                                    columnNumber: 228
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 778,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, gal.id, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 775,
+                                        columnNumber: 37
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 774,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                        lineNumber: 756,
+                        columnNumber: 38
+                    }, this),
+                    activeView === 'notices' && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "max-w-4xl mx-auto space-y-8 animate-in fade-in duration-500",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                                    className: "text-4xl font-black italic tracking-tighter uppercase text-slate-800",
+                                    children: "Public Announcements"
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                    lineNumber: 785,
+                                    columnNumber: 21
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 785,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                className: "p-8 rounded-[2.5rem] shadow-xl border-none bg-white",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "space-y-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    children: "Notice Subject"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 788,
+                                                    columnNumber: 44
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    value: newNotice.title,
+                                                    onChange: (e_22)=>setNewNotice({
+                                                            ...newNotice,
+                                                            title: e_22.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 788,
+                                                    columnNumber: 73
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 788,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    children: "Content"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 792,
+                                                    columnNumber: 44
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$textarea$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Textarea"], {
+                                                    rows: 4,
+                                                    value: newNotice.content,
+                                                    onChange: (e_23)=>setNewNotice({
+                                                            ...newNotice,
+                                                            content: e_23.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 792,
+                                                    columnNumber: 66
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 792,
+                                            columnNumber: 17
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                            className: "w-full py-6 font-black bg-slate-900 text-white rounded-2xl shadow-lg",
+                                            onClick: handlePostNotice,
+                                            children: "Deploy to Portal"
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 796,
+                                            columnNumber: 17
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                    lineNumber: 787,
+                                    columnNumber: 15
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 786,
+                                columnNumber: 13
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "grid gap-4",
+                                children: notices.map((nt)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                                        className: "p-6 rounded-3xl flex justify-between items-center shadow-sm border-none bg-white",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
+                                                        className: "font-black uppercase italic tracking-tight",
+                                                        children: nt.title
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 801,
+                                                        columnNumber: 24
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-[10px] text-zinc-400 font-bold mb-2",
+                                                        children: new Date(nt.created_at).toLocaleString()
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 801,
+                                                        columnNumber: 98
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                        className: "text-sm text-zinc-500 max-w-xl leading-relaxed",
+                                                        children: nt.content
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                        lineNumber: 801,
+                                                        columnNumber: 200
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 801,
+                                                columnNumber: 19
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                                variant: "ghost",
+                                                size: "icon",
+                                                className: "text-rose-500 rounded-full hover:bg-rose-50",
+                                                onClick: ()=>deleteNotice(nt.id),
+                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$trash$2d$2$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Trash2$3e$__["Trash2"], {
+                                                    size: 18
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 802,
+                                                    columnNumber: 147
+                                                }, this)
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                lineNumber: 802,
+                                                columnNumber: 19
+                                            }, this)
+                                        ]
+                                    }, nt.id, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 800,
+                                        columnNumber: 34
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                lineNumber: 799,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                        lineNumber: 784,
+                        columnNumber: 38
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
+                        open: isRegModalOpen,
+                        onOpenChange: setIsRegModalOpen,
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogContent"], {
+                            className: "rounded-[2.5rem] max-w-lg p-12 border-none shadow-2xl bg-white",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogHeader"], {
+                                    className: "mb-6",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogTitle"], {
+                                            className: "text-3xl font-black italic tracking-tighter uppercase text-slate-800",
+                                            children: "Enroll Student"
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 810,
+                                            columnNumber: 48
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogDescription"], {
+                                            className: "font-bold text-slate-400 uppercase text-[10px] tracking-widest",
+                                            children: "Initialize a new logic portal account."
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 810,
+                                            columnNumber: 170
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                    lineNumber: 810,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "grid grid-cols-2 gap-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "col-span-2 space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    children: "Full Name"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 812,
+                                                    columnNumber: 59
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    value: regData.fullName,
+                                                    onChange: (e_24)=>setRegData({
+                                                            ...regData,
+                                                            fullName: e_24.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 812,
+                                                    columnNumber: 83
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 812,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    children: "Email Address"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 816,
+                                                    columnNumber: 48
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    value: regData.email,
+                                                    onChange: (e_25)=>setRegData({
+                                                            ...regData,
+                                                            email: e_25.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 816,
+                                                    columnNumber: 76
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 816,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    children: "Password"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 820,
+                                                    columnNumber: 48
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    type: "password",
+                                                    value: regData.password,
+                                                    onChange: (e_26)=>setRegData({
+                                                            ...regData,
+                                                            password: e_26.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 820,
+                                                    columnNumber: 71
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 820,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    children: "Exam Year"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 825,
+                                                    columnNumber: 48
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    placeholder: "e.g. 2026",
+                                                    value: regData.academicYear,
+                                                    onChange: (e_27)=>setRegData({
+                                                            ...regData,
+                                                            academicYear: e_27.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 825,
+                                                    columnNumber: 72
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 825,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    children: "Phone Number"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 830,
+                                                    columnNumber: 48
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    value: regData.phoneNumber,
+                                                    onChange: (e_28)=>setRegData({
+                                                            ...regData,
+                                                            phoneNumber: e_28.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 830,
+                                                    columnNumber: 75
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 830,
+                                            columnNumber: 21
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "col-span-2 space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    children: "School Name"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 834,
+                                                    columnNumber: 59
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    value: regData.schoolName,
+                                                    onChange: (e_29)=>setRegData({
+                                                            ...regData,
+                                                            schoolName: e_29.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 834,
+                                                    columnNumber: 85
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 834,
+                                            columnNumber: 21
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                    lineNumber: 811,
+                                    columnNumber: 17
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                    className: "w-full py-7 font-black uppercase text-xs tracking-widest bg-slate-900 text-white rounded-2xl mt-6 shadow-xl",
+                                    onClick: handleRegisterStudent,
+                                    children: "Create & Authenticate"
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                    lineNumber: 839,
+                                    columnNumber: 17
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                            lineNumber: 809,
+                            columnNumber: 13
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                        lineNumber: 808,
+                        columnNumber: 9
+                    }, this),
+                    editClassData && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Dialog"], {
+                        open: !!editClassData,
+                        onOpenChange: ()=>setEditClassData(null),
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogContent"], {
+                            className: "rounded-3xl max-w-lg p-12 shadow-2xl border-none bg-white",
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogHeader"], {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$dialog$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["DialogTitle"], {
+                                        className: "text-2xl font-black italic uppercase text-slate-800",
+                                        children: "Modify Folder"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                        lineNumber: 843,
+                                        columnNumber: 201
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                    lineNumber: 843,
+                                    columnNumber: 187
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                    className: "grid grid-cols-2 gap-4 py-4",
+                                    children: [
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "col-span-2 space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    className: "text-[10px] font-black uppercase text-slate-400 tracking-widest",
+                                                    children: "Title"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 843,
+                                                    columnNumber: 403
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    value: editClassData.title || "",
+                                                    onChange: (e_30)=>setEditClassData({
+                                                            ...editClassData,
+                                                            title: e_30.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 843,
+                                                    columnNumber: 499
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 843,
+                                            columnNumber: 365
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    className: "text-[10px] font-black uppercase text-slate-400 tracking-widest",
+                                                    children: "Year"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 846,
+                                                    columnNumber: 54
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    value: editClassData.year || "",
+                                                    onChange: (e_31)=>setEditClassData({
+                                                            ...editClassData,
+                                                            year: e_31.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 846,
+                                                    columnNumber: 149
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 846,
+                                            columnNumber: 27
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    className: "text-[10px] font-black uppercase text-slate-400 tracking-widest",
+                                                    children: "Institute"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 849,
+                                                    columnNumber: 54
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    value: editClassData.institute_name || "",
+                                                    onChange: (e_32)=>setEditClassData({
+                                                            ...editClassData,
+                                                            institute_name: e_32.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 849,
+                                                    columnNumber: 154
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 849,
+                                            columnNumber: 27
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    className: "text-[10px] font-black uppercase text-slate-400 tracking-widest",
+                                                    children: "Day"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 852,
+                                                    columnNumber: 54
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    value: editClassData.class_day || "",
+                                                    onChange: (e_33)=>setEditClassData({
+                                                            ...editClassData,
+                                                            class_day: e_33.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 852,
+                                                    columnNumber: 148
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 852,
+                                            columnNumber: 27
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    className: "text-[10px] font-black uppercase text-slate-400 tracking-widest",
+                                                    children: "Time"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 855,
+                                                    columnNumber: 54
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                    value: editClassData.class_time || "",
+                                                    onChange: (e_34)=>setEditClassData({
+                                                            ...editClassData,
+                                                            class_time: e_34.target.value
+                                                        })
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 855,
+                                                    columnNumber: 149
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 855,
+                                            columnNumber: 27
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    className: "text-[10px] font-black uppercase text-slate-400 tracking-widest",
+                                                    children: "Type"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 858,
+                                                    columnNumber: 54
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                                    className: "flex h-10 w-full rounded-md border bg-white px-3 py-2 text-sm",
+                                                    value: editClassData.type || "",
+                                                    onChange: (e_35)=>setEditClassData({
+                                                            ...editClassData,
+                                                            type: e_35.target.value
+                                                        }),
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                            value: "Theory",
+                                                            children: "Theory"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 861,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                            value: "Revision",
+                                                            children: "Revision"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 861,
+                                                            columnNumber: 57
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 858,
+                                                    columnNumber: 149
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 858,
+                                            columnNumber: 27
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "space-y-1",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                    className: "text-[10px] font-black uppercase text-slate-400 tracking-widest",
+                                                    children: "Category"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 861,
+                                                    columnNumber: 141
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("select", {
+                                                    className: "flex h-10 w-full rounded-md border bg-white px-3 py-2 text-sm",
+                                                    value: editClassData.class_category || "",
+                                                    onChange: (e_36)=>setEditClassData({
+                                                            ...editClassData,
+                                                            class_category: e_36.target.value
+                                                        }),
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                            value: "Group",
+                                                            children: "Group Class"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 864,
+                                                            columnNumber: 19
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("option", {
+                                                            value: "Hall",
+                                                            children: "Hall Class"
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                            lineNumber: 864,
+                                                            columnNumber: 61
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                                    lineNumber: 861,
+                                                    columnNumber: 240
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                            lineNumber: 861,
+                                            columnNumber: 114
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                    lineNumber: 843,
+                                    columnNumber: 320
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                    onClick: handleUpdateClass,
+                                    className: "w-full py-7 font-black bg-slate-900 text-white rounded-2xl uppercase text-[10px] tracking-widest",
+                                    children: "Commit Changes"
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                                    lineNumber: 864,
+                                    columnNumber: 122
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                            lineNumber: 843,
+                            columnNumber: 102
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                        lineNumber: 843,
+                        columnNumber: 27
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+                lineNumber: 531,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/my-lms-project/src/app/components/AdminDashboard.tsx",
+        lineNumber: 497,
+        columnNumber: 10
+    }, this);
+}
+_s(AdminDashboard, "vp5U1V90VPT72UE4dvA+UPcGpIk=");
+_c = AdminDashboard;
+var _c;
+__turbopack_context__.k.register(_c, "AdminDashboard");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/StudentLogin.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "StudentLogin",
+    ()=>StudentLogin
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/lib/supabase.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/card.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/button.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/input.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/label.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/graduation-cap.js [app-client] (ecmascript) <export default as GraduationCap>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/lock.js [app-client] (ecmascript) <export default as Lock>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/mail.js [app-client] (ecmascript) <export default as Mail>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/chevron-left.js [app-client] (ecmascript) <export default as ChevronLeft>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/loader-circle.js [app-client] (ecmascript) <export default as Loader2>");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+;
+;
+function StudentLogin({ onNavigate }) {
+    _s();
+    const [email, setEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [password, setPassword] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [resetLoading, setResetLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    // --- LOGIN LOGIC ---
+    async function handleLogin(e) {
+        e.preventDefault();
+        setLoading(true);
+        try {
+            // 1. Authenticate with Supabase Auth
+            const { data, error: error_0 } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].auth.signInWithPassword({
+                email: email.trim(),
+                password
+            });
+            if (error_0) throw error_0;
+            // 2. Fetch user profile to verify role
+            const { data: profile, error: profileError } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].from('profiles').select('role').eq('id', data.user.id).single();
+            if (profileError || profile?.role !== 'student') {
+                // If not a student, log them out immediately
+                await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].auth.signOut();
+                alert("Access Denied: This portal is reserved for registered students only.");
+                return;
+            }
+            // 3. Success: Navigate to the student dashboard
+            onNavigate('student-dashboard');
+        } catch (error) {
+            alert("Login Error: " + error.message);
+        } finally{
+            setLoading(false);
+        }
+    }
+    // --- FORGOT PASSWORD LOGIC ---
+    async function handleForgotPassword() {
+        if (!email) {
+            alert("Please enter your email address first so we can send a reset link.");
+            return;
+        }
+        setResetLoading(true);
+        try {
+            const { error: error_2 } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].auth.resetPasswordForEmail(email, {
+                redirectTo: `${window.location.origin}/#type=recovery`
+            });
+            if (error_2) throw error_2;
+            alert("Verification email sent! Please check your inbox to reset your password.");
+        } catch (error_1) {
+            alert("Error: " + error_1.message);
+        } finally{
+            setResetLoading(false);
+        }
+    }
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: "min-h-screen bg-[#F8FAFC] dark:bg-zinc-950 flex flex-col items-center justify-center p-6 relative",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                variant: "ghost",
+                className: "absolute top-8 left-8 gap-2 font-bold text-zinc-500 hover:text-primary transition-colors",
+                onClick: ()=>onNavigate('home'),
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$left$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronLeft$3e$__["ChevronLeft"], {
+                        size: 18
+                    }, void 0, false, {
+                        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                        lineNumber: 80,
+                        columnNumber: 9
+                    }, this),
+                    " Back to Homepage"
+                ]
+            }, void 0, true, {
+                fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                lineNumber: 79,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                className: "w-full max-w-md border-none shadow-2xl rounded-[2.5rem] overflow-hidden bg-white dark:bg-zinc-900",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "h-3 bg-primary w-full"
+                    }, void 0, false, {
+                        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                        lineNumber: 85,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+                        className: "pt-10 pb-6 text-center",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "size-20 bg-primary/10 rounded-[1.5rem] flex items-center justify-center mx-auto mb-6",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$graduation$2d$cap$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__GraduationCap$3e$__["GraduationCap"], {
+                                    className: "size-12 text-primary"
+                                }, void 0, false, {
+                                    fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                    lineNumber: 89,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                lineNumber: 88,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                                className: "text-4xl font-black tracking-tighter uppercase italic text-zinc-900 dark:text-white",
+                                children: "Student Login"
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                lineNumber: 91,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardDescription"], {
+                                className: "text-zinc-500 font-medium text-lg mt-2",
+                                children: "Access your recordings and materials."
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                lineNumber: 94,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                        lineNumber: 87,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                        className: "space-y-6 pb-12 px-10",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                                onSubmit: handleLogin,
+                                className: "space-y-5",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                className: "text-[11px] font-black uppercase tracking-widest ml-1 text-zinc-400",
+                                                children: "Registered Email"
+                                            }, void 0, false, {
+                                                fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                                lineNumber: 103,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "relative",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                                        className: "absolute left-4 top-1/2 -translate-y-1/2 size-5 text-zinc-400"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                                        lineNumber: 107,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                        type: "email",
+                                                        placeholder: "student@example.com",
+                                                        className: "pl-12 h-14 rounded-2xl bg-zinc-50 dark:bg-zinc-800 border-none focus-visible:ring-2 ring-primary transition-all text-base",
+                                                        value: email,
+                                                        onChange: (e_0)=>setEmail(e_0.target.value),
+                                                        required: true
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                                        lineNumber: 108,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                                lineNumber: 106,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                        lineNumber: 102,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "space-y-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "flex justify-between items-center px-1",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+                                                        className: "text-[11px] font-black uppercase tracking-widest text-zinc-400",
+                                                        children: "Password"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                                        lineNumber: 115,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                        type: "button",
+                                                        onClick: handleForgotPassword,
+                                                        className: "text-[10px] font-black text-primary hover:underline uppercase tracking-tighter transition-all",
+                                                        disabled: resetLoading,
+                                                        children: resetLoading ? "Processing..." : "Forgot Key?"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                                        lineNumber: 118,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                                lineNumber: 114,
+                                                columnNumber: 15
+                                            }, this),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                                className: "relative",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$lock$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Lock$3e$__["Lock"], {
+                                                        className: "absolute left-4 top-1/2 -translate-y-1/2 size-5 text-zinc-400"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                                        lineNumber: 123,
+                                                        columnNumber: 17
+                                                    }, this),
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                                                        type: "password",
+                                                        placeholder: "••••••••",
+                                                        className: "pl-12 h-14 rounded-2xl bg-zinc-50 dark:bg-zinc-800 border-none focus-visible:ring-2 ring-primary transition-all text-base",
+                                                        value: password,
+                                                        onChange: (e_1)=>setPassword(e_1.target.value),
+                                                        required: true
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                                        lineNumber: 124,
+                                                        columnNumber: 17
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                                lineNumber: 122,
+                                                columnNumber: 15
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                        lineNumber: 113,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+                                        type: "submit",
+                                        className: "w-full h-15 rounded-2xl font-black text-xl shadow-xl shadow-primary/20 mt-6 active:scale-95 transition-transform",
+                                        disabled: loading,
+                                        children: loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                            className: "flex items-center gap-2",
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
+                                                    className: "animate-spin size-5"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                                    lineNumber: 131,
+                                                    columnNumber: 19
+                                                }, this),
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                    children: "Verifying..."
+                                                }, void 0, false, {
+                                                    fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                                    lineNumber: 132,
+                                                    columnNumber: 19
+                                                }, this)
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                            lineNumber: 130,
+                                            columnNumber: 26
+                                        }, this) : "Enter Dashboard"
+                                    }, void 0, false, {
+                                        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                        lineNumber: 129,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                lineNumber: 100,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "text-center pt-4 border-t border-zinc-100 dark:border-zinc-800",
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                    className: "text-xs text-zinc-400 font-medium",
+                                    children: [
+                                        "Don't have an account yet? ",
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                            lineNumber: 140,
+                                            columnNumber: 42
+                                        }, this),
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-primary font-bold",
+                                            children: "Contact the Administrator to get registered."
+                                        }, void 0, false, {
+                                            fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                            lineNumber: 141,
+                                            columnNumber: 15
+                                        }, this)
+                                    ]
+                                }, void 0, true, {
+                                    fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                    lineNumber: 139,
+                                    columnNumber: 13
+                                }, this)
+                            }, void 0, false, {
+                                fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                                lineNumber: 138,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                        lineNumber: 99,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                lineNumber: 83,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "mt-12 flex flex-col items-center gap-2",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-[10px] text-zinc-400 font-black uppercase tracking-[0.3em]",
+                        children: "Secure Access Protocol v2.5"
+                    }, void 0, false, {
+                        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                        lineNumber: 149,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-[9px] text-zinc-300 uppercase font-bold",
+                        children: "© 2025 Education Platform Design"
+                    }, void 0, false, {
+                        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                        lineNumber: 152,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+                lineNumber: 148,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/my-lms-project/src/app/components/StudentLogin.tsx",
+        lineNumber: 77,
+        columnNumber: 10
+    }, this);
+}
+_s(StudentLogin, "LtC5N5P0msCi3ePNE7h0R5G2fQ4=");
+_c = StudentLogin;
+var _c;
+__turbopack_context__.k.register(_c, "StudentLogin");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/components/ResetPassword.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "ResetPassword",
+    ()=>ResetPassword
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/lib/supabase.ts [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/card.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/button.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/input.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ui/label.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/loader-circle.js [app-client] (ecmascript) <export default as Loader2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/lucide-react/dist/esm/icons/circle-check.js [app-client] (ecmascript) <export default as CheckCircle2>");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+;
+;
+;
+function ResetPassword(t0) {
+    _s();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(26);
+    if ($[0] !== "68e2d54884690d1bee2216a8f7d9c1fae40a13eb89711cc4266b9594e9f37b6c") {
+        for(let $i = 0; $i < 26; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "68e2d54884690d1bee2216a8f7d9c1fae40a13eb89711cc4266b9594e9f37b6c";
+    }
+    const { onNavigate } = t0;
+    const [newPassword, setNewPassword] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [confirmPassword, setConfirmPassword] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [loading, setLoading] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [success, setSuccess] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    let t1;
+    if ($[1] !== confirmPassword || $[2] !== newPassword || $[3] !== onNavigate) {
+        t1 = async function handleReset(e) {
+            e.preventDefault();
+            if (newPassword !== confirmPassword) {
+                return alert("Passwords do not match!");
+            }
+            setLoading(true);
+            const { error } = await __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$lib$2f$supabase$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["supabase"].auth.updateUser({
+                password: newPassword
+            });
+            if (error) {
+                alert(error.message);
+            } else {
+                setSuccess(true);
+                setTimeout({
+                    "ResetPassword[handleReset > setTimeout()]": ()=>onNavigate("student")
+                }["ResetPassword[handleReset > setTimeout()]"], 3000);
+            }
+            setLoading(false);
+        };
+        $[1] = confirmPassword;
+        $[2] = newPassword;
+        $[3] = onNavigate;
+        $[4] = t1;
+    } else {
+        t1 = $[4];
+    }
+    const handleReset = t1;
+    if (success) {
+        let t2;
+        if ($[5] === Symbol.for("react.memo_cache_sentinel")) {
+            t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "min-h-screen flex items-center justify-center bg-zinc-50 p-6",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                    className: "max-w-md w-full text-center p-10 rounded-[2.5rem]",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$circle$2d$check$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__CheckCircle2$3e$__["CheckCircle2"], {
+                            className: "size-16 text-emerald-500 mx-auto mb-4"
+                        }, void 0, false, {
+                            fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+                            lineNumber: 60,
+                            columnNumber: 158
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                            className: "text-2xl font-black",
+                            children: "Password Updated!"
+                        }, void 0, false, {
+                            fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+                            lineNumber: 60,
+                            columnNumber: 224
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-zinc-500 mt-2",
+                            children: "Redirecting you to the login page..."
+                        }, void 0, false, {
+                            fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+                            lineNumber: 60,
+                            columnNumber: 296
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+                    lineNumber: 60,
+                    columnNumber: 90
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+                lineNumber: 60,
+                columnNumber: 12
+            }, this);
+            $[5] = t2;
+        } else {
+            t2 = $[5];
+        }
+        return t2;
+    }
+    let t2;
+    if ($[6] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "h-3 bg-primary w-full"
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+            lineNumber: 69,
+            columnNumber: 10
+        }, this);
+        $[6] = t2;
+    } else {
+        t2 = $[6];
+    }
+    let t3;
+    if ($[7] === Symbol.for("react.memo_cache_sentinel")) {
+        t3 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardHeader"], {
+            className: "pt-10",
+            children: [
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardTitle"], {
+                    className: "text-3xl font-black tracking-tighter uppercase italic",
+                    children: "New Password"
+                }, void 0, false, {
+                    fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+                    lineNumber: 76,
+                    columnNumber: 40
+                }, this),
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardDescription"], {
+                    children: "Set your new secure access key."
+                }, void 0, false, {
+                    fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+                    lineNumber: 76,
+                    columnNumber: 141
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+            lineNumber: 76,
+            columnNumber: 10
+        }, this);
+        $[7] = t3;
+    } else {
+        t3 = $[7];
+    }
+    let t4;
+    if ($[8] === Symbol.for("react.memo_cache_sentinel")) {
+        t4 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+            className: "text-xs font-black uppercase tracking-widest text-zinc-400",
+            children: "New Password"
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+            lineNumber: 83,
+            columnNumber: 10
+        }, this);
+        $[8] = t4;
+    } else {
+        t4 = $[8];
+    }
+    let t5;
+    if ($[9] === Symbol.for("react.memo_cache_sentinel")) {
+        t5 = ({
+            "ResetPassword[<Input>.onChange]": (e_0)=>setNewPassword(e_0.target.value)
+        })["ResetPassword[<Input>.onChange]"];
+        $[9] = t5;
+    } else {
+        t5 = $[9];
+    }
+    let t6;
+    if ($[10] !== newPassword) {
+        t6 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "space-y-2",
+            children: [
+                t4,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                    type: "password",
+                    value: newPassword,
+                    onChange: t5,
+                    className: "h-14 rounded-2xl bg-zinc-50 border-none",
+                    required: true
+                }, void 0, false, {
+                    fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+                    lineNumber: 99,
+                    columnNumber: 41
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+            lineNumber: 99,
+            columnNumber: 10
+        }, this);
+        $[10] = newPassword;
+        $[11] = t6;
+    } else {
+        t6 = $[11];
+    }
+    let t7;
+    if ($[12] === Symbol.for("react.memo_cache_sentinel")) {
+        t7 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$label$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Label"], {
+            className: "text-xs font-black uppercase tracking-widest text-zinc-400",
+            children: "Confirm Password"
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+            lineNumber: 107,
+            columnNumber: 10
+        }, this);
+        $[12] = t7;
+    } else {
+        t7 = $[12];
+    }
+    let t8;
+    if ($[13] === Symbol.for("react.memo_cache_sentinel")) {
+        t8 = ({
+            "ResetPassword[<Input>.onChange]": (e_1)=>setConfirmPassword(e_1.target.value)
+        })["ResetPassword[<Input>.onChange]"];
+        $[13] = t8;
+    } else {
+        t8 = $[13];
+    }
+    let t9;
+    if ($[14] !== confirmPassword) {
+        t9 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "space-y-2",
+            children: [
+                t7,
+                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$input$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Input"], {
+                    type: "password",
+                    value: confirmPassword,
+                    onChange: t8,
+                    className: "h-14 rounded-2xl bg-zinc-50 border-none",
+                    required: true
+                }, void 0, false, {
+                    fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+                    lineNumber: 123,
+                    columnNumber: 41
+                }, this)
+            ]
+        }, void 0, true, {
+            fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+            lineNumber: 123,
+            columnNumber: 10
+        }, this);
+        $[14] = confirmPassword;
+        $[15] = t9;
+    } else {
+        t9 = $[15];
+    }
+    let t10;
+    if ($[16] !== loading) {
+        t10 = loading ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$loader$2d$circle$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Loader2$3e$__["Loader2"], {
+            className: "animate-spin"
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+            lineNumber: 131,
+            columnNumber: 21
+        }, this) : "Reset Password";
+        $[16] = loading;
+        $[17] = t10;
+    } else {
+        t10 = $[17];
+    }
+    let t11;
+    if ($[18] !== loading || $[19] !== t10) {
+        t11 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Button"], {
+            type: "submit",
+            className: "w-full h-14 rounded-2xl font-black text-lg",
+            disabled: loading,
+            children: t10
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+            lineNumber: 139,
+            columnNumber: 11
+        }, this);
+        $[18] = loading;
+        $[19] = t10;
+        $[20] = t11;
+    } else {
+        t11 = $[20];
+    }
+    let t12;
+    if ($[21] !== handleReset || $[22] !== t11 || $[23] !== t6 || $[24] !== t9) {
+        t12 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "min-h-screen bg-zinc-50 flex items-center justify-center p-6",
+            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Card"], {
+                className: "w-full max-w-md rounded-[2.5rem] shadow-2xl border-none overflow-hidden",
+                children: [
+                    t2,
+                    t3,
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ui$2f$card$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["CardContent"], {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                            onSubmit: handleReset,
+                            className: "space-y-4",
+                            children: [
+                                t6,
+                                t9,
+                                t11
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+                            lineNumber: 148,
+                            columnNumber: 200
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+                        lineNumber: 148,
+                        columnNumber: 187
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+                lineNumber: 148,
+                columnNumber: 89
+            }, this)
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/components/ResetPassword.tsx",
+            lineNumber: 148,
+            columnNumber: 11
+        }, this);
+        $[21] = handleReset;
+        $[22] = t11;
+        $[23] = t6;
+        $[24] = t9;
+        $[25] = t12;
+    } else {
+        t12 = $[25];
+    }
+    return t12;
+}
+_s(ResetPassword, "CDMHYwBHILrmvSeRV22vu0SeR/E=");
+_c = ResetPassword;
+var _c;
+__turbopack_context__.k.register(_c, "ResetPassword");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/my-lms-project/src/app/page.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Home
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/compiler-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+// Change these from "@/components/..." to "./components/..."
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$PublicHomepage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/PublicHomepage.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$StudentDashboard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/StudentDashboard.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$AdminDashboard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/AdminDashboard.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$StudentLogin$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/StudentLogin.tsx [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ResetPassword$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/my-lms-project/src/app/components/ResetPassword.tsx [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+;
+;
+;
+;
+function Home() {
+    _s();
+    const $ = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$compiler$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["c"])(20);
+    if ($[0] !== "6521ba071b8959f3341725595688a8466a54d2a7501d81d5cab8caf2ee11ef17") {
+        for(let $i = 0; $i < 20; $i += 1){
+            $[$i] = Symbol.for("react.memo_cache_sentinel");
+        }
+        $[0] = "6521ba071b8959f3341725595688a8466a54d2a7501d81d5cab8caf2ee11ef17";
+    }
+    const [currentPage, setCurrentPage] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("home");
+    let t0;
+    let t1;
+    if ($[1] === Symbol.for("react.memo_cache_sentinel")) {
+        t0 = ({
+            "Home[useEffect()]": ()=>{
+                const handleHashChange = {
+                    "Home[useEffect() > handleHashChange]": ()=>{
+                        if (window.location.hash.includes("type=recovery")) {
+                            setCurrentPage("reset-password");
+                        }
+                    }
+                }["Home[useEffect() > handleHashChange]"];
+                window.addEventListener("hashchange", handleHashChange);
+                handleHashChange();
+                return ()=>window.removeEventListener("hashchange", handleHashChange);
+            }
+        })["Home[useEffect()]"];
+        t1 = [];
+        $[1] = t0;
+        $[2] = t1;
+    } else {
+        t0 = $[1];
+        t1 = $[2];
+    }
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])(t0, t1);
+    let t2;
+    if ($[3] === Symbol.for("react.memo_cache_sentinel")) {
+        t2 = ({
+            "Home[handleNavigation]": (page)=>{
+                setCurrentPage(page);
+                window.scrollTo(0, 0);
+            }
+        })["Home[handleNavigation]"];
+        $[3] = t2;
+    } else {
+        t2 = $[3];
+    }
+    const handleNavigation = t2;
+    let t3;
+    if ($[4] !== currentPage) {
+        t3 = currentPage === "home" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$PublicHomepage$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["PublicHomepage"], {
+            onNavigate: handleNavigation
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/page.tsx",
+            lineNumber: 61,
+            columnNumber: 36
+        }, this);
+        $[4] = currentPage;
+        $[5] = t3;
+    } else {
+        t3 = $[5];
+    }
+    let t4;
+    if ($[6] !== currentPage) {
+        t4 = currentPage === "student" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$StudentLogin$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StudentLogin"], {
+            onNavigate: handleNavigation
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/page.tsx",
+            lineNumber: 69,
+            columnNumber: 39
+        }, this);
+        $[6] = currentPage;
+        $[7] = t4;
+    } else {
+        t4 = $[7];
+    }
+    let t5;
+    if ($[8] !== currentPage) {
+        t5 = currentPage === "reset-password" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$ResetPassword$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["ResetPassword"], {
+            onNavigate: handleNavigation
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/page.tsx",
+            lineNumber: 77,
+            columnNumber: 46
+        }, this);
+        $[8] = currentPage;
+        $[9] = t5;
+    } else {
+        t5 = $[9];
+    }
+    let t6;
+    if ($[10] !== currentPage) {
+        t6 = currentPage === "student-dashboard" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$StudentDashboard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["StudentDashboard"], {
+            onNavigate: handleNavigation
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/page.tsx",
+            lineNumber: 85,
+            columnNumber: 49
+        }, this);
+        $[10] = currentPage;
+        $[11] = t6;
+    } else {
+        t6 = $[11];
+    }
+    let t7;
+    if ($[12] !== currentPage) {
+        t7 = currentPage === "admin" && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$src$2f$app$2f$components$2f$AdminDashboard$2e$tsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["AdminDashboard"], {
+            onNavigate: handleNavigation
+        }, void 0, false, {
+            fileName: "[project]/my-lms-project/src/app/page.tsx",
+            lineNumber: 93,
+            columnNumber: 37
+        }, this);
+        $[12] = currentPage;
+        $[13] = t7;
+    } else {
+        t7 = $[13];
+    }
+    let t8;
+    if ($[14] !== t3 || $[15] !== t4 || $[16] !== t5 || $[17] !== t6 || $[18] !== t7) {
+        t8 = /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$my$2d$lms$2d$project$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+            className: "min-h-screen bg-background text-foreground",
+            children: [
+                t3,
+                t4,
+                t5,
+                t6,
+                t7
+            ]
+        }, void 0, true, {
+            fileName: "[project]/my-lms-project/src/app/page.tsx",
+            lineNumber: 101,
+            columnNumber: 10
+        }, this);
+        $[14] = t3;
+        $[15] = t4;
+        $[16] = t5;
+        $[17] = t6;
+        $[18] = t7;
+        $[19] = t8;
+    } else {
+        t8 = $[19];
+    }
+    return t8;
+}
+_s(Home, "WRE9J6mrDmDfWaiKbVmJVAdsQ00=");
+_c = Home;
+var _c;
+__turbopack_context__.k.register(_c, "Home");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+]);
+
+//# sourceMappingURL=my-lms-project_src_ba1a9628._.js.map

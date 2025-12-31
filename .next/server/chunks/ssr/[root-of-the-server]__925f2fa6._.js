@@ -1,0 +1,3 @@
+module.exports=[64433,a=>{a.v({className:"inter_5972bc34-module__OU16Qa__className"})},23947,a=>{"use strict";var b=a.i(77506),c=a.i(64433);let d={className:c.default.className,style:{fontFamily:"'Inter', 'Inter Fallback'",fontStyle:"normal"}};function e({children:a}){return(0,b.jsx)("html",{lang:"en",suppressHydrationWarning:!0,children:(0,b.jsx)("body",{className:`${d.className} antialiased selection:bg-primary selection:text-white`,children:a})})}null!=c.default.variable&&(d.variable=c.default.variable),a.s(["default",()=>e,"metadata",0,{title:"EduPlatform LMS | Quality Education",description:"Advanced class management and student portal"}],23947)}];
+
+//# sourceMappingURL=%5Broot-of-the-server%5D__925f2fa6._.js.map

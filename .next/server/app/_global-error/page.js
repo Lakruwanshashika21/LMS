@@ -1,0 +1,11 @@
+var R=require("../../chunks/ssr/[turbopack]_runtime.js")("server/app/_global-error/page.js")
+R.c("server/chunks/ssr/[root-of-the-server]__01fcc428._.js")
+R.c("server/chunks/ssr/my-lms-project_1871ca97._.js")
+R.c("server/chunks/ssr/b50f0_next_dist_47206635._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__cb81ecc8._.js")
+R.c("server/chunks/ssr/[root-of-the-server]__a9be6781._.js")
+R.c("server/chunks/ssr/b50f0_next_dist_00422c10._.js")
+R.c("server/chunks/ssr/my-lms-project_src_app_4bf0a69c._.js")
+R.c("server/chunks/ssr/my-lms-project__next-internal_server_app__global-error_page_actions_e9794c2d.js")
+R.m(91882)
+module.exports=R.m(91882).exports
