@@ -117,7 +117,7 @@ export function PublicHomepage({ onNavigate }: { onNavigate: (page: string) => v
         <div className="flex items-center gap-3">
           <img src="/logo.png" alt="Logic Logo" className="h-10 w-auto object-contain" />
           <div className="flex flex-col">
-            <h2 className="text-base font-black text-slate-800 tracking-tighter uppercase italic leading-none">Logic with Dilshan</h2>
+            <h2 className="text-base font-black text-slate-800 tracking-tighter uppercase italic leading-none">Logic with Dilshan Uthpala</h2>
             <span className="text-[7px] font-bold text-teal-600 uppercase tracking-widest mt-1 italic">Authorized Educational Platform</span>
           </div>
         </div>

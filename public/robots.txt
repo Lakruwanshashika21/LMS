@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://logicwithdilshanuthpala.web.app/sitemap.xml

@@ -114,15 +114,14 @@ export function AdminDashboard({ onNavigate }: { onNavigate: (page: string) => v
     setLoading(true);
     try {
       const { data: authData, error: authError } = await supabase.auth.signUp({ 
-            email: newStaff.email.trim(), 
-            password: newStaff.password,
-            options: { 
-              data: { 
-                full_name: newStaff.fullName,
-                // FIX: Move role here
-                role: 'admin' 
-              }
-            }
+              email: newStaff.email.trim(), 
+              password: newStaff.password,
+              options: { 
+                data: { full_name: newStaff.fullName },
+                // This is what the SQL policy looks for
+                // @ts-ignore
+                app_metadata: { role: 'admin' }
+              } as any
           });
       if (authError) throw authError;
 
@@ -154,12 +153,10 @@ export function AdminDashboard({ onNavigate }: { onNavigate: (page: string) => v
   }
 
   async function handleRegisterStudent() {
-  if (!regData.email || !regData.password) return alert("Required fields missing");
-  setLoading(true);
-  
-  try {
-    // 1. Only call signUp. The Database Trigger handles the 'profiles' table now.
-    const { data: authData, error: authError } = await supabase.auth.signUp({ 
+    if (!regData.email || !regData.password) return alert("Required fields missing");
+    setLoading(true);
+    try {
+      const { data: authData, error: authError } = await supabase.auth.signUp({ 
         email: regData.email.trim(), 
         password: regData.password,
         options: { 
@@ -168,28 +165,24 @@ export function AdminDashboard({ onNavigate }: { onNavigate: (page: string) => v
             school_name: regData.schoolName,
             phone_number: regData.phoneNumber,
             academic_year: regData.academicYear,
-            // FIX: Move role here
             role: 'student' 
           }
         }
       });
-
-    if (authError) throw authError;
-
-    // 2. REMOVE the supabase.from('profiles').insert([...]) block entirely.
-    // That block is what caused the 'duplicate key' error.
-
-    setIsRegModalOpen(false); 
-    setRegData({ email: "", password: "", fullName: "", academicYear: "", schoolName: "", phoneNumber: "", institute: "" });
-    fetchInitialData();
-    alert("Student registered successfully via Database Trigger!");
-    
-  } catch (err: any) {
-    alert("Registration Error: " + err.message);
-  } finally {
-    setLoading(false);
+  
+      if (authError) throw authError;
+  
+      // IMPORTANT: No manual insert here. The trigger does it.
+      setIsRegModalOpen(false); 
+      setRegData({ email: "", password: "", fullName: "", academicYear: "", schoolName: "", phoneNumber: "", institute: "" });
+      fetchInitialData();
+      alert("Student enrolled successfully!");
+    } catch (err: any) {
+      alert("Error: " + err.message);
+    } finally {
+      setLoading(false);
+    }
   }
-}
 
 async function removeStudent(id: string) {
   if (confirm("Permanently delete this student account?")) {
