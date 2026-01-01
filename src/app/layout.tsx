@@ -1,11 +1,16 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { InstallPrompt } from "./components/InstallPrompt";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const viewport: Viewport = {
   themeColor: "#0d9488",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export const metadata: Metadata = {
@@ -18,21 +23,22 @@ export const metadata: Metadata = {
   manifest: "/manifest.json",
   appleWebApp: {
     capable: true,
-    statusBarStyle: "default",
+    statusBarStyle: "black-translucent",
     title: "Logic LMS",
+    // startupImage is optional but provides a nice splash screen effect
   },
 
   // Open Graph: Controls how the link looks on WhatsApp and Social Media
   openGraph: {
     title: "Logic LMS | Dilshan Uthpala",
     description: "Access your Logic class materials and student portal.",
-    url: "https://your-logic-site.web.app", // TODO: Update with your actual Firebase URL
+    url: "https://logicwithdilshanuthpala.web.app", // Updated with your verified Firebase URL
     siteName: "Logic LMS",
     images: [
       {
         url: "/logo.png", 
-        width: 800,
-        height: 600,
+        width: 512,
+        height: 512,
         alt: "Logic LMS Logo",
       },
     ],
@@ -42,7 +48,7 @@ export const metadata: Metadata = {
   
   // Verification for Search Console
   verification: {
-    google: "googlec49a03556e0ad994", // Extracted from your file name
+    google: "googlec49a03556e0ad994",
   }
 };
 
@@ -54,11 +60,21 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* CRITICAL: iOS/Apple specific icons for home screen installation */}
         <link rel="apple-touch-icon" href="/logo.png" />
-        {/* Verification meta tag is now handled by the metadata object above */}
+        <link rel="apple-touch-icon" sizes="152x152" href="/logo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/logo.png" />
+        <link rel="apple-touch-icon" sizes="167x167" href="/logo.png" />
+        
+        {/* PWA primary meta tags */}
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-title" content="Logic LMS" />
       </head>
-      <body className={`${inter.className} antialiased selection:bg-teal-600 selection:text-white`}>
+      <body className={`${inter.className} antialiased selection:bg-teal-600 selection:text-white overflow-x-hidden`}>
         {children}
+        
+        {/* This triggers the custom "Install App" popup on supported mobile devices */}
+        <InstallPrompt />
       </body>
     </html>
   );
