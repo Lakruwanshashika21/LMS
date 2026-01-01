@@ -31,18 +31,16 @@ export function StudentLogin({ onNavigate }: { onNavigate: (page: string) => voi
       // 2. Fetch user profile to verify role
       const { data: profile, error: profileError } = await supabase
         .from('profiles')
-        .select('role')
+        .select('role, is_paid, is_suspended') // Add these fields
         .eq('id', data.user.id)
         .single();
 
-      if (profileError || profile?.role !== 'student') {
-        // If not a student, log them out immediately
+      if (profile?.is_suspended) {
         await supabase.auth.signOut();
-        alert("Access Denied: This portal is reserved for registered students only.");
-        return;
+        return alert("Account Suspended. Contact Admin.");
       }
 
-      // 3. Success: Navigate to the student dashboard
+      // Optional: Redirect specifically based on paid status
       onNavigate('student-dashboard');
       
     } catch (error: any) {

@@ -3,6 +3,7 @@
 import * as React from "react";
 import * as RechartsPrimitive from "recharts";
 
+
 import { cn } from "./utils";
 
 // Format: { THEME_NAME: CSS_SELECTOR }
@@ -120,11 +121,14 @@ function ChartTooltipContent({
   labelKey,
 }: React.ComponentProps<typeof RechartsPrimitive.Tooltip> &
   React.ComponentProps<"div"> & {
-    hideLabel?: boolean;
-    hideIndicator?: boolean;
-    indicator?: "line" | "dot" | "dashed";
-    nameKey?: string;
-    labelKey?: string;
+    hideLabel?: boolean
+    hideIndicator?: boolean
+    indicator?: "dot" | "line" | "dashed"
+    nameKey?: string
+    labelKey?: string
+    // Add these two lines specifically to fix the "does not exist" error
+    payload?: any[] 
+    label?: string | number
   }) {
   const { config } = useChart();
 
@@ -254,54 +258,31 @@ function ChartLegendContent({
   className,
   hideIcon = false,
   payload,
-  verticalAlign = "bottom",
+  verticalAlign,
   nameKey,
-}: React.ComponentProps<"div"> &
-  Pick<RechartsPrimitive.LegendProps, "payload" | "verticalAlign"> & {
-    hideIcon?: boolean;
-    nameKey?: string;
-  }) {
-  const { config } = useChart();
-
-  if (!payload?.length) {
-    return null;
-  }
-
+}: React.ComponentProps<"div"> & {
+  payload?: any[]
+  verticalAlign?: 'top' | 'middle' | 'bottom'
+  hideIcon?: boolean
+  nameKey?: string
+}) {
   return (
-    <div
-      className={cn(
-        "flex items-center justify-center gap-4",
-        verticalAlign === "top" ? "pb-3" : "pt-3",
-        className,
-      )}
-    >
-      {payload.map((item) => {
-        const key = `${nameKey || item.dataKey || "value"}`;
-        const itemConfig = getPayloadConfigFromPayload(config, item, key);
-
-        return (
-          <div
-            key={item.value}
-            className={cn(
-              "[&>svg]:text-muted-foreground flex items-center gap-1.5 [&>svg]:h-3 [&>svg]:w-3",
-            )}
-          >
-            {itemConfig?.icon && !hideIcon ? (
-              <itemConfig.icon />
-            ) : (
-              <div
-                className="h-2 w-2 shrink-0 rounded-[2px]"
-                style={{
-                  backgroundColor: item.color,
-                }}
-              />
-            )}
-            {itemConfig?.label}
-          </div>
-        );
-      })}
+    <div className={cn("flex items-center justify-center gap-4", className)}>
+      {payload?.map((entry: any, index: number) => (
+        <div key={`item-${index}`} className="flex items-center gap-1">
+          {!hideIcon && (
+            <div
+              className="h-2 w-2 rounded-full"
+              style={{ backgroundColor: entry.color }}
+            />
+          )}
+          <span className="text-sm text-muted-foreground">
+            {entry.value}
+          </span>
+        </div>
+      ))}
     </div>
-  );
+  )
 }
 
 // Helper to extract item config from a payload.

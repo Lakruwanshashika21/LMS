@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { supabase } from "@/lib/supabase";
+import { supabase } from "../../lib/supabase";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "./ui/card";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
@@ -9,15 +9,16 @@ import { Badge } from "./ui/badge";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "./ui/table";
 import { Label } from "./ui/label";
 import { Textarea } from "./ui/textarea";
-import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger, DialogDescription } from "./ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "./ui/dialog";
 import { 
   DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger 
 } from "./ui/dropdown-menu";
 import { 
-  Users, Trophy, Plus, Trash2, Video, FileText, 
+  Users, Trophy, Trash2, Video, FileText, 
   FolderPlus, ChevronLeft, UserPlus, Clock, Search, 
-  MoreVertical, Ban, School, Upload, Settings, Pencil, Check, Image as ImageIcon, EyeOff, Bell, ShieldCheck, Send, MessageSquare, ExternalLink, HelpCircle, Phone
+  MoreVertical, Ban, School, Upload, Pencil, Check, Image as ImageIcon, EyeOff, Bell, ShieldCheck, Send, MessageSquare, ExternalLink, HelpCircle, Phone
 } from "lucide-react";
+import { cn } from "./ui/utils";
 
 type AdminView = 'students' | 'classes' | 'gallery' | 'notices' | 'staff' | 'inquiries';
 
@@ -70,32 +71,35 @@ export function AdminDashboard({ onNavigate }: { onNavigate: (page: string) => v
     setLoading(true);
     try {
       const { data: cls } = await supabase.from('classes').select('*').order('year', { ascending: false });
-      const classesData = cls || [];
-      setClasses(classesData);
+      const currentClasses = cls || [];
+      setClasses(currentClasses);
 
       const { data: nts } = await supabase.from('notices').select('*').order('created_at', { ascending: false });
       setNotices(nts || []);
 
-      const { data: stf } = await supabase.from('profiles').select('*').eq('role', 'admin');
-      setStaff(stf || []);
-
       const { data: gals } = await supabase.from('galleries').select('*').order('created_at', { ascending: false });
       setGalleries(gals || []);
 
-      const { data: profiles } = await supabase.from('profiles').select('*').eq('role', 'student').order('full_name');
-      const { data: enrolls } = await supabase.from('enrollments').select('student_id, class_id');
-
-      if (profiles) {
-        const merged = profiles.map(p => ({
-          ...p,
-          enrolled_folders: enrolls?.filter(e => e.student_id === p.id).map(e => (cls || []).find(c => c.id === e.class_id)).filter(Boolean) || []
-        }));
-        setStudents(merged);
+      if (activeView === 'staff') {
+        const { data: stf } = await supabase.from('profiles').select('*').eq('role', 'admin');
+        setStaff(stf || []);
       }
 
-      if (activeView === 'inquiries') await fetchAllQuestions();
+      try {
+        const { data: profiles } = await supabase.from('profiles').select('*').eq('role', 'student').order('full_name');
+        const { data: enrolls } = await supabase.from('enrollments').select('student_id, class_id');
 
-    } catch (err: any) { console.error("Sync Error:", err.message); }
+        if (profiles) {
+          const merged = profiles.map(p => ({
+            ...p,
+            enrolled_folders: enrolls?.filter(e => e.student_id === p.id).map(e => currentClasses.find(c => c.id === e.class_id)).filter(Boolean) || []
+          }));
+          setStudents(merged);
+        }
+      } catch (e) { console.error("Profile sync fail (RLS issue)"); }
+
+      if (activeView === 'inquiries') await fetchAllQuestions();
+    } catch (err: any) { console.error("Global fetch error:", err.message); }
     setLoading(false);
   }
 
@@ -105,175 +109,136 @@ export function AdminDashboard({ onNavigate }: { onNavigate: (page: string) => v
     s.phone_number?.includes(searchQuery)
   );
 
-  async function fetchAllQuestions() {
-    const { data } = await supabase.from('private_questions').select('*').order('is_resolved', { ascending: true }).order('created_at', { ascending: false });
-    setAllQuestions(data || []);
-  }
-
-  async function submitReply(id: number) {
-    const text = replyText[id];
-    if (!text) return alert("Type a reply first");
-    const { error } = await supabase.from('private_questions').update({ 
-        admin_reply: text, 
-        is_resolved: true,
-        replied_at: new Date().toISOString() 
-    }).eq('id', id);
-    
-    if (!error) {
-        alert("Reply Sent!");
-        setReplyText(prev => { const updated = { ...prev }; delete updated[id]; return updated; });
-        fetchAllQuestions();
-    } else { alert("Reply failed: " + error.message); }
-  }
-
-  async function handleSendMessage() {
-  // Use refreshSession to prevent "Expired" errors
-  const { data: { session } } = await supabase.auth.getSession();
-  let currentUserId = session?.user?.id;
-
-  if (!session?.user) {
-    const { data: refresh } = await supabase.auth.refreshSession();
-    currentUserId = refresh.session?.user?.id;
-  }
-
-  if (!currentUserId) return alert("Security session lost. Please log out and log back in.");
-  if (!messageText || !selectedClass) return alert("Enter message text.");
-
-  const { error } = await supabase.from('class_messages').insert([{
-    class_id: selectedClass.id,
-    sender_id: currentUserId,
-    sender_name: "Dilshan Uthpala",
-    message_text: messageText
-  }]);
-
-  if (!error) { 
-    setMessageText(""); 
-    fetchClassMessages(selectedClass.id); 
-  } else { 
-    alert("Messaging Error: " + error.message); 
-  }
-}
-
-  async function fetchClassMessages(classId: number) {
-    const { data } = await supabase.from('class_messages').select('*').eq('class_id', classId).order('created_at', { ascending: false });
-    setClassMessages(data || []);
-  }
-
   async function handleAddAdmin() {
     if (!newStaff.email || !newStaff.password || !newStaff.fullName) return alert("Fill all fields");
     setLoading(true);
-    const { data: authData, error: authError } = await supabase.auth.signUp({ 
-        email: newStaff.email, 
-        password: newStaff.password,
-        options: { data: { full_name: newStaff.fullName, role: 'admin' } }
-    });
-    if (authData.user) {
-        const { error } = await supabase.from('profiles').upsert([{ 
-          id: authData.user.id, 
-          full_name: newStaff.fullName, 
-          email: newStaff.email, 
-          role: 'admin' 
-        }]);
-        if (error) alert("DB Error: " + error.message);
-        else {
-            alert("Admin registered!");
-            setNewStaff({ email: "", password: "", fullName: "" });
-            fetchInitialData();
-        }
-    } else if (authError) { alert(authError.message); }
+    try {
+      const { data: authData, error: authError } = await supabase.auth.signUp({ 
+            email: newStaff.email.trim(), 
+            password: newStaff.password,
+            options: { 
+              data: { 
+                full_name: newStaff.fullName,
+                // FIX: Move role here
+                role: 'admin' 
+              }
+            }
+          });
+      if (authError) throw authError;
+
+      if (authData.user) {
+          const { error } = await supabase.from('profiles').upsert([{ 
+            id: authData.user.id, 
+            full_name: newStaff.fullName, 
+            email: newStaff.email.trim(), 
+            role: 'admin' 
+          }]);
+          if (error) throw error;
+          alert("Admin registered!");
+          setNewStaff({ email: "", password: "", fullName: "" });
+          fetchInitialData();
+      }
+    } catch (err: any) { alert("Auth Error: " + err.message); }
     setLoading(false);
   }
 
-  // Any Admin can call this; RLS will allow it if the target is a student
-async function removeStudent(id: string) {
-  if (confirm("Permanently delete this student account?")) {
-    const { error } = await supabase.from('profiles').delete().eq('id', id);
-    if (error) alert("Delete failed: " + error.message);
-    else {
-      alert("Student removed.");
-      fetchInitialData(); 
+  async function removeAdmin(id: string) {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (session?.user?.id === id) return alert("You cannot delete your own account.");
+
+    if (confirm("Permanently revoke this administrator's access?")) { 
+      const { error } = await supabase.from('profiles').delete().eq('id', id); 
+      if (error) alert("Deletion Error: " + error.message);
+      else fetchInitialData(); 
     }
   }
-}
-
-// RLS will block this unless the logged-in user is lakruwanshashika21@gmail.com
-async function removeAdmin(id: string) {
-  const { data: { user } } = await supabase.auth.getUser();
-  
-  if (user?.email !== 'lakruwanshashika21@gmail.com') {
-    return alert("Access Denied: Only the Super Admin can remove other Admins.");
-  }
-
-  if (confirm("Revoke admin access?")) { 
-    const { error } = await supabase.from('profiles').delete().eq('id', id); 
-    if (error) alert("Deletion Error: " + error.message);
-    else fetchInitialData(); 
-  }
-}
 
   async function handleRegisterStudent() {
   if (!regData.email || !regData.password) return alert("Required fields missing");
   setLoading(true);
   
   try {
-    // 1. Create the Auth Account
+    // 1. Only call signUp. The Database Trigger handles the 'profiles' table now.
     const { data: authData, error: authError } = await supabase.auth.signUp({ 
-      email: regData.email, 
-      password: regData.password,
-      options: { 
-        data: { 
-          full_name: regData.fullName,
-          role: 'student' 
-        } 
-      }
-    });
+        email: regData.email.trim(), 
+        password: regData.password,
+        options: { 
+          data: { 
+            full_name: regData.fullName,
+            school_name: regData.schoolName,
+            phone_number: regData.phoneNumber,
+            academic_year: regData.academicYear,
+            // FIX: Move role here
+            role: 'student' 
+          }
+        }
+      });
 
     if (authError) throw authError;
 
-    if (authData.user) {
-      // 2. Insert into profiles table
-      const { error: dbError } = await supabase
-        .from('profiles')
-        .insert([{ 
-          id: authData.user.id, 
-          full_name: regData.fullName, 
-          email: regData.email, 
-          academic_year: regData.academicYear, 
-          phone_number: regData.phoneNumber,
-          role: 'student' // We still save the role, but the DB won't "check" it yet
-        }]);
-      
-      if (dbError) throw dbError;
+    // 2. REMOVE the supabase.from('profiles').insert([...]) block entirely.
+    // That block is what caused the 'duplicate key' error.
 
-      setIsRegModalOpen(false); 
-      fetchInitialData();
-      alert("Student enrolled successfully!");
-    }
+    setIsRegModalOpen(false); 
+    setRegData({ email: "", password: "", fullName: "", academicYear: "", schoolName: "", phoneNumber: "", institute: "" });
+    fetchInitialData();
+    alert("Student registered successfully via Database Trigger!");
+    
   } catch (err: any) {
-    alert("Error: " + err.message);
+    alert("Registration Error: " + err.message);
   } finally {
     setLoading(false);
   }
 }
 
-  async function handleCreateClass() {
-    if (!newClass.title || !newClass.year) return alert("Fill details");
-    await supabase.from('classes').insert([newClass]);
-    setNewClass({ title: "", year: "", type: "Theory", class_day: "", class_time: "", institute_name: "", class_category: "Group", instructor: "Dilshan Uthpala" });
-    fetchInitialData();
+async function removeStudent(id: string) {
+  if (confirm("Permanently delete this student account?")) {
+    // We only delete from the 'profiles' table. 
+    // Supabase Auth users should be managed in the Supabase Dashboard.
+    const { error } = await supabase
+      .from('profiles')
+      .delete()
+      .eq('id', id);
+    
+    if (error) {
+      alert("Delete failed: " + error.message);
+    } else {
+      alert("Student profile removed.");
+      fetchInitialData(); // Refresh the list
+    }
+  }
+}
+
+  async function toggleStatus(id: string, field: string, currentVal: boolean) {
+    const { error } = await supabase.from('profiles').update({ [field]: !currentVal }).eq('id', id);
+    if (error) alert("Update failed: " + error.message);
+    else {
+      setStudents(prev => prev.map(s => s.id === id ? { ...s, [field]: !currentVal } : s));
+    }
   }
 
-  async function handleUpdateClass() {
-    await supabase.from('classes').update(editClassData).eq('id', editClassData.id);
-    setEditClassData(null); fetchInitialData();
+  async function handleSendMessage() {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session?.user?.id || !messageText) return alert("Message cannot be empty.");
+    const { error } = await supabase.from('class_messages').insert([{
+      class_id: selectedClass.id,
+      sender_id: session.user.id,
+      sender_name: "Dilshan Uthpala",
+      message_text: messageText
+    }]);
+    if (!error) { setMessageText(""); fetchClassMessages(selectedClass.id); }
   }
 
-  async function handleDeleteClass(id: number) {
-    if (confirm("Delete class folder?")) { await supabase.from('classes').delete().eq('id', id); setSelectedClass(null); fetchInitialData(); }
+  async function handleDeleteMessage(messageId: number) {
+    if (confirm("Permanently delete this announcement?")) {
+      const { error } = await supabase.from('class_messages').delete().eq('id', messageId);
+      if (!error) fetchClassMessages(selectedClass.id);
+    }
   }
 
-  async function handleDeleteContent(id: string) {
-    if (confirm("Remove material?")) { await supabase.from('class_content').delete().eq('id', id); fetchFolderContent(); }
+  async function fetchClassMessages(classId: number) {
+    const { data } = await supabase.from('class_messages').select('*').eq('class_id', classId).order('created_at', { ascending: false });
+    setClassMessages(data || []);
   }
 
   async function fetchFolderContent() {
@@ -281,11 +246,40 @@ async function removeAdmin(id: string) {
     setClassContent(data || []);
   }
 
+  async function fetchStudentsInClass(classId: number) {
+    const { data: enrollData } = await supabase.from('enrollments').select('student_id').eq('class_id', classId);
+    const ids = enrollData?.map(e => e.student_id) || [];
+    if (ids.length > 0) {
+      const { data: profileData } = await supabase.from('profiles').select('*').in('id', ids);
+      setClassStudents(profileData || []);
+    } else setClassStudents([]);
+  }
+
   async function toggleClassAssignment(studentId: string, classId: number) {
     const { data: existing } = await supabase.from('enrollments').select('*').eq('student_id', studentId).eq('class_id', classId).maybeSingle();
     if (existing) { await supabase.from('enrollments').delete().eq('student_id', studentId).eq('class_id', classId); }
     else { await supabase.from('enrollments').insert([{ student_id: studentId, class_id: classId }]); }
     fetchInitialData();
+  }
+
+  async function handlePostNotice() {
+    if (!newNotice.title || !newNotice.content) return alert("Fill all fields");
+    const { error } = await supabase.from('notices').insert([newNotice]);
+    if (!error) { setNewNotice({ title: "", content: "" }); fetchInitialData(); }
+  }
+
+  async function deleteNotice(id: number) {
+    if (confirm("Remove notice?")) { await supabase.from('notices').delete().eq('id', id); fetchInitialData(); }
+  }
+
+  async function handleSaveGallery() {
+    if (!newGalleryName || galleryImages.length === 0) return alert("Fill details");
+    const { error } = await supabase.from('galleries').insert([{ name: newGalleryName, image_urls: galleryImages }]);
+    if (!error) { setNewGalleryName(""); setGalleryImages([]); fetchInitialData(); }
+  }
+
+  async function handleDeleteGallery(id: number, urls: string[]) {
+    if (confirm("Delete gallery?")) { await supabase.from('galleries').delete().eq('id', id); fetchInitialData(); }
   }
 
   async function handleFileUpload(e: React.ChangeEvent<HTMLInputElement>) {
@@ -308,34 +302,29 @@ async function removeAdmin(id: string) {
     fetchFolderContent();
   }
 
-  async function toggleStatus(id: string, field: string, currentVal: boolean) {
-    const { error } = await supabase.from('profiles').update({ [field]: !currentVal }).eq('id', id);
-    if (error) alert("Update failed: " + error.message);
-    else fetchInitialData();
+  async function handleDeleteContent(id: string) {
+    if (confirm("Remove material?")) { await supabase.from('class_content').delete().eq('id', id); fetchFolderContent(); }
   }
 
-  async function handlePostNotice() {
-    if (!newNotice.title || !newNotice.content) return alert("Fill all fields");
-    await supabase.from('notices').insert([newNotice]);
-    setNewNotice({ title: "", content: "" }); fetchInitialData();
+  async function handleCreateClass() {
+    if (!newClass.title || !newClass.year) return alert("Fill details");
+    await supabase.from('classes').insert([newClass]);
+    setNewClass({ title: "", year: "", type: "Theory", class_day: "", class_time: "", institute_name: "", class_category: "Group", instructor: "Dilshan Uthpala" });
+    fetchInitialData();
   }
 
-  async function deleteNotice(id: number) {
-    if (confirm("Remove notice?")) { await supabase.from('notices').delete().eq('id', id); fetchInitialData(); }
+  async function handleUpdateClass() {
+    await supabase.from('classes').update(editClassData).eq('id', editClassData.id);
+    setEditClassData(null); fetchInitialData();
+  }
+
+  async function handleDeleteClass(id: number) {
+    if (confirm("Delete class folder?")) { await supabase.from('classes').delete().eq('id', id); setSelectedClass(null); fetchInitialData(); }
   }
 
   async function fetchExistingResults(classId: number) {
     const { data } = await supabase.from('exam_results').select('*').eq('class_id', classId).order('created_at', { ascending: false });
     setExistingResults(data || []);
-  }
-
-  async function fetchStudentsInClass(classId: number) {
-    const { data: enrollData } = await supabase.from('enrollments').select('student_id').eq('class_id', classId);
-    const ids = enrollData?.map(e => e.student_id) || [];
-    if (ids.length > 0) {
-      const { data: profileData } = await supabase.from('profiles').select('*').in('id', ids);
-      setClassStudents(profileData || []);
-    } else setClassStudents([]);
   }
 
   async function handleSaveMark(studentId: string, studentName: string, schoolName: string) {
@@ -365,14 +354,18 @@ async function removeAdmin(id: string) {
     setUploading(false);
   }
 
-  async function handleSaveGallery() {
-    if (!newGalleryName || galleryImages.length === 0) return alert("Fill details");
-    await supabase.from('galleries').insert([{ name: newGalleryName, image_urls: galleryImages }]);
-    setNewGalleryName(""); setGalleryImages([]); fetchInitialData();
+  async function fetchAllQuestions() {
+    const { data } = await supabase.from('private_questions').select('*').order('is_resolved', { ascending: true }).order('created_at', { ascending: false });
+    setAllQuestions(data || []);
   }
 
-  async function handleDeleteGallery(id: number, urls: string[]) {
-    if (confirm("Delete gallery?")) { await supabase.from('galleries').delete().eq('id', id); fetchInitialData(); }
+  async function submitReply(id: number) {
+    const text = replyText[id];
+    if (!text) return alert("Type a reply first");
+    await supabase.from('private_questions').update({ admin_reply: text, is_resolved: true, replied_at: new Date().toISOString() }).eq('id', id);
+    alert("Reply Sent!");
+    setReplyText(prev => { const updated = { ...prev }; delete updated[id]; return updated; });
+    fetchAllQuestions();
   }
 
   if (loading) return <div className="h-screen flex items-center justify-center font-bold text-slate-900 italic">Syncing Admin Hub...</div>;
@@ -384,7 +377,6 @@ async function removeAdmin(id: string) {
             <h2 className="text-2xl font-black text-slate-800 tracking-tighter uppercase italic leading-none">Logic Admin</h2>
             <p className="text-[9px] font-bold text-teal-600 mt-2 tracking-widest uppercase">මොළ හදන ලොජික් පන්තිය</p>
         </div>
-        
         <nav className="space-y-1 flex-1">
           <Button variant={activeView === 'classes' ? 'default' : 'ghost'} className="w-full justify-start gap-3 rounded-xl h-11 font-bold" onClick={() => { setActiveView('classes'); setSelectedClass(null); }}>
             <FolderPlus size={18} /> Course Folders
@@ -410,7 +402,6 @@ async function removeAdmin(id: string) {
       </aside>
 
       <main className="flex-1 p-10 overflow-auto">
-        {/* STUDENT ACCESS VIEW */}
         {activeView === 'students' && (
           <div className="max-w-6xl mx-auto space-y-6">
             <header className="flex justify-between items-center"><h1 className="text-4xl font-black italic tracking-tighter uppercase text-slate-800">Student Access</h1><Button className="bg-blue-700 h-12 px-6 rounded-xl font-bold text-white shadow-lg" onClick={() => setIsRegModalOpen(true)}><UserPlus className="mr-2"/> Enroll Student</Button></header>
@@ -426,7 +417,7 @@ async function removeAdmin(id: string) {
                 </TableRow></TableHeader>
                 <TableBody>
                   {filteredStudents.map((s) => (
-                    <TableRow key={s.id} className={s.is_suspended ? "opacity-50 grayscale" : "border-zinc-50"}>
+                    <TableRow key={s.id} className={cn(s.is_suspended && "opacity-50 grayscale", "border-zinc-50")}>
                       <TableCell className="py-6 pl-8">
                         <div className="font-black uppercase text-sm text-slate-800">{s.full_name}</div>
                         <div className="text-[10px] text-slate-400 font-bold italic lowercase">{s.academic_year || "---"} Exam Year</div>
@@ -438,7 +429,7 @@ async function removeAdmin(id: string) {
                          </div>
                       </TableCell>
                       <TableCell><div className="flex gap-1 flex-wrap">{s.enrolled_folders?.map((f:any, i:number) => (<Badge key={i} className="bg-blue-50 text-blue-700 border-none text-[9px] font-black uppercase">{f.year} {f.title}</Badge>)) || <span className="text-xs text-slate-300 italic">None</span>}</div></TableCell>
-                      <TableCell className="text-center"><Button variant="ghost" size="sm" onClick={() => toggleStatus(s.id, 'is_paid', s.is_paid)} className={`rounded-full px-4 h-8 font-black text-[10px] tracking-widest ${s.is_paid ? 'bg-emerald-50 text-emerald-600' : 'bg-rose-50 text-rose-600'}`}>{s.is_paid ? 'PAID' : 'PENDING'}</Button></TableCell>
+                      <TableCell className="text-center"><Button variant="ghost" size="sm" onClick={() => toggleStatus(s.id, 'is_paid', s.is_paid)} className={cn("rounded-full px-4 h-8 font-black text-[10px] tracking-widest", s.is_paid ? 'bg-emerald-50 text-emerald-600' : 'bg-rose-50 text-rose-600')}>{s.is_paid ? 'PAID' : 'PENDING'}</Button></TableCell>
                       <TableCell className="text-right pr-8">
                         <DropdownMenu><DropdownMenuTrigger asChild><Button variant="ghost" size="icon" className="rounded-full"><MoreVertical size={18}/></Button></DropdownMenuTrigger><DropdownMenuContent align="end" className="w-56 p-2 rounded-2xl shadow-2xl">
                           {classes.map(c => { const isEnrolled = s.enrolled_folders?.some((f: any) => f.id === c.id); return (<DropdownMenuItem key={c.id} onClick={() => toggleClassAssignment(s.id, c.id)} className="flex justify-between items-center text-xs font-bold px-3"><span>{c.year} {c.title}</span>{isEnrolled && <Check size={14} className="text-blue-600" />}</DropdownMenuItem>); })}
@@ -453,7 +444,6 @@ async function removeAdmin(id: string) {
           </div>
         )}
 
-        {/* STAFF DETAILS VIEW */}
         {activeView === 'staff' && (
             <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in duration-500">
                 <header><h1 className="text-4xl font-black italic tracking-tighter text-slate-800 uppercase leading-none">Administrators</h1></header>
@@ -478,7 +468,9 @@ async function removeAdmin(id: string) {
                                         <div className="font-black uppercase text-sm italic">{s.full_name}</div>
                                         <div className="text-[10px] font-bold text-slate-400">{s.email}</div>
                                     </TableCell>
-                                    <TableCell className="text-right pr-10"><Button variant="ghost" className="text-rose-500 font-black text-[10px] uppercase" onClick={() => removeAdmin(s.id)}>Revoke</Button></TableCell>
+                                    <TableCell className="text-right pr-10">
+                                        <Button variant="ghost" className="text-rose-500 font-black text-[10px] uppercase hover:bg-rose-50 rounded-xl" onClick={() => removeAdmin(s.id)}>Revoke Access</Button>
+                                    </TableCell>
                                 </TableRow>
                             ))}
                         </TableBody>
@@ -487,35 +479,7 @@ async function removeAdmin(id: string) {
             </div>
         )}
 
-        {/* INQUIRIES VIEW */}
-        {activeView === 'inquiries' && (
-            <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in duration-500">
-                <header><h1 className="text-4xl font-black italic tracking-tighter text-slate-800 uppercase leading-none">Student Inquiries</h1></header>
-                <div className="grid gap-6">
-                    {allQuestions.map(q => (
-                        <Card key={q.id} className={`p-6 rounded-[2rem] border-none shadow-xl bg-white ${!q.is_resolved ? 'ring-2 ring-teal-500' : ''}`}>
-                            <div className="flex justify-between items-start mb-4">
-                                <div><h3 className="font-black text-slate-800 uppercase text-lg">{q.student_name}</h3><p className="text-[10px] font-bold text-slate-400">{new Date(q.created_at).toLocaleString()}</p></div>
-                                {q.is_resolved ? <Badge className="bg-teal-500 text-white">Replied</Badge> : <Badge className="bg-rose-500 text-white animate-pulse">Pending</Badge>}
-                            </div>
-                            <p className="text-slate-600 font-medium mb-6 bg-slate-50 p-4 rounded-2xl border">Q: {q.question_text}</p>
-                            {!q.is_resolved ? (
-                                <div className="flex gap-2">
-                                    <Input placeholder="Type your reply..." className="h-12 rounded-xl" value={replyText[q.id] || ""} onChange={(e) => setReplyText({...replyText, [q.id]: e.target.value})} />
-                                    <Button onClick={() => submitReply(q.id)} className="bg-teal-600 h-12 px-8 rounded-xl font-bold uppercase text-xs tracking-widest text-white">Deliver Reply</Button>
-                                </div>
-                            ) : (
-                                <div className="p-4 bg-teal-50 rounded-2xl border border-teal-100"><p className="text-[10px] font-black text-teal-700 uppercase mb-1">Reply:</p><p className="text-sm font-medium text-slate-700 italic">"{q.admin_reply}"</p></div>
-                            )}
-                        </Card>
-                    ))}
-                    {allQuestions.length === 0 && <div className="py-20 text-center text-slate-300 font-bold uppercase tracking-widest italic border-4 border-dashed rounded-[3rem]">No student questions found.</div>}
-                </div>
-            </div>
-        )}
-
-        {/* FOLDER DETAILS (MESSAGING & CONTENT) */}
-        {activeView === 'classes' && selectedClass && (
+        {selectedClass && activeView === 'classes' && (
           <div className="max-w-6xl mx-auto space-y-6">
             <Button variant="ghost" onClick={() => setSelectedClass(null)} className="gap-2 font-bold"><ChevronLeft size={16}/> Folders</Button>
             <div className="flex justify-between items-center bg-white p-8 rounded-[2.5rem] border shadow-sm">
@@ -530,9 +494,10 @@ async function removeAdmin(id: string) {
                     <Button className="w-full font-black uppercase text-xs tracking-widest bg-teal-600 text-white h-14 rounded-2xl shadow-lg" onClick={handleSendMessage}><Send size={14} className="mr-2"/> Post Message</Button>
                     <div className="mt-8 space-y-3 max-h-64 overflow-y-auto pr-2 custom-scrollbar">
                         {classMessages.map(m => (
-                            <div key={m.id} className="p-4 bg-slate-50 rounded-2xl border">
+                            <div key={m.id} className="p-4 bg-slate-50 rounded-2xl border group relative">
                                 <div className="flex justify-between text-[9px] font-black text-slate-400 uppercase mb-1"><span>{m.sender_name}</span><span>{new Date(m.created_at).toLocaleDateString()}</span></div>
-                                <p className="text-sm font-medium text-slate-700">{m.message_text}</p>
+                                <p className="text-sm font-medium text-slate-700 pr-8">{m.message_text}</p>
+                                <Button variant="ghost" size="icon" className="absolute top-2 right-2 h-8 w-8 text-rose-500 opacity-0 group-hover:opacity-100 transition-all rounded-full" onClick={() => handleDeleteMessage(m.id)}><Trash2 size={14}/></Button>
                             </div>
                         ))}
                     </div>
@@ -549,7 +514,7 @@ async function removeAdmin(id: string) {
                 <Card className="p-8 rounded-[2.5rem] bg-white shadow-md border-none">
                     <CardTitle className="mb-6 italic uppercase text-lg text-slate-800 flex justify-between">Folder Content <Badge className="bg-slate-100 text-slate-500 border-none font-bold">{classContent.length}</Badge></CardTitle>
                     <Table><TableBody>{classContent.map(item => (
-                        <TableRow key={item.id} className="group border-slate-50 hover:bg-slate-50"><TableCell className="py-4 font-black uppercase text-xs tracking-tight text-slate-700"><div className="flex items-center gap-3"><div className={`p-2 rounded-lg ${item.type === 'video' ? 'bg-blue-50 text-blue-500' : 'bg-orange-50 text-orange-500'}`}>{item.type === 'video' ? <Video size={16}/> : <FileText size={16}/>}</div>{item.title}</div></TableCell><TableCell><a href={item.url} target="_blank" className="p-2 bg-slate-100 rounded-lg inline-block hover:bg-teal-500 text-slate-700 transition-all"><ExternalLink size={14}/></a></TableCell><TableCell className="text-right pr-0"><Button variant="ghost" size="icon" className="text-rose-500 opacity-0 group-hover:opacity-100 transition-all" onClick={() => handleDeleteContent(item.id)}><Trash2 size={16}/></Button></TableCell></TableRow>
+                        <TableRow key={item.id} className="group border-slate-50 hover:bg-slate-50"><TableCell className="py-4 font-black uppercase text-xs tracking-tight text-slate-700"><div className="flex items-center gap-3"><div className={cn("p-2 rounded-lg", item.type === 'video' ? 'bg-blue-50 text-blue-500' : 'bg-orange-50 text-orange-500')}>{item.type === 'video' ? <Video size={16}/> : <FileText size={16}/>}</div>{item.title}</div></TableCell><TableCell><a href={item.url} target="_blank" className="p-2 bg-slate-100 rounded-lg inline-block hover:bg-teal-500 text-slate-700 transition-all"><ExternalLink size={14}/></a></TableCell><TableCell className="text-right pr-0"><Button variant="ghost" size="icon" className="text-rose-500 opacity-0 group-hover:opacity-100 transition-all" onClick={() => handleDeleteContent(item.id)}><Trash2 size={16}/></Button></TableCell></TableRow>
                     ))}</TableBody></Table>
                  </Card>
                  <Card className="p-8 rounded-[2.5rem] bg-white shadow-xl">
@@ -582,7 +547,6 @@ async function removeAdmin(id: string) {
           </div>
         )}
 
-        {/* DEFAULT VIEW: COURSE FOLDERS LIST */}
         {activeView === 'classes' && !selectedClass && (
           <div className="space-y-6">
             <h1 className="text-4xl font-black italic tracking-tighter text-slate-800 uppercase leading-none">Course Management</h1>
@@ -608,7 +572,6 @@ async function removeAdmin(id: string) {
           </div>
         )}
 
-        {/* GALLARY VIEW */}
         {activeView === 'gallery' && (
           <div className="max-w-6xl mx-auto space-y-10">
             <h1 className="text-4xl font-black italic tracking-tighter uppercase text-slate-800">Visual Archive</h1>
@@ -631,7 +594,7 @@ async function removeAdmin(id: string) {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-10">
               {galleries.map((gal) => (
                 <Card key={gal.id} className="relative group overflow-hidden rounded-[2.5rem] shadow-xl border-none">
-                  <img src={gal.image_urls[0]} className="h-56 w-full object-cover transition-transform group-hover:scale-110 duration-700"/>
+                  <img src={gal.image_urls[0]} className="h-56 w-full object-cover transition-transform group-hover:scale-110 duration-700" alt={gal.name}/>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex flex-col justify-end p-8"><h3 className="text-white font-black uppercase italic text-xl">{gal.name}</h3></div>
                   <Button variant="destructive" size="icon" className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-all rounded-full shadow-lg" onClick={() => handleDeleteGallery(gal.id, gal.image_urls)}><Trash2 size={16}/></Button>
                 </Card>
@@ -640,7 +603,6 @@ async function removeAdmin(id: string) {
           </div>
         )}
 
-        {/* NOTICES VIEW */}
         {activeView === 'notices' && (
           <div className="max-w-4xl mx-auto space-y-8 animate-in fade-in duration-500">
             <header><h1 className="text-4xl font-black italic tracking-tighter uppercase text-slate-800">Public Announcements</h1></header>
@@ -662,7 +624,31 @@ async function removeAdmin(id: string) {
           </div>
         )}
 
-        {/* REGISTRATION MODAL */}
+        {activeView === 'inquiries' && (
+            <div className="max-w-5xl mx-auto space-y-8 animate-in fade-in duration-500">
+                <header><h1 className="text-4xl font-black italic tracking-tighter text-slate-800 uppercase leading-none">Student Inquiries</h1></header>
+                <div className="grid gap-6">
+                    {allQuestions.map(q => (
+                        <Card key={q.id} className={cn("p-6 rounded-[2rem] border-none shadow-xl bg-white", !q.is_resolved && 'ring-2 ring-teal-500')}>
+                            <div className="flex justify-between items-start mb-4">
+                                <div><h3 className="font-black text-slate-800 uppercase text-lg">{q.student_name}</h3><p className="text-[10px] font-bold text-slate-400">{new Date(q.created_at).toLocaleString()}</p></div>
+                                {q.is_resolved ? <Badge className="bg-teal-500 text-white">Replied</Badge> : <Badge className="bg-rose-500 text-white animate-pulse">Pending</Badge>}
+                            </div>
+                            <p className="text-slate-600 font-medium mb-6 bg-slate-50 p-4 rounded-2xl border">Q: {q.question_text}</p>
+                            {!q.is_resolved ? (
+                                <div className="flex gap-2">
+                                    <Input placeholder="Type your reply..." className="h-12 rounded-xl" value={replyText[q.id] || ""} onChange={(e) => setReplyText({...replyText, [q.id]: e.target.value})} />
+                                    <Button onClick={() => submitReply(q.id)} className="bg-teal-600 h-12 px-8 rounded-xl font-bold uppercase text-xs tracking-widest text-white">Deliver Reply</Button>
+                                </div>
+                            ) : (
+                                <div className="p-4 bg-teal-50 rounded-2xl border border-teal-100"><p className="text-[10px] font-black text-teal-700 uppercase mb-1">Reply:</p><p className="text-sm font-medium text-slate-700 italic">"{q.admin_reply}"</p></div>
+                            )}
+                        </Card>
+                    ))}
+                </div>
+            </div>
+        )}
+
         <Dialog open={isRegModalOpen} onOpenChange={setIsRegModalOpen}>
             <DialogContent className="rounded-[2.5rem] max-w-lg p-12 border-none shadow-2xl bg-white">
                 <DialogHeader className="mb-6"><DialogTitle className="text-3xl font-black italic tracking-tighter uppercase text-slate-800">Enroll Student</DialogTitle><DialogDescription className="font-bold text-slate-400 uppercase text-[10px] tracking-widest">Initialize a new logic portal account.</DialogDescription></DialogHeader>
@@ -670,13 +656,11 @@ async function removeAdmin(id: string) {
                     <div className="col-span-2 space-y-1"><Label>Full Name</Label><Input value={regData.fullName} onChange={e => setRegData({...regData, fullName: e.target.value})} /></div>
                     <div className="space-y-1"><Label>Email Address</Label><Input value={regData.email} onChange={e => setRegData({...regData, email: e.target.value})} /></div>
                     <div className="space-y-1"><Label>Password</Label><Input type="password" value={regData.password} onChange={e => setRegData({...regData, password: e.target.value})} /></div>
-                    
                     <div className="space-y-1"><Label>Exam Year</Label><Input placeholder="e.g. 2026" value={regData.academicYear} onChange={e => setRegData({...regData, academicYear: e.target.value})} /></div>
-                    
                     <div className="space-y-1"><Label>Phone Number</Label><Input value={regData.phoneNumber} onChange={e => setRegData({...regData, phoneNumber: e.target.value})} /></div>
                     <div className="col-span-2 space-y-1"><Label>School Name</Label><Input value={regData.schoolName} onChange={e => setRegData({...regData, schoolName: e.target.value})} /></div>
                 </div>
-                <Button className="w-full py-7 font-black uppercase text-xs tracking-widest bg-slate-900 text-white rounded-2xl mt-6 shadow-xl" onClick={handleRegisterStudent}>Create & Authenticate</Button>
+                <Button className="w-full py-7 font-black uppercase text-xs tracking-widest bg-slate-900 text-white rounded-2xl mt-6 shadow-xl" onClick={handleRegisterStudent} disabled={loading}>Create & Authenticate</Button>
             </DialogContent>
         </Dialog>
         

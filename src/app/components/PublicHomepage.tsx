@@ -215,28 +215,43 @@ export function PublicHomepage({ onNavigate }: { onNavigate: (page: string) => v
         </div>
       </section>
 
-      {/* Notice Board */}
-      {notices.length > 0 && (
-        <section className="py-24 bg-slate-50 border-y border-slate-100">
-            <div className="max-w-7xl mx-auto px-6">
-                <div className="flex items-center gap-3 mb-16">
-                    <Bell className="text-teal-600 size-7" />
-                    <h2 className="text-3xl font-black uppercase tracking-tighter text-slate-900 italic">Notice Board</h2>
-                </div>
-                <div className="grid md:grid-cols-3 gap-8">
-                    {notices.map(n => (
-                        <Card key={n.id} className="rounded-[2.5rem] border-none bg-white shadow-xl shadow-slate-200/50 p-4 transition-transform hover:-translate-y-2">
-                            <CardHeader>
-                                <div className="text-[10px] font-black text-teal-600 uppercase mb-3 tracking-widest bg-teal-50 w-fit px-3 py-1 rounded-full">{new Date(n.created_at).toLocaleDateString()}</div>
-                                <CardTitle className="text-xl font-black uppercase italic leading-tight text-slate-800">{n.title}</CardTitle>
-                            </CardHeader>
-                            <CardContent><p className="text-sm text-slate-500 font-medium leading-relaxed">{n.content}</p></CardContent>
-                        </Card>
-                    ))}
-                </div>
-            </div>
-        </section>
-      )}
+      {/* --- START OF NOTICE BOARD SECTION --- */}
+{notices.length > 0 && (
+  <section className="py-24 bg-slate-50 border-y border-slate-100">
+    <div className="max-w-7xl mx-auto px-6">
+      <div className="flex items-center gap-3 mb-16">
+        <div className="size-12 bg-teal-600 rounded-2xl flex items-center justify-center shadow-lg shadow-teal-200">
+           <Bell className="text-white size-6" />
+        </div>
+        <h2 className="text-4xl font-black uppercase tracking-tighter text-slate-900 italic">Notice Board</h2>
+      </div>
+      
+      <div className="grid md:grid-cols-3 gap-8">
+        {notices.map((n) => (
+          <Card key={n.id} className="rounded-[2.5rem] border-none bg-white shadow-xl shadow-slate-200/40 p-2 transition-all hover:-translate-y-2 group">
+            <CardHeader className="p-6 pb-2">
+              <div className="flex justify-between items-start mb-4">
+                <Badge className="bg-teal-50 text-teal-600 border-none font-black text-[9px] px-3 py-1 rounded-full tracking-widest">
+                  {new Date(n.created_at).toLocaleDateString()}
+                </Badge>
+                <Zap size={14} className="text-teal-200 group-hover:text-teal-500 transition-colors" />
+              </div>
+              <CardTitle className="text-2xl font-black uppercase italic leading-tight text-slate-800 group-hover:text-teal-600 transition-colors">
+                {n.title}
+              </CardTitle>
+            </CardHeader>
+            <CardContent className="p-6 pt-2">
+              <p className="text-slate-500 font-medium leading-relaxed italic">
+                "{n.content}"
+              </p>
+            </CardContent>
+          </Card>
+        ))}
+      </div>
+    </div>
+  </section>
+)}
+{/* --- END OF NOTICE BOARD SECTION --- */}
 
       {/* Hall of Fame */}
       <section className="py-32 px-6 max-w-7xl mx-auto text-center">

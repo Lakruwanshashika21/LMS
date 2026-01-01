@@ -30,11 +30,37 @@ export function StudentDashboard({ onNavigate }: { onNavigate: (page: string) =>
     fetchInitialData();
   }, []);
 
-  useEffect(() => {
-    if (selectedClassId && profile?.is_paid && !profile?.is_suspended) {
-      fetchClassSpecificData();
-    }
-  }, [selectedClassId, profile]);
+  // Updated useEffect to handle Real-time Permission Changes
+useEffect(() => {
+  if (selectedClassId && profile?.is_paid && !profile?.is_suspended) {
+    fetchClassSpecificData();
+  }
+
+  // --- START REAL-TIME PERMISSION LISTENER ---
+  if (profile?.id) {
+    const profileSubscription = supabase
+      .channel(`profile-updates-${profile.id}`)
+      .on(
+        'postgres_changes',
+        {
+          event: 'UPDATE',
+          schema: 'public',
+          table: 'profiles',
+          filter: `id=eq.${profile.id}`
+        },
+        (payload) => {
+          console.log("Profile updated in real-time:", payload.new);
+          setProfile(payload.new); // Instantly updates is_paid status in UI
+        }
+      )
+      .subscribe();
+
+    return () => {
+      supabase.removeChannel(profileSubscription);
+    };
+  }
+  // --- END REAL-TIME PERMISSION LISTENER ---
+}, [selectedClassId, profile?.id, profile?.is_paid, profile?.is_suspended]);
 
   async function fetchInitialData() {
     setLoading(true);
@@ -47,13 +73,17 @@ export function StudentDashboard({ onNavigate }: { onNavigate: (page: string) =>
     }
 
     // 1. Fetch User Profile
-    const { data: profileData } = await supabase
-      .from('profiles')
-      .select('*')
-      .eq('id', session.user.id)
-      .single();
-    
-    setProfile(profileData);
+    // Inside fetchInitialData()
+const { data: profileData, error: profileError } = await supabase
+  .from('profiles')
+  .select('*')
+  .eq('id', session.user.id)
+  .maybeSingle(); // Changed from .single() to avoid crashing if row is missing
+
+if (profileError) {
+  console.error("Profile Fetch Error:", profileError.message);
+}
+setProfile(profileData);
 
     // 2. Fetch Enrolled Classes
     const { data: enrollmentData } = await supabase
